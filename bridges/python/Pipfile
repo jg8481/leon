@@ -8,5 +8,12 @@ requests = "==2.21.0"
 pytube = "==9.5.0"
 tinydb = "==3.9.0"
 beautifulsoup4 = "==4.7.1"
+robotframework = ">=3.0"
+six = ">=1.11.0"
+robotframework-seleniumlibrary = "==4.1.0"
+robotframework-requests = "==0.6.2"
+robotframework-pabot = "==0.91"
+pyyaml = "==5.1.2"
 
 [dev-packages]
+
