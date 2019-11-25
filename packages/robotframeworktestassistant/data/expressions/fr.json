@@ -1,0 +1,16 @@
+{
+  "robotframeworktestassistant": {
+    "test_one": {
+      "expressions": [
+        "Test one",
+        "Run test one"
+      ]
+    },
+    "test_two": {
+      "expressions": [
+        "Test two",
+        "Run test two"
+      ]
+    }
+  }
+}

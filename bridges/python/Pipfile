@@ -14,6 +14,7 @@ robotframework-seleniumlibrary = "==4.1.0"
 robotframework-requests = "==0.6.2"
 robotframework-pabot = "==0.91"
 pyyaml = "==5.1.2"
+webdrivermanager = "==0.7.4"
 
 [dev-packages]
 

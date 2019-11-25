@@ -1,0 +1,12 @@
+{
+	"robotframeworktestassistant": {
+    "test_one_ran": [
+      "Alright, I'm running test one.",
+      "Yes, I will run test one."
+    ],
+    "test_two_ran": [
+			"Alright, I'm running test two.",
+      "Yes, I will run test two."
+    ]
+	}
+}

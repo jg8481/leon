@@ -1,0 +1,96 @@
+{
+  "robotframeworktestassistant": {
+    "Clean_Up_Results": {
+      "expressions": [
+        "clean"
+      ]
+    },
+    "Test_One": {
+      "expressions": [
+        "test one"
+      ]
+    },
+    "Test_Two": {
+      "expressions": [
+        "test two"
+      ]
+    },
+    "Test_Three": {
+      "expressions": [
+        "test three"
+      ]
+    },
+    "Test_Four": {
+      "expressions": [
+        "test four"
+      ]
+    },
+    "Set_Up_Runner_One": {
+      "expressions": [
+        "set up runner one"
+      ]
+    },
+    "Set_Test_One": {
+      "expressions": [
+        "set test one"
+      ]
+    },
+    "Set_Test_Two": {
+      "expressions": [
+        "set test two"
+      ]
+    },
+    "Set_Test_Three": {
+      "expressions": [
+        "set test three"
+      ]
+    },
+    "Set_Test_Four": {
+      "expressions": [
+        "set test four"
+      ]
+    },
+    "Custom_Runner_One": {
+      "expressions": [
+        "custom runner one"
+      ]
+    },
+    "Display_Runner_One": {
+      "expressions": [
+        "display runner one"
+      ]
+    },
+    "Set_Group_One": {
+      "expressions": [
+        "set group one"
+      ]
+    },
+    "Set_Group_Two": {
+      "expressions": [
+        "set group two"
+      ]
+    },
+    "Set_Group_Three": {
+      "expressions": [
+        "set group three"
+      ]
+    },
+    "Set_Group_Four": {
+      "expressions": [
+        "set group four"
+      ]
+    },
+    "Slack_Notification": {
+      "expressions": [
+        "slack",
+        "slack notify",
+        "slack notification"
+      ]
+    },
+    "Robot_Framework_Desktop_Web_Test_Example": {
+      "expressions": [
+        "desktop browsers"
+      ]
+    }
+  }
+}

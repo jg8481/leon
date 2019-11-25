@@ -1,0 +1,28 @@
+{
+	"robotframeworktestassistant": {
+		"clean_up_results_ran": [
+			"Alright, I'll clean up the test results.",
+			"Yes, I will clean up the test results."
+		],
+		"single_test_ran": [
+			"Alright, that test has finished running.",
+			"The test result is ready."
+		],
+		"multiple_tests_ran": [
+			"Alright, those tests have finished running.",
+			"The results of your tests are ready."
+		],
+		"finished_setting_up": [
+			"No problem, I have finished setting that up."
+		],
+		"display_results": [
+			"Here are the results you requested."
+		],
+		"notify_the_team": [
+			"A notification has been sent to your team."
+		],
+    "error": [
+      "Oops, an error occurred..."
+    ]
+	}
+}
