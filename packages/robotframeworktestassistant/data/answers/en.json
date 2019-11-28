@@ -8,6 +8,10 @@
 			"Alright, that test has finished running.",
 			"The test result is ready."
 		],
+		"parallel_tests_ran": [
+			"Alright, those parallel running tests have finished.",
+			"The test results are ready."
+		],
 		"multiple_tests_ran": [
 			"Alright, those tests have finished running.",
 			"The results of your tests are ready."
