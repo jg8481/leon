@@ -67,9 +67,3 @@ test-log*.txt
 *log.html
 *output.xml
 *report.html
-test-*.html
-test-*.xml
-group-*.html
-group-*.xml
-custom-*.html
-custom-*.xml
