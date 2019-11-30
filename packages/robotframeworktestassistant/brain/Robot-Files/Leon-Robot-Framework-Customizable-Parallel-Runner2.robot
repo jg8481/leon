@@ -9,33 +9,33 @@ ${PATH}    ${EXECDIR}
 
 *** Test Cases ***
 
-CUSTOM RUNNER START : This helps avoid skipping the first actual step in the runner file.
+CUSTOM RUNNER START : This helps avoid skipping the first actual automated check in the runner file.
     Log    This runs first.
     [Tags]    Start
 
-TEST 1 - PARALLEL RUNNER 2 : A test that will run.
+AUTOMATED CHECK 1 - PARALLEL RUNNER 2 : An automated check that will run.
     Log    Just giving Robot Framework something to do when triggered by the voice assistant.
-    #Send Detailed Message Through Slack About This Test    TEST 1 - PARALLEL RUNNER 2    QA
+    #Send Detailed Message Through Slack About The Automation Run Result    AUTOMATED CHECK 1 - PARALLEL RUNNER 2    QA
     [Tags]    Group_One
 
-TEST 2 - PARALLEL RUNNER 2 : A test that will run.
+AUTOMATED CHECK 2 - PARALLEL RUNNER 2 : An automated check that will run.
     Log    Just giving Robot Framework something to do when triggered by the voice assistant.
-    #Send Detailed Message Through Slack About This Test    TEST 2 - PARALLEL RUNNER 2    QA
+    #Send Detailed Message Through Slack About The Automation Run Result    AUTOMATED CHECK 2 - PARALLEL RUNNER 2    QA
     [Tags]    Group_Two
 
-TEST 3 - PARALLEL RUNNER 2 : A test that will run.
+AUTOMATED CHECK 3 - PARALLEL RUNNER 2 : An automated check that will run.
     Log    Just giving Robot Framework something to do when triggered by the voice assistant.
-    #Send Detailed Message Through Slack About This Test    TEST 3 - PARALLEL RUNNER 2    QA
+    #Send Detailed Message Through Slack About The Automation Run Result    AUTOMATED CHECK 3 - PARALLEL RUNNER 2    QA
     [Tags]    Group_Three
 
-TEST 4 - PARALLEL RUNNER 2 : A test that will run.
+AUTOMATED CHECK 4 - PARALLEL RUNNER 2 : An automated check that will run.
     Log    Just giving Robot Framework something to do when triggered by the voice assistant.
-    #Send Detailed Message Through Slack About This Test    TEST 4 - PARALLEL RUNNER 2    QA
+    #Send Detailed Message Through Slack About The Automation Run Result    AUTOMATED CHECK 4 - PARALLEL RUNNER 2    QA
     [Tags]    Group_Four
 
 *** Keywords ***
 
-Send Detailed Message Through Slack About This Test
+Send Detailed Message Through Slack About The Automation Run Result
     ## There are various solutions out there for sending Slack messages through its API. Here are some examples.
     ##
     ## robot-framework-slack-notifier is a cross-platform solution...

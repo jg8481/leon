@@ -5,24 +5,24 @@
         "clean"
       ]
     },
-    "Test_One": {
+    "Check_One": {
       "expressions": [
-        "test one"
+        "check one"
       ]
     },
-    "Test_Two": {
+    "Check_Two": {
       "expressions": [
-        "test two"
+        "check two"
       ]
     },
-    "Test_Three": {
+    "Check_Three": {
       "expressions": [
-        "test three"
+        "check three"
       ]
     },
-    "Test_Four": {
+    "Check_Four": {
       "expressions": [
-        "test four"
+        "check four"
       ]
     },
     "Set_Up_Runner_One": {
@@ -30,24 +30,24 @@
         "set up runner one"
       ]
     },
-    "Set_Test_One": {
+    "Set_Check_One": {
       "expressions": [
-        "set test one"
+        "set check one"
       ]
     },
-    "Set_Test_Two": {
+    "Set_Check_Two": {
       "expressions": [
-        "set test two"
+        "set check two"
       ]
     },
-    "Set_Test_Three": {
+    "Set_Check_Three": {
       "expressions": [
-        "set test three"
+        "set check three"
       ]
     },
-    "Set_Test_Four": {
+    "Set_Check_Four": {
       "expressions": [
-        "set test four"
+        "set check four"
       ]
     },
     "Custom_Runner_One": {
@@ -121,7 +121,7 @@
         "notify all"
       ]
     },
-    "Robot_Framework_Desktop_Web_Test_Example": {
+    "Robot_Framework_Desktop_Web": {
       "expressions": [
         "desktop browsers"
       ]

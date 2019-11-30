@@ -1,20 +1,20 @@
 {
 	"robotframeworktestassistant": {
 		"clean_up_results_ran": [
-			"Alright, I'll clean up the test results.",
-			"Yes, I will clean up the test results."
+			"Alright, I'll clean up the automation results.",
+			"Yes, I will clean up the automation results."
 		],
-		"single_test_ran": [
-			"Alright, that test has finished running.",
-			"The test result is ready."
+		"single_check_ran": [
+			"Alright, that automated task has finished running.",
+			"The automation result is ready."
 		],
-		"parallel_tests_ran": [
-			"Alright, those parallel running tests have finished.",
-			"The test results are ready."
+		"parallel_checks_ran": [
+			"Alright, those parallel running tasks have finished.",
+			"The automation results are ready."
 		],
-		"multiple_tests_ran": [
-			"Alright, those tests have finished running.",
-			"The results of your tests are ready."
+		"multiple_checks_ran": [
+			"Alright, those automated tasks have finished running.",
+			"The results of your automation are ready."
 		],
 		"finished_setting_up": [
 			"No problem, I have finished setting that up."

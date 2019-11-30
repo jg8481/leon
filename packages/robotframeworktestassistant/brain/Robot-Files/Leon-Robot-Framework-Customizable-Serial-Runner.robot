@@ -9,33 +9,33 @@ ${PATH}    ${EXECDIR}
 
 *** Test Cases ***
 
-CUSTOM RUNNER START : This helps avoid skipping the first actual step in the runner file.
+CUSTOM RUNNER START : This helps avoid skipping the first actual automated check in the runner file.
     Log    This runs first.
     [Tags]    Start
 
-TEST 1 - SERIAL RUNNER : A test that will run.
+AUTOMATED CHECK 1 - SERIAL RUNNER : An automated check that will run.
     Log    Just giving Robot Framework something to do when triggered by the voice assistant.
-    #Send Detailed Message Through Slack About This Test    TEST 1 - SERIAL RUNNER   QA
-    [Tags]    Test_One
+    #Send Detailed Message Through Slack About The Automation Run Result    AUTOMATED CHECK 1 - SERIAL RUNNER   QA
+    [Tags]    Check_One
 
-TEST 2 - SERIAL RUNNER : A test that will run.
+AUTOMATED CHECK 2 - SERIAL RUNNER : An automated check that will run.
     Log    Just giving Robot Framework something to do when triggered by the voice assistant.
-    #Send Detailed Message Through Slack About This Test    TEST 2 - SERIAL RUNNER   QA
-    [Tags]    Test_Two
+    #Send Detailed Message Through Slack About The Automation Run Result    AUTOMATED CHECK 2 - SERIAL RUNNER   QA
+    [Tags]    Check_Two
 
-TEST 3 - SERIAL RUNNER : A test that will run.
+AUTOMATED CHECK 3 - SERIAL RUNNER : An automated check that will run.
     Log    Just giving Robot Framework something to do when triggered by the voice assistant.
-    #Send Detailed Message Through Slack About This Test    TEST 3 - SERIAL RUNNER   QA
-    [Tags]    Test_Three
+    #Send Detailed Message Through Slack About The Automation Run Result    AUTOMATED CHECK 3 - SERIAL RUNNER   QA
+    [Tags]    Check_Three
 
-TEST 4 - SERIAL RUNNER : A test that will run.
+AUTOMATED CHECK 4 - SERIAL RUNNER : An automated check that will run.
     Log    Just giving Robot Framework something to do when triggered by the voice assistant.
-    #Send Detailed Message Through Slack About This Test    TEST 4 - SERIAL RUNNER   QA
-    [Tags]    Test_Four
+    #Send Detailed Message Through Slack About The Automation Run Result    AUTOMATED CHECK 4 - SERIAL RUNNER   QA
+    [Tags]    Check_Four
 
 *** Keywords ***
 
-Send Detailed Message Through Slack About This Test
+Send Detailed Message Through Slack About The Automation Run Result
     ## There are various solutions out there for sending Slack messages through its API. Here are some examples.
     ##
     ## robot-framework-slack-notifier is a cross-platform solution...
