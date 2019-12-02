@@ -1,0 +1,251 @@
+{
+  "robotframework-test-assistant": {
+    "Clean_Up_Results": {
+      "expressions": [
+        "clean",
+        "cleanup",
+        "clean up"
+      ]
+    },
+    "Check_One": {
+      "expressions": [
+        "check one",
+        "checkone",
+        "run checkone",
+        "run check one"
+      ]
+    },
+    "Check_Two": {
+      "expressions": [
+        "check two",
+        "checktwo",
+        "run checktwo",
+        "run check two"
+      ]
+    },
+    "Check_Three": {
+      "expressions": [
+        "check three",
+        "checkthree",
+        "run checkthree",
+        "run check three"
+      ]
+    },
+    "Check_Four": {
+      "expressions": [
+        "check four",
+        "checkfour",
+        "run checkfour",
+        "run check four"
+      ]
+    },
+    "Set_Up_Runner_One": {
+      "expressions": [
+        "set up runner one",
+        "setup runnerone",
+        "set up runnerone",
+        "setup runner one"
+      ]
+    },
+    "Set_Check_One": {
+      "expressions": [
+        "set check one",
+        "set checkone"
+      ]
+    },
+    "Set_Check_Two": {
+      "expressions": [
+        "set check two",
+        "set checktwo"
+      ]
+    },
+    "Set_Check_Three": {
+      "expressions": [
+        "set check three",
+        "set checkthree"
+      ]
+    },
+    "Set_Check_Four": {
+      "expressions": [
+        "set check four",
+        "set checkfour"
+      ]
+    },
+    "Custom_Runner_One": {
+      "expressions": [
+        "custom runner one",
+        "runner one",
+        "runnerone",
+        "custom runnerone"
+      ]
+    },
+    "Display_Runner_One": {
+      "expressions": [
+        "display runner one",
+        "display runnerone"
+      ]
+    },
+    "Group_One": {
+      "expressions": [
+        "group one",
+        "groupone",
+        "run groupone",
+        "run group one"
+      ]
+    },
+    "Group_Two": {
+      "expressions": [
+        "group two",
+        "grouptwo",
+        "run grouptwo",
+        "run group two"
+      ]
+    },
+    "Group_Three": {
+      "expressions": [
+        "group three",
+        "groupthree",
+        "run groupthree",
+        "run group three"
+      ]
+    },
+    "Group_Four": {
+      "expressions": [
+        "group four",
+        "groupfour",
+        "run groupfour",
+        "run group four"
+      ]
+    },
+    "Set_Up_Runner_Two": {
+      "expressions": [
+        "set up runner two",
+        "setup runnertwo",
+        "set up runnertwo",
+        "setup runner two"
+      ]
+    },
+    "Set_Group_One": {
+      "expressions": [
+        "set group one",
+        "set groupone"
+      ]
+    },
+    "Set_Group_Two": {
+      "expressions": [
+        "set group two",
+        "set grouptwo"
+      ]
+    },
+    "Set_Group_Three": {
+      "expressions": [
+        "set group three",
+        "set groupthree"
+      ]
+    },
+    "Set_Group_Four": {
+      "expressions": [
+        "set group four",
+        "set groupfour"
+      ]
+    },
+    "Custom_Runner_Two": {
+      "expressions": [
+        "custom runner two",
+        "runner two",
+        "runnertwo",
+        "custom runnertwo"
+      ]
+    },
+    "Display_Runner_Two": {
+      "expressions": [
+        "display runner two",
+        "display runnertwo"
+      ]
+    },
+    "Slack_Notification_Send_All": {
+      "expressions": [
+        "slack",
+        "notify",
+        "slack notify",
+        "send slack",
+        "slackall",
+        "slack all",
+        "notify all"
+      ]
+    },
+    "Build_Docker_Containers": {
+      "expressions": [
+        "docker build",
+        "build"
+      ]
+    },
+    "Robot_Framework_Docker_API_Checks": {
+      "expressions": [
+        "response check",
+        "check response"
+      ]
+    },
+    "Robot_Framework_Docker_Random_Order_API_Checks": {
+      "expressions": [
+        "random order response checks",
+        "random order",
+        "randomize",
+        "random"
+      ]
+    },
+    "Robot_Framework_Docker_MBT_Graphwalker_Checks": {
+      "expressions": [
+        "run graph walker checks",
+        "run graphwalker checks",
+        "graphwalker checks",
+        "graph walker checks",
+        "modelbased testing",
+        "modelbased test",
+        "model based test",
+        "model based testing",
+        "model based",
+        "graph walker",
+        "graph",
+        "graphwalker"
+      ]
+    },
+    "Display_Current_MBT_Graphwalker_Path": {
+      "expressions": [
+        "display graph walker path",
+        "display graph walker",
+        "graph walker path"
+      ]
+    },
+    "Run_Same_Robot_Framework_Docker_MBT_Graphwalker_Checks_Again": {
+      "expressions": [
+        "rerun graph walker",
+        "ree run graph walker",
+        "graph walker again",
+        "run graph walker again",
+        "rerun graphwalker",
+        "ree run graphwalker",
+        "graphwalker again",
+        "run graphwalker again"
+      ]
+    },
+    "Display_MBT_Graphwalker_Path_Rerun": {
+      "expressions": [
+        "display graph walker rerun",
+        "display graph walker ree run",
+        "display graphwalker ree run",
+        "display graphwalker rerun",
+        "graphwalker rerun",
+        "graphwalker ree run",
+        "graph walker rerun"
+      ]
+    },
+    "Robot_Framework_Selenium_Desktop_Web_Checks": {
+      "expressions": [
+        "desktop browsers",
+        "desktop",
+        "desktop selenium"
+      ]
+    }
+  }
+}
