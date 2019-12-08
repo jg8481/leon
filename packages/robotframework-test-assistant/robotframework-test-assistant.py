@@ -135,6 +135,11 @@ def Build_Docker_Containers(string, entities):
     subprocess.call(filepath + '/robotframework-runner.sh Build-Docker-Containers', shell=True)
     return utils.output('end', 'finished_setting_up', utils.translate('finished_setting_up'))
 
+def Clean_Up_Docker_Containers(string, entities):
+    """Leon will stop and remove Docker Containers"""
+    subprocess.call(filepath + '/robotframework-runner.sh Clean-Up-Docker-Containers', shell=True)
+    return utils.output('end', 'finished_setting_up', utils.translate('finished_setting_up'))
+
 def Robot_Framework_Docker_API_Checks(string, entities):
     """Leon will run Robot Framework scripts from within Docker Containers that run locally"""
     subprocess.call(filepath + '/robotframework-runner.sh Robot-Framework-Docker-API-Checks', shell=True)
@@ -164,3 +169,69 @@ def Robot_Framework_Selenium_Desktop_Web_Checks(string, entities):
     """Leon will run Robot Framework through the script runner"""
     subprocess.call(filepath + '/robotframework-runner.sh Robot-Framework-Selenium-Desktop-Web-Checks', shell=True)
     return utils.output('end', 'multiple_checks_ran', utils.translate('multiple_checks_ran'))
+
+def Start_Remote_API_Check_Process_Webhook_Docker_Container(string, entities):
+    """Leon will start a Docker Container for running remote Robot Framework scripts triggered by a webhook"""
+    subprocess.call(filepath + '/robotframework-runner.sh Start-Remote-API-Check-Process-Webhook-Docker-Container', shell=True)
+    return utils.output('end', 'multiple_checks_ran', utils.translate('multiple_checks_ran'))
+
+def Start_Remote_Selenium_Process_Webhook_Container(string, entities):
+    """Leon will start a Docker Container for running remote Robot Framework scripts triggered by a webhook"""
+    subprocess.call(filepath + '/robotframework-runner.sh Start-Remote-Selenium-Process-Webhook-Docker-Container', shell=True)
+    return utils.output('end', 'multiple_checks_ran', utils.translate('multiple_checks_ran'))
+
+def Trigger_Remote_API_Check_Process_Webhook_Docker_Container(string, entities):
+    """Leon will trigger a Docker Container for running remote Robot Framework scripts using a webhook"""
+    subprocess.call(filepath + '/robotframework-runner.sh Trigger-Remote-API-Check-Process-Webhook-Docker-Container', shell=True)
+    return utils.output('end', 'multiple_checks_ran', utils.translate('multiple_checks_ran'))
+
+def Trigger_Remote_Selenium_Process_Webhook_Container(string, entities):
+    """Leon will trigger a Docker Container for running remote Robot Framework scripts using a webhook"""
+    subprocess.call(filepath + '/robotframework-runner.sh Trigger-Remote-Selenium-Process-Webhook-Docker-Container', shell=True)
+    return utils.output('end', 'multiple_checks_ran', utils.translate('multiple_checks_ran'))
+
+## The following are a work in progress 
+def Custom_Tasks_And_Suites_Runner(string, entities):
+    """Leon will set up a custom automated tasks and suites run"""
+    subprocess.call(filepath + '/custom-tasks-and-suites-runner.sh Custom-Tasks-And-Suites-Runner', shell=True)
+    return utils.output('end', 'finished_setting_up', utils.translate('multiple_checks_ran'))
+
+def Set_Up_Custom_Tasks_And_Suites_Runner(string, entities):
+    """Leon will set up a custom automated tasks and suites run"""
+    subprocess.call(filepath + '/custom-tasks-and-suites-runner.sh Set-Up-Custom-Tasks-And-Suites-Runner', shell=True)
+    return utils.output('end', 'finished_setting_up', utils.translate('finished_setting_up'))
+
+def Set_Slack_Notification_Send_All(string, entities):
+    """Leon will set up a custom automated tasks and suites run"""
+    subprocess.call(filepath + '/custom-tasks-and-suites-runner.sh Set-Slack-Notification-Send-All', shell=True)
+    return utils.output('end', 'finished_setting_up', utils.translate('finished_setting_up'))
+
+def Set_Build_Docker_Containers(string, entities):
+    """Leon will set up a custom automated tasks and suites run"""
+    subprocess.call(filepath + '/custom-tasks-and-suites-runner.sh Set-Build-Docker-Containers', shell=True)
+    return utils.output('end', 'finished_setting_up', utils.translate('finished_setting_up'))
+
+def Set_Clean_Up_Docker_Containers(string, entities):
+    """Leon will set up a custom automated tasks and suites run"""
+    subprocess.call(filepath + '/custom-tasks-and-suites-runner.sh Set-Clean-Up-Docker-Containers', shell=True)
+    return utils.output('end', 'finished_setting_up', utils.translate('finished_setting_up'))
+
+def Set_Start_Remote_API_Check_Process_Webhook_Docker_Container(string, entities):
+    """Leon will set up a custom automated tasks and suites run"""
+    subprocess.call(filepath + '/custom-tasks-and-suites-runner.sh Set-Start-Remote-API-Check-Process-Webhook-Docker-Container', shell=True)
+    return utils.output('end', 'finished_setting_up', utils.translate('finished_setting_up'))
+
+def Set_Start_Remote_Selenium_Process_Webhook_Docker_Container(string, entities):
+    """Leon will set up a custom automated tasks and suites run"""
+    subprocess.call(filepath + '/custom-tasks-and-suites-runner.sh Set-Start-Remote-Selenium-Process-Webhook-Docker-Container', shell=True)
+    return utils.output('end', 'finished_setting_up', utils.translate('finished_setting_up'))
+
+def Set_Trigger_Remote_API_Check_Process_Webhook_Docker_Container(string, entities):
+    """Leon will set up a custom automated tasks and suites run"""
+    subprocess.call(filepath + '/custom-tasks-and-suites-runner.sh Set-Trigger-Remote-API-Check-Process-Webhook-Docker-Container', shell=True)
+    return utils.output('end', 'finished_setting_up', utils.translate('finished_setting_up'))
+
+def Set_Trigger_Remote_Selenium_Process_Webhook_Docker_Container(string, entities):
+    """Leon will set up a custom automated tasks and suites run"""
+    subprocess.call(filepath + '/custom-tasks-and-suites-runner.sh Set-Trigger-Remote-Selenium-Process-Webhook-Docker-Container', shell=True)
+    return utils.output('end', 'finished_setting_up', utils.translate('finished_setting_up'))

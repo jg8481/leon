@@ -9,6 +9,7 @@
     },
     "Check_One": {
       "expressions": [
+        "a check one",
         "check one",
         "checkone",
         "run checkone",
@@ -20,7 +21,9 @@
         "check two",
         "checktwo",
         "run checktwo",
-        "run check two"
+        "run check two",
+        "check to",
+        "a check to"
       ]
     },
     "Check_Three": {
@@ -36,7 +39,9 @@
         "check four",
         "checkfour",
         "run checkfour",
-        "run check four"
+        "run check four",
+        "check for",
+        "a check for"
       ]
     },
     "Set_Up_Runner_One": {
@@ -81,6 +86,7 @@
     },
     "Display_Runner_One": {
       "expressions": [
+        "show one",
         "display runner one",
         "display runnerone"
       ]
@@ -159,6 +165,8 @@
     },
     "Display_Runner_Two": {
       "expressions": [
+        "show two",
+        "show to",
         "display runner two",
         "display runnertwo"
       ]
@@ -178,6 +186,12 @@
       "expressions": [
         "docker build",
         "build"
+      ]
+    },
+    "Clean_Up_Docker_Containers": {
+      "expressions": [
+        "docker clean",
+        "clean docker"
       ]
     },
     "Robot_Framework_Docker_API_Checks": {
@@ -245,6 +259,92 @@
         "desktop browsers",
         "desktop",
         "desktop selenium"
+      ]
+    },
+    "Start_Remote_API_Check_Process_Webhook_Docker_Container": {
+      "expressions": [
+        "remote docker one",
+        "remote one",
+        "docker one"
+      ]
+    },
+    "Start_Remote_Selenium_Process_Webhook_Container": {
+      "expressions": [
+        "remote docker two",
+        "remote two",
+        "docker two"
+      ]
+    },
+    "Trigger_Remote_API_Check_Process_Webhook_Docker_Container": {
+      "expressions": [
+        "trigger remote one",
+        "trigger one",
+        "trigger docker one"
+      ]
+    },
+    "Trigger_Remote_Selenium_Process_Webhook_Container": {
+      "expressions": [
+        "trigger remote two",
+        "trigger two",
+        "trigger docker two"
+      ]
+    },
+    "Custom_Tasks_And_Suites_Runner": {
+      "expressions": [
+        "custom task runner",
+        "custom runner three"
+      ]
+    },
+    "Set_Up_Custom_Tasks_And_Suites_Runner": {
+      "expressions": [
+        "set up custom task",
+        "set up runner three"
+      ]
+    },
+    "Set_Slack_Notification_Send_All": {
+      "expressions": [
+        "set slack",
+        "set notification"
+      ]
+    },
+    "Set_Build_Docker_Containers": {
+      "expressions": [
+        "set build docker",
+        "set docker build"
+      ]
+    },
+    "Set_Clean_Up_Docker_Containers": {
+      "expressions": [
+        "set docker clean",
+        "set container clean"
+      ]
+    },
+    "Set_Start_Remote_API_Check_Process_Webhook_Docker_Container": {
+      "expressions": [
+        "set remote docker one",
+        "set remote one",
+        "set docker one"
+      ]
+    },
+    "Set_Start_Remote_Selenium_Process_Webhook_Docker_Container": {
+      "expressions": [
+        "set remote docker two",
+        "set remote two",
+        "set docker two"
+      ]
+    },
+    "Set_Trigger_Remote_API_Check_Process_Webhook_Docker_Container": {
+      "expressions": [
+        "set trigger remote one",
+        "set trigger one",
+        "set trigger docker one"
+      ]
+    },
+    "Set_Trigger_Remote_Selenium_Process_Webhook_Docker_Container": {
+      "expressions": [
+        "set trigger remote two",
+        "set trigger two",
+        "set trigger docker two"
       ]
     }
   }

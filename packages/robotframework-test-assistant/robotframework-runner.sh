@@ -1,7 +1,10 @@
 #!/bin/bash
 
-export PROJECT_PATH=$(pwd)
-export PACKAGES_PATH="$PROJECT_PATH/packages/robotframework-test-assistant/brain"
+PROJECT_PATH=$(pwd)
+export PROJECT_PATH
+PACKAGES_PATH="$PROJECT_PATH/packages/robotframework-test-assistant/brain"
+export PACKAGES_PATH
+
 
 if [ "$1" == "Clean-Up-Results" ]; then
   rm -rf "$PACKAGES_PATH"/Log-Files/*.txt
@@ -188,9 +191,15 @@ if [ "$1" == "Build-Docker-Containers" ]; then
   touch "$PACKAGES_PATH"/Log-Files/Build-Images-Teardown-Old-Docker-Containers-Log.txt
   TIMESTAMP1=$(date)
   echo "This Build-Docker-Containers task was started by leon-ai on $TIMESTAMP1." >> "$PACKAGES_PATH"/Log-Files/Build-Images-Teardown-Old-Docker-Containers-Log.txt
-  bash -c "cd $PACKAGES_PATH/Tool-Strategies-Lone-Testers-Test-Leadership-Congress-2019/ && ./start-specific-docker-example-workflows-for-workshop.sh Build-Images-Teardown-Old-Docker-Containers > /dev/null 2>&1 && docker images && exit 0" > "$PACKAGES_PATH"/Log-Files/Build-Images-Teardown-Old-Docker-Containers-Log.txt
+  bash -c "cd $PACKAGES_PATH/Tool-Strategies-Lone-Testers-Test-Leadership-Congress-2019/ && ./start-specific-docker-example-workflows-for-workshop.sh Build-Images-Teardown-Old-Docker-Containers > /dev/null 2>&1 && docker images && exit 0" >> "$PACKAGES_PATH"/Log-Files/Build-Images-Teardown-Old-Docker-Containers-Log.txt
   TIMESTAMP2=$(date)
   echo "This Build-Docker-Containers task was started by leon-ai, and it ended on $TIMESTAMP2." >> "$PACKAGES_PATH"/Log-Files/Build-Images-Teardown-Old-Docker-Containers-Log.txt
+fi
+
+if [ "$1" == "Clean-Up-Docker-Containers" ]; then
+  docker stop $(docker ps -a -q) > /dev/null 2>&1
+  docker rm $(docker ps -a -q) > /dev/null 2>&1
+  docker image prune --force > /dev/null 2>&1
 fi
 
 if [ "$1" == "Robot-Framework-Docker-API-Checks" ]; then
@@ -252,15 +261,67 @@ if [ "$1" == "Display-MBT-Graphwalker-Path-Rerun" ]; then
 fi
 
 if [ "$1" == "Robot-Framework-Selenium-Desktop-Web-Checks" ]; then
-  chmod -R 755 "$PROJECT_PATH"/bridges/python/.venv/WebDriverManager > /dev/null 2>&1
+  chmod -R 755 "$PROJECT_PATH"/bridges/python/.venv > /dev/null 2>&1
   chmod +x "$PACKAGES_PATH"/Tool-Strategies-Lone-Testers-Test-Leadership-Congress-2019/start-specific-local-machine-example-workflows-for-workshop.sh > /dev/null 2>&1
   rm -rf "$PACKAGES_PATH"/Log-Files/Robot-Framework-Desktop-Web-Log.txt
   touch "$PACKAGES_PATH"/Log-Files/Robot-Framework-Desktop-Web-Log.txt
   TIMESTAMP1=$(date)
   echo "This Robot-Framework-Selenium-Desktop-Web-Checks task was started by leon-ai on $TIMESTAMP1." >> "$PACKAGES_PATH"/Log-Files/Robot-Framework-Desktop-Web-Log.txt
-  bash -c "cd $PACKAGES_PATH/Tool-Strategies-Lone-Testers-Test-Leadership-Congress-2019/ && ./start-specific-local-machine-example-workflows-for-workshop.sh Robot-Framework-Desktop-Web-Test-Example" > "$PACKAGES_PATH"/Log-Files/Robot-Framework-Desktop-Web-Log.txt
+  bash -c "cd $PACKAGES_PATH/Tool-Strategies-Lone-Testers-Test-Leadership-Congress-2019/ && ./start-specific-local-machine-example-workflows-for-workshop.sh Robot-Framework-Desktop-Web-Test-Example" >> "$PACKAGES_PATH"/Log-Files/Robot-Framework-Desktop-Web-Log.txt
   TIMESTAMP2=$(date)
   echo "This Robot-Framework-Selenium-Desktop-Web-Checks task was started by leon-ai, and it ended on $TIMESTAMP2." >> "$PACKAGES_PATH"/Log-Files/Robot-Framework-Desktop-Web-Log.txt
 fi
 
+if [ "$1" == "Start-Remote-API-Check-Process-Webhook-Docker-Container" ]; then
+  chmod +x "$PACKAGES_PATH"/Tool-Strategies-Lone-Testers-Test-Leadership-Congress-2019/start-specific-local-machine-example-workflows-for-workshop.sh > /dev/null 2>&1
+  rm -rf "$PACKAGES_PATH"/Log-Files/Start-Remote-API-Check-Process-Webhook-Docker-Container-Log.txt
+  touch "$PACKAGES_PATH"/Log-Files/Start-Remote-API-Check-Process-Webhook-Docker-Container-Log.txt
+  TIMESTAMP1=$(date)
+  TIME_LOGGER=$(echo "This Start-Remote-API-Check-Process-Webhook-Docker-Container task was started by leon-ai on $TIMESTAMP1.")
+  sleep 2s &&
+  bash -c "cd $PACKAGES_PATH/Tool-Strategies-Lone-Testers-Test-Leadership-Congress-2019/ && nohup ./start-specific-docker-example-workflows-for-workshop.sh Remote-Test-Process-Triggered-By-A-Webhook-Docker-Example >> $PACKAGES_PATH/Log-Files/Start-Remote-API-Check-Process-Webhook-Docker-Container-Log.txt & exit 0" >> "$PACKAGES_PATH"/Log-Files/Start-Remote-API-Check-Process-Webhook-Docker-Container-Log.txt &> /dev/null
+  sleep 2s &&
+  TIMESTAMP2=$(date)
+  echo "$TIME_LOGGER" >>  "$PACKAGES_PATH"/Log-Files/Start-Remote-API-Check-Process-Webhook-Docker-Container-Log.txt
+  echo "This Start-Remote-API-Check-Process-Webhook-Docker-Container task was started by leon-ai, and it ended on $TIMESTAMP2." >> "$PACKAGES_PATH"/Log-Files/Start-Remote-API-Check-Process-Webhook-Docker-Container-Log.txt
+fi
 
+if [ "$1" == "Start-Remote-Selenium-Process-Webhook-Docker-Container" ]; then
+  chmod +x "$PACKAGES_PATH"/Tool-Strategies-Lone-Testers-Test-Leadership-Congress-2019/start-specific-local-machine-example-workflows-for-workshop.sh > /dev/null 2>&1
+  rm -rf "$PACKAGES_PATH"/Log-Files/Start-Remote-Selenium-Process-Webhook-Docker-Container-Log.txt
+  touch "$PACKAGES_PATH"/Log-Files/Start-Remote-Selenium-Process-Webhook-Docker-Container-Log.txt
+  TIMESTAMP1=$(date)
+  TIME_LOGGER=$(echo "This Start-Remote-Selenium-Process-Webhook-Docker-Container task was started by leon-ai on $TIMESTAMP1.")
+  sleep 2s &&
+  bash -c "cd $PACKAGES_PATH/Tool-Strategies-Lone-Testers-Test-Leadership-Congress-2019/ && nohup ./start-specific-docker-example-workflows-for-workshop.sh Remote-Selenium-Process-Triggered-By-A-Webhook-Docker-Example >> $PACKAGES_PATH/Log-Files/Start-Remote-Selenium-Process-Webhook-Docker-Container-Log.txt & exit 0" >> "$PACKAGES_PATH"/Log-Files/Start-Remote-Selenium-Process-Webhook-Docker-Container-Log.txt &> /dev/null
+  sleep 2s &&
+  TIMESTAMP2=$(date)
+  echo "$TIME_LOGGER" >> "$PACKAGES_PATH"/Log-Files/Start-Remote-Selenium-Process-Webhook-Docker-Container-Log.txt
+  echo "This Start-Remote-Selenium-Process-Webhook-Docker-Container task was started by leon-ai, and it ended on $TIMESTAMP2." >> "$PACKAGES_PATH"/Log-Files/Start-Remote-Selenium-Process-Webhook-Docker-Container-Log.txt
+fi
+
+if [ "$1" == "Trigger-Remote-API-Check-Process-Webhook-Docker-Container" ]; then
+  rm -rf "$PACKAGES_PATH"/Log-Files/Trigger-Remote-API-Check-Process-Webhook-Docker-Container-Log.txt
+  touch "$PACKAGES_PATH"/Log-Files/Trigger-Remote-API-Check-Process-Webhook-Docker-Container-Log.txt
+  TIMESTAMP1=$(date)
+  TIME_LOGGER=$(echo "This Trigger-Remote-API-Check-Process-Webhook-Docker-Container task was started by leon-ai on $TIMESTAMP1.")
+  sleep 2s &&
+  nohup curl -i http://0.0.0.0:9080/hooks/robot-framework-remote-test-process-webhook-part1 &> "$PACKAGES_PATH"/Log-Files/Trigger-Remote-API-Check-Process-Webhook-Docker-Container-Log.txt
+  sleep 2s &&
+  TIMESTAMP2=$(date)
+  echo "$TIME_LOGGER" >> "$PACKAGES_PATH"/Log-Files/Trigger-Remote-API-Check-Process-Webhook-Docker-Container-Log.txt
+  echo "This Trigger-Remote-API-Check-Process-Webhook-Docker-Container task was started by leon-ai, and it ended on $TIMESTAMP2." >> "$PACKAGES_PATH"/Log-Files/Trigger-Remote-API-Check-Process-Webhook-Docker-Container-Log.txt
+fi
+
+if [ "$1" == "Trigger-Remote-Selenium-Process-Webhook-Docker-Container" ]; then
+  rm -rf "$PACKAGES_PATH"/Log-Files/Trigger-Remote-Selenium-Process-Webhook-Docker-Container-Log.txt
+  touch "$PACKAGES_PATH"/Log-Files/Trigger-Remote-Selenium-Process-Webhook-Docker-Container-Log.txt
+  TIMESTAMP1=$(date)
+  TIME_LOGGER=$(echo "This Trigger-Remote-Selenium-Process-Webhook-Docker-Container task was started by leon-ai on $TIMESTAMP1.")
+  sleep 2s &&
+  nohup curl -i http://0.0.0.0:9088/hooks/robot-framework-remote-test-process-webhook-part2 &> "$PACKAGES_PATH"/Log-Files/Trigger-Remote-Selenium-Process-Webhook-Docker-Container-Log.txt
+  sleep 2s &&
+  TIMESTAMP2=$(date)
+  echo "$TIME_LOGGER" >> "$PACKAGES_PATH"/Log-Files/Trigger-Remote-Selenium-Process-Webhook-Docker-Container-Log.txt
+  echo "This Trigger-Remote-Selenium-Process-Webhook-Docker-Container task was started by leon-ai, and it ended on $TIMESTAMP2." >> "$PACKAGES_PATH"/Log-Files/Trigger-Remote-Selenium-Process-Webhook-Docker-Container-Log.txt
+fi
