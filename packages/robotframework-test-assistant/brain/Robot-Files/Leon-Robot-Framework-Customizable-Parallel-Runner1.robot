@@ -15,27 +15,27 @@ CUSTOM RUNNER START : This helps avoid skipping the first actual automated check
 
 AUTOMATED CHECK 1 - PARALLEL RUNNER 1 : An automated check that will run.
     Log    Just giving Robot Framework something to do when triggered by the voice assistant.
-    #Send Detailed Message Through Slack About The Automation Run Result    AUTOMATED CHECK 1 - PARALLEL RUNNER 1    QA
+    Send Short Message Through Slack About The Automation Run    AUTOMATED CHECK 1 - PARALLEL RUNNER 1    QA
     [Tags]    Group_One
 
 AUTOMATED CHECK 2 - PARALLEL RUNNER 1 : An automated check that will run.
     Log    Just giving Robot Framework something to do when triggered by the voice assistant.
-    #Send Detailed Message Through Slack About The Automation Run Result    AUTOMATED CHECK 2 - PARALLEL RUNNER 1    QA
+    Send Short Message Through Slack About The Automation Run    AUTOMATED CHECK 2 - PARALLEL RUNNER 1    QA
     [Tags]    Group_Two
 
 AUTOMATED CHECK 3 - PARALLEL RUNNER 1 : An automated check that will run.
     Log    Just giving Robot Framework something to do when triggered by the voice assistant.
-    #Send Detailed Message Through Slack About The Automation Run Result    AUTOMATED CHECK 3 - PARALLEL RUNNER 1    QA
+    Send Short Message Through Slack About The Automation Run    AUTOMATED CHECK 3 - PARALLEL RUNNER 1    QA
     [Tags]    Group_Three
 
 AUTOMATED CHECK 4 - PARALLEL RUNNER 1 : An automated check that will run.
     Log    Just giving Robot Framework something to do when triggered by the voice assistant.
-    #Send Detailed Message Through Slack About The Automation Run Result    AUTOMATED CHECK 4 - PARALLEL RUNNER 1    QA
+    Send Short Message Through Slack About The Automation Run    AUTOMATED CHECK 4 - PARALLEL RUNNER 1    QA
     [Tags]    Group_Four
 
 *** Keywords ***
 
-Send Detailed Message Through Slack About The Automation Run Result
+Send Short Message Through Slack About The Automation Run
     ## There are various solutions out there for sending Slack messages through its API. Here are some examples.
     ##
     ## robot-framework-slack-notifier is a cross-platform solution...

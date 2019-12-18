@@ -224,7 +224,7 @@
         "graphwalker"
       ]
     },
-    "Display_Current_MBT_Graphwalker_Path": {
+    "Display_MBT_Graphwalker_Results": {
       "expressions": [
         "display graph walker path",
         "display graph walker",
@@ -241,17 +241,6 @@
         "ree run graphwalker",
         "graphwalker again",
         "run graphwalker again"
-      ]
-    },
-    "Display_MBT_Graphwalker_Path_Rerun": {
-      "expressions": [
-        "display graph walker rerun",
-        "display graph walker ree run",
-        "display graphwalker ree run",
-        "display graphwalker rerun",
-        "graphwalker rerun",
-        "graphwalker ree run",
-        "graph walker rerun"
       ]
     },
     "Robot_Framework_Selenium_Desktop_Web_Checks": {
@@ -287,6 +276,13 @@
         "trigger remote two",
         "trigger two",
         "trigger docker two"
+      ]
+    },
+    "Trigger_Both_Webhook_Docker_Containers_For_Parallel_Run": {
+      "expressions": [
+        "trigger both remote",
+        "trigger both",
+        "trigger parallel docker"
       ]
     },
     "Custom_Tasks_And_Suites_Runner": {
@@ -338,6 +334,13 @@
         "set trigger remote one",
         "set trigger one",
         "set trigger docker one"
+      ]
+    },
+    "Set_Trigger_Both_Webhook_Docker_Containers_For_Parallel_Run": {
+      "expressions": [
+        "set trigger both remote",
+        "set trigger both",
+        "set trigger parallel docker"
       ]
     },
     "Set_Trigger_Remote_Selenium_Process_Webhook_Docker_Container": {

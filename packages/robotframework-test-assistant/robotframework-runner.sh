@@ -89,7 +89,7 @@ if [ "$1" == "Custom-Runner-One" ]; then
   #rm -rf "$PACKAGES_PATH"/Robot-Files/CustomSerialAutomationRunnerFile.csv
   TIMESTAMP2=$(date)
   echo "This Custom-Runner-One task was started by leon-ai, and it ended on $TIMESTAMP2." >> "$PACKAGES_PATH"/Log-Files/Custom-Runner-One-Log.txt
-  cat "$PACKAGES_PATH"/Log-Files/Custom-Runner-One-Log.txt | slacktee.sh -i :nerd_face: --plain-text --config "$PACKAGES_PATH"/Tool-Strategies-Lone-Testers-Test-Leadership-Congress-2019/Workshop-Examples/Shared-Resources/.slacktee > /dev/null 2>&1
+  cat "$PACKAGES_PATH"/Log-Files/Custom-Runner-One-Log.txt | slacktee.sh -i :nerd_face: --plain-text --config "$PROJECT_PATH"/packages/robotframework-test-assistant/.slacktee > /dev/null 2>&1
 fi
 
 if [ "$1" == "Display-Runner-One" ]; then
@@ -174,7 +174,7 @@ if [ "$1" == "Custom-Runner-Two" ]; then
   #rm -rf "$PACKAGES_PATH"/Robot-Files/CustomParallelAutomationRunnerFile.csv
   TIMESTAMP2=$(date)
   echo "This Custom-Runner-Two task was started by leon-ai, and it ended on $TIMESTAMP2." >> "$PACKAGES_PATH"/Log-Files/Custom-Runner-Two-Log.txt
-  cat "$PACKAGES_PATH"/Log-Files/Custom-Runner-Two-Log.txt | slacktee.sh -i :nerd_face: --plain-text --config "$PACKAGES_PATH"/Tool-Strategies-Lone-Testers-Test-Leadership-Congress-2019/Workshop-Examples/Shared-Resources/.slacktee > /dev/null 2>&1
+  cat "$PACKAGES_PATH"/Log-Files/Custom-Runner-Two-Log.txt | slacktee.sh -i :nerd_face: --plain-text --config "$PROJECT_PATH"/packages/robotframework-test-assistant/.slacktee > /dev/null 2>&1
 fi
 
 if [ "$1" == "Display-Runner-Two" ]; then
@@ -182,7 +182,7 @@ if [ "$1" == "Display-Runner-Two" ]; then
 fi
 
 if [ "$1" == "Slack-Notification-Send-All" ]; then
-  cat "$PACKAGES_PATH"/Log-Files/*.txt | slacktee.sh -i :nerd_face: --plain-text --config "$PACKAGES_PATH"/Tool-Strategies-Lone-Testers-Test-Leadership-Congress-2019/Workshop-Examples/Shared-Resources/.slacktee > /dev/null 2>&1
+  cat "$PACKAGES_PATH"/Log-Files/*.txt | slacktee.sh -i :nerd_face: --plain-text --config "$PROJECT_PATH"/packages/robotframework-test-assistant/.slacktee > /dev/null 2>&1
 fi
 
 if [ "$1" == "Build-Docker-Containers" ]; then
@@ -240,7 +240,7 @@ if [ "$1" == "Robot-Framework-Docker-MBT-Graphwalker-Checks" ]; then
   echo "The results of the Robot-Framework-Docker-MBT-Graphwalker-Checks task can be found in this html log file-> $PACKAGES_PATH/Tool-Strategies-Lone-Testers-Test-Leadership-Congress-2019/Workshop-Examples/Workshop-Part-Three/Graphwalker-Model-Based-Test-Results/long-graphwalker-run.html" >> "$PACKAGES_PATH"/Log-Files/Long-Graphwalker-Run-Workshop-Example-Log.txt
 fi
 
-if [ "$1" == "Display-Current-MBT-Graphwalker-Path" ]; then
+if [ "$1" == "Display-MBT-Graphwalker-Results" ]; then
   open "$PACKAGES_PATH"/Tool-Strategies-Lone-Testers-Test-Leadership-Congress-2019/Workshop-Examples/Workshop-Part-Three/Graphwalker-Model-Based-Test-Results/long-graphwalker-run.html
 fi
 
@@ -254,10 +254,6 @@ if [ "$1" == "Run-Same-Robot-Framework-Docker-MBT-Graphwalker-Checks-Again" ]; t
   TIMESTAMP2=$(date)
   echo "This Run-Same-Robot-Framework-Docker-MBT-Graphwalker-Checks-Again task was started by leon-ai, and it ended on $TIMESTAMP2." >> "$PACKAGES_PATH"/Log-Files/Previous-Long-Graphwalker-Run-Workshop-Example-Log.txt
   echo "The results of the Run-Same-Robot-Framework-Docker-MBT-Graphwalker-Checks-Again task can be found in this html log file-> $PACKAGES_PATH/Tool-Strategies-Lone-Testers-Test-Leadership-Congress-2019/Workshop-Examples/Workshop-Part-Three/Graphwalker-Model-Based-Test-Results/long-graphwalker-reuse-previous-path-file" >> "$PACKAGES_PATH"/Log-Files/Previous-Long-Graphwalker-Run-Workshop-Example-Log.txt
-fi
-
-if [ "$1" == "Display-MBT-Graphwalker-Path-Rerun" ]; then
-  open "$PACKAGES_PATH"/Tool-Strategies-Lone-Testers-Test-Leadership-Congress-2019/Workshop-Examples/Workshop-Part-Three/Graphwalker-Model-Based-Test-Results/long-graphwalker-run.html
 fi
 
 if [ "$1" == "Robot-Framework-Selenium-Desktop-Web-Checks" ]; then
@@ -324,4 +320,77 @@ if [ "$1" == "Trigger-Remote-Selenium-Process-Webhook-Docker-Container" ]; then
   TIMESTAMP2=$(date)
   echo "$TIME_LOGGER" >> "$PACKAGES_PATH"/Log-Files/Trigger-Remote-Selenium-Process-Webhook-Docker-Container-Log.txt
   echo "This Trigger-Remote-Selenium-Process-Webhook-Docker-Container task was started by leon-ai, and it ended on $TIMESTAMP2." >> "$PACKAGES_PATH"/Log-Files/Trigger-Remote-Selenium-Process-Webhook-Docker-Container-Log.txt
+fi
+
+if [ "$1" == "Trigger-Both-Webhook-Docker-Containers-For-Parallel-Run" ]; then
+  rm -rf "$PACKAGES_PATH"/Log-Files/Trigger-Both-Webhook-Docker-Containers-For-Parallel-Run-Log.txt
+  touch "$PACKAGES_PATH"/Log-Files/Trigger-Both-Webhook-Docker-Containers-For-Parallel-Run-Log.txt
+  TIMESTAMP1=$(date)
+  TIME_LOGGER=$(echo "This Trigger-Both-Webhook-Docker-Containers-For-Parallel-Run task was started by leon-ai on $TIMESTAMP1.")
+  sleep 2s &&
+  nohup curl -i http://0.0.0.0:9080/hooks/robot-framework-remote-test-process-webhook-part1 &> "$PACKAGES_PATH"/Log-Files/Trigger-Both-Webhook-Docker-Containers-For-Parallel-Run-Log.txt
+  nohup curl -i http://0.0.0.0:9088/hooks/robot-framework-remote-test-process-webhook-part2 &> "$PACKAGES_PATH"/Log-Files/Trigger-Both-Webhook-Docker-Containers-For-Parallel-Run-Log.txt
+  sleep 2s &&
+  TIMESTAMP2=$(date)
+  echo "$TIME_LOGGER" >> "$PACKAGES_PATH"/Log-Files/Trigger-Both-Webhook-Docker-Containers-For-Parallel-Run-Log.txt
+  echo "This Trigger-Both-Webhook-Docker-Containers-For-Parallel-Run task was started by leon-ai, and it ended on $TIMESTAMP2." >> "$PACKAGES_PATH"/Log-Files/Trigger-Both-Webhook-Docker-Containers-For-Parallel-Run-Log.txt
+fi
+
+## The following are a work in progress
+if [ "$1" == "Custom-Tasks-And-Suite-Runner" ]; then
+  rm -rf "$PACKAGES_PATH"/Log-Files/Custom-Tasks-And-Suite-Runner-Log.txt
+  touch "$PACKAGES_PATH"/Log-Files/Custom-Tasks-And-Suite-Runner-Log.txt
+  TIMESTAMP1=$(date)
+  echo "This Custom-Tasks-And-Suite-Runner task was started by leon-ai on $TIMESTAMP1." >> "$PACKAGES_PATH"/Log-Files/Custom-Tasks-And-Suite-Runner-Log.txt
+  while IFS=, read -r CUSTOMRUNNER
+  do
+    robot --include "${CUSTOMRUNNER}" --report NONE --output customized-suite-order-automation-run-ouput.xml --log customized-suite-order-automation-run.html --timestampoutputs -N "${CUSTOMRUNNER}" -d "$PACKAGES_PATH"/Log-Files/Results "$PACKAGES_PATH"/Robot-Files/Leon-Robot-Framework-Customizable-RPA-Task-Runner.robot >> "$PACKAGES_PATH"/Log-Files/Custom-Tasks-And-Suite-Runner-Log.txt &&
+    sleep 0.5s
+  done < "$PACKAGES_PATH"/Robot-Files/CustomizedTasksAndRobotFrameworkSuitesOrderSequence.csv
+  rebot --suitestatlevel 1 -N "Manually constructed order of tasks and Robot Framework suites set up through leon-ai with a CustomizedTasksAndRobotFrameworkSuitesOrderSequence.csv file" --report NONE --log "$PACKAGES_PATH"/Log-Files/Results/customized-suite-order-automation-results-log.html --output "$PACKAGES_PATH"/Log-Files/Results/customized-suite-order-automation-run-*.xml >> "$PACKAGES_PATH"/Log-Files/Custom-Tasks-And-Suite-Runner-Log.txt
+  rm -rf "$PACKAGES_PATH"/Log-Files/Results/customized-suite-order-automation-run-*.xml
+  rm -rf "$PACKAGES_PATH"/Log-Files/Results/customized-suite-order-automation-run-*.html
+  #rm -rf "$PACKAGES_PATH"/Robot-Files/CustomizedTasksAndRobotFrameworkSuitesOrderSequence.csv
+  TIMESTAMP2=$(date)
+  echo "This Custom-Tasks-And-Suite-Runner task was started by leon-ai, and it ended on $TIMESTAMP2." >> "$PACKAGES_PATH"/Log-Files/Custom-Tasks-And-Suite-Runner-Log.txt
+  cat "$PACKAGES_PATH"/Log-Files/Custom-Tasks-And-Suite-Runner-Log.txt | slacktee.sh -i :nerd_face: --plain-text --config "$PROJECT_PATH"/packages/robotframework-test-assistant/.slacktee > /dev/null 2>&1
+fi
+
+if [ "$1" == "Set-Up-Custom-Tasks-And-Suites-Runner" ]; then
+  rm -rf "$CUSTOM_PACKAGES_PATH"/Robot-Files/CustomizedTasksAndRobotFrameworkSuitesOrderSequence.csv
+  touch "$CUSTOM_PACKAGES_PATH"/Robot-Files/CustomizedTasksAndRobotFrameworkSuitesOrderSequence.csv
+  echo "Start" > "$CUSTOM_PACKAGES_PATH"/Robot-Files/CustomizedTasksAndRobotFrameworkSuitesOrderSequence.csv
+fi
+
+if [ "$1" == "Set-Slack-Notification-Send-All" ]; then
+  echo "Slack_Notification_Send_All" >> "$CUSTOM_PACKAGES_PATH"/Robot-Files/CustomizedTasksAndRobotFrameworkSuitesOrderSequence.csv
+fi
+
+if [ "$1" == "Set-Build-Docker-Containers" ]; then
+  echo "Build_Docker_Containers" >> "$CUSTOM_PACKAGES_PATH"/Robot-Files/CustomizedTasksAndRobotFrameworkSuitesOrderSequence.csv
+fi
+
+if [ "$1" == "Set-Clean-Up-Docker-Containers" ]; then
+  echo "Clean_Up_Docker_Containers" >> "$CUSTOM_PACKAGES_PATH"/Robot-Files/CustomizedTasksAndRobotFrameworkSuitesOrderSequence.csv
+fi
+
+if [ "$1" == "Set-Start-Remote-API-Check-Process-Webhook-Docker-Container" ]; then
+  echo "Start_Remote_API_Check_Process_Webhook_Docker_Container" >> "$CUSTOM_PACKAGES_PATH"/Robot-Files/CustomizedTasksAndRobotFrameworkSuitesOrderSequence.csv
+fi
+
+if [ "$1" == "Set-Start-Remote-Selenium-Process-Webhook-Docker-Container" ]; then
+  echo "Start_Remote_Selenium_Process_Webhook_Docker_Container" >> "$CUSTOM_PACKAGES_PATH"/Robot-Files/CustomizedTasksAndRobotFrameworkSuitesOrderSequence.csv
+fi
+
+if [ "$1" == "Set-Trigger-Remote-API-Check-Process-Webhook-Docker-Container" ]; then
+  echo "Trigger_Remote_API_Check_Process_Webhook_Docker_Container" >> "$CUSTOM_PACKAGES_PATH"/Robot-Files/CustomizedTasksAndRobotFrameworkSuitesOrderSequence.csv
+fi
+
+
+if [ "$1" == "Set-Trigger-Remote-Selenium-Process-Webhook-Docker-Container" ]; then
+  echo "Trigger_Remote_Selenium_Process_Webhook_Container" >> "$CUSTOM_PACKAGES_PATH"/Robot-Files/CustomizedTasksAndRobotFrameworkSuitesOrderSequence.csv
+fi
+
+if [ "$1" == "Set-Trigger-Both-Webhook-Docker-Containers-For-Parallel-Run" ]; then
+  echo "Trigger_Both_Webhook_Docker_Containers_For_Parallel_Run" >> "$CUSTOM_PACKAGES_PATH"/Robot-Files/CustomizedTasksAndRobotFrameworkSuitesOrderSequence.csv
 fi

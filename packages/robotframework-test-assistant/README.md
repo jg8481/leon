@@ -4,15 +4,17 @@
 
 ### Use leon-ai to turn Robot Framework into a personal testing assistant and OpenRPA task runner.
 
-### Commands to use while doing development, and before running leon-ai.
+### Commands for running leon-ai and getting started with this package.
 
 ```
+#Assuming that you git cloned the leon-ai repository.
+cd leon
 npm install && npm run build && npm start
-#If you get this --> ".env file already exists, overwrite:..." Select No
+#If you get this --> ".env file already exists, overwrite:...", select No or press enter.
 ```
 
 ```
-#Open another terminal, and run the following to use voice commands
+#Open another terminal, and run the following to use voice commands.
 npm run wake
 ```
 
