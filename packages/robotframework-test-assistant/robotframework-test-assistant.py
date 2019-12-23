@@ -195,7 +195,6 @@ def Trigger_Both_Webhook_Docker_Containers_For_Parallel_Run(string, entities):
     subprocess.call(filepath + '/robotframework-runner.sh Trigger-Both-Webhook-Docker-Containers-For-Parallel-Run', shell=True)
     return utils.output('end', 'multiple_checks_ran', utils.translate('multiple_checks_ran'))
 
-## The following are a work in progress
 def Custom_Tasks_And_Suites_Runner(string, entities):
     """Leon will set up a custom automated tasks and suites run"""
     subprocess.call(filepath + '/robotframework-runner.sh Custom-Tasks-And-Suites-Runner', shell=True)
