@@ -2,7 +2,7 @@
 
 PROJECT_PATH=$(pwd)
 export PROJECT_PATH
-PACKAGES_PATH="$PROJECT_PATH/packages/robotframework-test-assistant/brain"
+PACKAGES_PATH="$PROJECT_PATH/packages/robotframework-test-assistant/robotframework-brain"
 export PACKAGES_PATH
 
 
@@ -181,7 +181,7 @@ if [ "$1" == "Display-Runner-Two" ]; then
 fi
 
 if [ "$1" == "Slack-Notification-Send-All" ]; then
-  cat "$PACKAGES_PATH"/Log-Files/*.txt | slacktee.sh -i :nerd_face: --plain-text --plain-text --config "$PROJECT_PATH"/packages/robotframework-test-assistant/brain/Tool-Strategies-Lone-Testers-Test-Leadership-Congress-2019/Workshop-Examples/Shared-Resources/.slacktee > /dev/null 2>&1
+  cat "$PACKAGES_PATH"/Log-Files/*.txt | slacktee.sh -i :nerd_face: --plain-text --plain-text --config "$PROJECT_PATH"/packages/robotframework-test-assistant/robotframework-brain/Tool-Strategies-Lone-Testers-Test-Leadership-Congress-2019/Workshop-Examples/Shared-Resources/.slacktee > /dev/null 2>&1
 fi
 
 if [ "$1" == "Build-Docker-Containers" ]; then

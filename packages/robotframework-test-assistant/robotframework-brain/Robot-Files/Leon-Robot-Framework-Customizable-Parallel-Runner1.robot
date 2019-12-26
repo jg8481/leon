@@ -13,25 +13,25 @@ CUSTOM RUNNER START : This helps avoid skipping the first actual automated check
     Log    This runs first.
     [Tags]    Start
 
-AUTOMATED CHECK 1 - SERIAL RUNNER : An automated check that will run.
+AUTOMATED CHECK 1 - PARALLEL RUNNER 1 : An automated check that will run.
     Log    Just giving Robot Framework something to do when triggered by the voice assistant.
-    Send Short Message Through Slack About The Automation Run    AUTOMATED CHECK 1 - SERIAL RUNNER   QA
-    [Tags]    Check_One
+    Send Short Message Through Slack About The Automation Run    AUTOMATED CHECK 1 - PARALLEL RUNNER 1    QA
+    [Tags]    Group_One
 
-AUTOMATED CHECK 2 - SERIAL RUNNER : An automated check that will run.
+AUTOMATED CHECK 2 - PARALLEL RUNNER 1 : An automated check that will run.
     Log    Just giving Robot Framework something to do when triggered by the voice assistant.
-    Send Short Message Through Slack About The Automation Run    AUTOMATED CHECK 2 - SERIAL RUNNER   QA
-    [Tags]    Check_Two
+    Send Short Message Through Slack About The Automation Run    AUTOMATED CHECK 2 - PARALLEL RUNNER 1    QA
+    [Tags]    Group_Two
 
-AUTOMATED CHECK 3 - SERIAL RUNNER : An automated check that will run.
+AUTOMATED CHECK 3 - PARALLEL RUNNER 1 : An automated check that will run.
     Log    Just giving Robot Framework something to do when triggered by the voice assistant.
-    Send Short Message Through Slack About The Automation Run    AUTOMATED CHECK 3 - SERIAL RUNNER   QA
-    [Tags]    Check_Three
+    Send Short Message Through Slack About The Automation Run    AUTOMATED CHECK 3 - PARALLEL RUNNER 1    QA
+    [Tags]    Group_Three
 
-AUTOMATED CHECK 4 - SERIAL RUNNER : An automated check that will run.
+AUTOMATED CHECK 4 - PARALLEL RUNNER 1 : An automated check that will run.
     Log    Just giving Robot Framework something to do when triggered by the voice assistant.
-    Send Short Message Through Slack About The Automation Run    AUTOMATED CHECK 4 - SERIAL RUNNER   QA
-    [Tags]    Check_Four
+    Send Short Message Through Slack About The Automation Run    AUTOMATED CHECK 4 - PARALLEL RUNNER 1    QA
+    [Tags]    Group_Four
 
 *** Keywords ***
 
@@ -46,4 +46,4 @@ Send Short Message Through Slack About The Automation Run
     ##
     ## The folowing keyword will demonstrate slacktee...
     [Arguments]    ${TEST_NAME}    ${TEST_ENVIRONMENT}
-    Run Process    echo "${TEST_NAME} ran in the ${TEST_ENVIRONMENT} environment..." | slacktee.sh -i :nerd_face: --plain-text --config ${SLACK_CONFIG_PATH}/brain/Tool-Strategies-Lone-Testers-Test-Leadership-Congress-2019/Workshop-Examples/Shared-Resources/.slacktee    shell=True    timeout=20s    on_timeout=continue
+    Run Process    echo "${TEST_NAME} ran in the ${TEST_ENVIRONMENT} environment..." | slacktee.sh -i :nerd_face: --plain-text --config ${SLACK_CONFIG_PATH}/robotframework-brain/Tool-Strategies-Lone-Testers-Test-Leadership-Congress-2019/Workshop-Examples/Shared-Resources/.slacktee     shell=True    timeout=20s    on_timeout=continue
