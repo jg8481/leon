@@ -7,8 +7,13 @@ import os.path
 import sys
 import subprocess
 import re
+import time
+
 
 filepath = os.path.dirname(os.path.realpath(__file__))
+small_time_delay = 10 ##--> Use this to set up your small time delay. This time delay is in seconds.
+medium_time_delay = 60 ##--> Use this to set up your medium time delay. This time delay is in seconds.
+large_time_delay = 600 ##--> Use this to set up your large time delay. This time delay is in seconds.
 
 def Clean_Up_Results(string, entities):
     """Leon will clean up the results folder"""
@@ -244,3 +249,62 @@ def Set_Trigger_Both_Webhook_Docker_Containers_For_Parallel_Run(string, entities
     """Leon will set up a custom automated tasks and suites run"""
     subprocess.call(filepath + '/robotframework-runner.sh Set-Trigger-Both-Webhook-Docker-Containers-For-Parallel-Run', shell=True)
     return utils.output('end', 'finished_setting_up', utils.translate('finished_setting_up'))
+
+def Generic_Customizable_Time_Delayed_Runner_One(string, entities):
+    """Leon will set up a time delayed generic task runner"""
+    ##--> Suggestion: Feel free to change the time.sleep to small_time_delay, medium_time_delay or large_time_delay.
+    time.sleep(small_time_delay)
+    ##--> Suggestion: Feel free to set the following subprocess.call to any of the previously defined commands in this robotframework-test-assistant.py script. The following is just an example triggering a single time delayed check.
+    subprocess.call(filepath + '/robotframework-runner.sh Check-One', shell=True)
+    return utils.output('end', 'generic_time_delayed_task', utils.translate('generic_time_delayed_task'))
+
+def Generic_Customizable_Time_Delayed_Runner_Two(string, entities):
+    """Leon will set up a time delayed generic task runner"""
+    ##--> Suggestion: Feel free to change the time.sleep to small_time_delay, medium_time_delay or large_time_delay.
+    time.sleep(small_time_delay)
+    ##--> Suggestion: Feel free to set the following subprocess.call to any of the previously defined commands in this robotframework-test-assistant.py script. The following example builds off of a previously created Custom_Runner_Two .csv file.
+    subprocess.call(filepath + '/robotframework-runner.sh Custom-Runner-Two', shell=True)
+    return utils.output('end', 'generic_time_delayed_task', utils.translate('generic_time_delayed_task'))
+
+def Generic_Customizable_Time_Delayed_Runner_Three(string, entities):
+    """Leon will set up a time delayed generic task runner"""
+    ##--> Suggestion: Feel free to change the time.sleep to small_time_delay, medium_time_delay or large_time_delay.
+    time.sleep(small_time_delay)
+    ##--> Suggestion: Feel free to set the following subprocess.call to any of the previously defined commands in this robotframework-test-assistant.py script. The following example will chain together the commands for a new Custom_Runner_One .csv file, runs it, and displays results.
+    subprocess.call(filepath + '/robotframework-runner.sh Set-Up-Runner-One', shell=True)
+    subprocess.call(filepath + '/robotframework-runner.sh Set-Check-Three', shell=True)
+    subprocess.call(filepath + '/robotframework-runner.sh Set-Check-Two', shell=True)
+    subprocess.call(filepath + '/robotframework-runner.sh Set-Check-Three', shell=True)
+    subprocess.call(filepath + '/robotframework-runner.sh Set-Check-One', shell=True)
+    subprocess.call(filepath + '/robotframework-runner.sh Custom-Runner-One', shell=True)
+    subprocess.call(filepath + '/robotframework-runner.sh Display-Runner-One', shell=True)
+    return utils.output('end', 'generic_time_delayed_task', utils.translate('generic_time_delayed_task'))
+
+def Generic_Customizable_Time_Delayed_Runner_Four(string, entities):
+    """Leon will set up a time delayed generic task runner"""
+    ##--> Suggestion: Feel free to change the time.sleep to small_time_delay, medium_time_delay or large_time_delay.
+    time.sleep(small_time_delay)
+    ##--> Suggestion: Feel free to set the following subprocess.call to any of the previously defined commands in this robotframework-test-assistant.py script. The following example will chain together the commands for all of the custom runners and sends notifications to the team.
+    subprocess.call(filepath + '/robotframework-runner.sh Set-Up-Runner-One', shell=True)
+    subprocess.call(filepath + '/robotframework-runner.sh Set-Check-Three', shell=True)
+    subprocess.call(filepath + '/robotframework-runner.sh Set-Check-Two', shell=True)
+    subprocess.call(filepath + '/robotframework-runner.sh Set-Check-Four', shell=True)
+    subprocess.call(filepath + '/robotframework-runner.sh Set-Check-One', shell=True)
+    subprocess.call(filepath + '/robotframework-runner.sh Custom-Runner-One', shell=True)
+    subprocess.call(filepath + '/robotframework-runner.sh Set-Up-Runner-Two', shell=True)
+    subprocess.call(filepath + '/robotframework-runner.sh Set-Group-Two', shell=True)
+    subprocess.call(filepath + '/robotframework-runner.sh Set-Group-One', shell=True)
+    subprocess.call(filepath + '/robotframework-runner.sh Set-Group-Four', shell=True)
+    subprocess.call(filepath + '/robotframework-runner.sh Set-Group-Three', shell=True)
+    subprocess.call(filepath + '/robotframework-runner.sh Custom-Runner-Two', shell=True)
+    subprocess.call(filepath + '/robotframework-runner.sh Set-Up-Custom-Tasks-And-Suites-Runner', shell=True)
+    subprocess.call(filepath + '/robotframework-runner.sh Set-Clean-Up-Docker-Containers', shell=True)
+    subprocess.call(filepath + '/robotframework-runner.sh Set-Build-Docker-Containers', shell=True)
+    subprocess.call(filepath + '/robotframework-runner.sh Set-Start-Remote-API-Check-Process-Webhook-Docker-Container', shell=True)
+    subprocess.call(filepath + '/robotframework-runner.sh Set-Start-Remote-Selenium-Process-Webhook-Docker-Container', shell=True)
+    subprocess.call(filepath + '/robotframework-runner.sh Set-Trigger-Both-Webhook-Docker-Containers-For-Parallel-Run', shell=True)
+    subprocess.call(filepath + '/robotframework-runner.sh Set-Trigger-Remote-Selenium-Process-Webhook-Docker-Container', shell=True)
+    subprocess.call(filepath + '/robotframework-runner.sh Set-Trigger-Remote-API-Check-Process-Webhook-Docker-Container', shell=True)
+    subprocess.call(filepath + '/robotframework-runner.sh Custom-Tasks-And-Suites-Runner', shell=True)
+    subprocess.call(filepath + '/robotframework-runner.sh Slack-Notification-Send-All', shell=True)
+    return utils.output('end', 'generic_time_delayed_task', utils.translate('generic_time_delayed_task'))

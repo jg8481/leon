@@ -9,7 +9,6 @@
     },
     "Check_One": {
       "expressions": [
-        "a check one",
         "check one",
         "checkone",
         "run checkone",
@@ -21,9 +20,7 @@
         "check two",
         "checktwo",
         "run checktwo",
-        "run check two",
-        "check to",
-        "a check to"
+        "run check two"
       ]
     },
     "Check_Three": {
@@ -39,9 +36,7 @@
         "check four",
         "checkfour",
         "run checkfour",
-        "run check four",
-        "check for",
-        "a check for"
+        "run check four"
       ]
     },
     "Set_Up_Runner_One": {
@@ -348,6 +343,30 @@
         "set trigger remote two",
         "set trigger two",
         "set trigger docker two"
+      ]
+    },
+    "Generic_Customizable_Time_Delayed_Runner_One": {
+      "expressions": [
+        "time delayed runner one",
+        "first time delayed run"
+      ]
+    },
+    "Generic_Customizable_Time_Delayed_Runner_Two": {
+      "expressions": [
+        "time delayed runner two",
+        "second time delayed run"
+      ]
+    },
+    "Generic_Customizable_Time_Delayed_Runner_Three": {
+      "expressions": [
+        "time delayed runner three",
+        "third time delayed run"
+      ]
+    },
+    "Generic_Customizable_Time_Delayed_Runner_Four": {
+      "expressions": [
+        "time delayed runner four",
+        "fourth time delayed run"
       ]
     }
   }

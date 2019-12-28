@@ -46,4 +46,4 @@ Send Short Message Through Slack About The Automation Run
     ##
     ## The folowing keyword will demonstrate slacktee...
     [Arguments]    ${TEST_NAME}    ${TEST_ENVIRONMENT}
-    Run Process    echo "${TEST_NAME} ran in the ${TEST_ENVIRONMENT} environment..." | slacktee.sh -i :nerd_face: --plain-text --config ${SLACK_CONFIG_PATH}/robotframework-brain/Tool-Strategies-Lone-Testers-Test-Leadership-Congress-2019/Workshop-Examples/Shared-Resources/.slacktee    shell=True    timeout=20s    on_timeout=continue
+    Run Process    echo "${TEST_NAME} ran in the ${TEST_ENVIRONMENT} environment..." | slacktee.sh -i :nerd_face: --plain-text --config ${SLACK_CONFIG_PATH}    shell=True    timeout=20s    on_timeout=continue

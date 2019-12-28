@@ -25,6 +25,9 @@
 		"notify_the_team": [
 			"A notification has been sent to your team."
 		],
+		"generic_time_delayed_task": [
+			"Your time delayed generic task has finished running."
+		],
     "error": [
       "Oops, an error occurred..."
     ]
