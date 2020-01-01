@@ -116,6 +116,14 @@ Use the following information to help set up the basic Appium requirements:
 
 After installing Appium try running ``appium-doctor``. If any warnings show up please follow the instructions.
 
+[RoboCon 2020 Workshop](https://robocon.io/#strategies-for-creating-your-own-conversational-test-assistant-with-robot-framework-and-other-tools) - January 14, 2020
+- Commands used to run the example for this webinar.
+  ```
+  git clone https://github.com/jg8481/Tool-Strategies-Lone-Testers-Test-Leadership-Congress-2019.git
+  cd Tool-Strategies-Lone-Testers-Test-Leadership-Congress-2019/Workshop-Examples/Shared-Resources/Bug-Risk-Prediction-Using-Heuristics-And-Machine-Learning
+  ./start-bug-risk-prediction-docker-container.sh
+  ```
+
 ***
 
 Slides for the presentation and additional videos of content that was not covered in the Test Leadership Congress 2019 conference recordings can be found in this repo.
@@ -151,6 +159,7 @@ Additional slides for future presentations and webinars that used the tool examp
 - Bryan Oakley
 - Shiva Prasad Adirala
 - Tatu Aalto
+- Henry Hinnefeld
 - The Docker development team
 - The Graphwalker development team
 - The entire Robot Framework community and its contributors

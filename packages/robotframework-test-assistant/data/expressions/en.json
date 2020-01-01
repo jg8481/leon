@@ -345,6 +345,19 @@
         "set trigger docker two"
       ]
     },
+    "Set_Generate_Bug_Risk_Prediction_Scores_For_A_GitHub_Repo": {
+      "expressions": [
+        "set bug risk predictor",
+        "set bug risk analyzer",
+        "set bug risk container"
+      ]
+    },
+    "Gather_All_Robot_Framework_Test_Results_And_Deploy_Dashboard_To_Heroku": {
+      "expressions": [
+        "testing dashboard",
+        "test the dashboard"
+      ]
+    },
     "Generic_Customizable_Time_Delayed_Runner_One": {
       "expressions": [
         "time delayed runner one",

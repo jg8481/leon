@@ -69,6 +69,19 @@ Leon tells you about other personal assistants.
 ...
 ```
 
+### Random Number
+
+Leon gives a random number.
+
+#### Usage
+
+```
+(en-US) "Give me a random number"
+
+(fr-FR) "Donne-moi un nombre aléatoire"
+...
+```
+
 ### Welcome
 
 Leon welcomes you.

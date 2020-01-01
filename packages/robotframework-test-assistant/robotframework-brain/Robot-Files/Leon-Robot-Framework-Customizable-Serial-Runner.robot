@@ -15,22 +15,22 @@ CUSTOM RUNNER START : This helps avoid skipping the first actual automated check
 
 AUTOMATED CHECK 1 - SERIAL RUNNER : An automated check that will run.
     Log    Just giving Robot Framework something to do when triggered by the voice assistant.
-    Send Short Message Through Slack About The Automation Run    AUTOMATED CHECK 1 - SERIAL RUNNER   QA
+    Send Short Message Through Slack About The Automation Run    AUTOMATED CHECK 1 - A hypothetical automated check - SERIAL RUNNER    QA
     [Tags]    Check_One
 
 AUTOMATED CHECK 2 - SERIAL RUNNER : An automated check that will run.
     Log    Just giving Robot Framework something to do when triggered by the voice assistant.
-    Send Short Message Through Slack About The Automation Run    AUTOMATED CHECK 2 - SERIAL RUNNER   QA
+    Send Short Message Through Slack About The Automation Run    AUTOMATED CHECK 2 - A hypothetical automated check - SERIAL RUNNER    QA
     [Tags]    Check_Two
 
 AUTOMATED CHECK 3 - SERIAL RUNNER : An automated check that will run.
     Log    Just giving Robot Framework something to do when triggered by the voice assistant.
-    Send Short Message Through Slack About The Automation Run    AUTOMATED CHECK 3 - SERIAL RUNNER   QA
+    Send Short Message Through Slack About The Automation Run    AUTOMATED CHECK 3 - A hypothetical automated check - SERIAL RUNNER    QA
     [Tags]    Check_Three
 
 AUTOMATED CHECK 4 - SERIAL RUNNER : An automated check that will run.
     Log    Just giving Robot Framework something to do when triggered by the voice assistant.
-    Send Short Message Through Slack About The Automation Run    AUTOMATED CHECK 4 - SERIAL RUNNER   QA
+    Send Short Message Through Slack About The Automation Run    AUTOMATED CHECK 4 - A hypothetical automated check - SERIAL RUNNER    QA
     [Tags]    Check_Four
 
 *** Keywords ***

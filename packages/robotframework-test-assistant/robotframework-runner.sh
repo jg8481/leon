@@ -10,6 +10,7 @@ export SLACK_CONFIG_PATH
 if [ "$1" == "Clean-Up-Results" ]; then
   rm -rf "$PACKAGES_PATH"/Log-Files/*.txt
   rm -rf "$PACKAGES_PATH"/Log-Files/Results/*
+  rm -rf ./combined-leon-robot-framework-assistant-results-log.html
 fi
 
 if [ "$1" == "Check-One" ]; then
@@ -17,7 +18,7 @@ if [ "$1" == "Check-One" ]; then
   touch "$PACKAGES_PATH"/Log-Files/Check-One-Log.txt
   TIMESTAMP1=$(date)
   echo "This Check-One task was started by leon-ai on $TIMESTAMP1." >> "$PACKAGES_PATH"/Log-Files/Check-One-Log.txt
-  robot --variable SLACK_CONFIG_PATH:"$SLACK_CONFIG_PATH" --include Check_One --report NONE --log check-one-log.html --output check-one-output.xml -d "$PACKAGES_PATH"/Log-Files/Results "$PACKAGES_PATH"/Robot-Files/Leon-Robot-Framework-Customizable-Serial-Runner.robot >> "$PACKAGES_PATH"/Log-Files/Check-One-Log.txt
+  robot --variable SLACK_CONFIG_PATH:"$SLACK_CONFIG_PATH" --include Check_One --report NONE --log check-one-log.html --output check-one-output.xml -N "Check One - One Robot Framework file that runs in serial" -d "$PACKAGES_PATH"/Log-Files/Results "$PACKAGES_PATH"/Robot-Files/Leon-Robot-Framework-Customizable-Serial-Runner.robot >> "$PACKAGES_PATH"/Log-Files/Check-One-Log.txt
   TIMESTAMP2=$(date)
   echo "This Check-One task was started by leon-ai, and it ended on $TIMESTAMP2." >> "$PACKAGES_PATH"/Log-Files/Check-One-Log.txt
 fi
@@ -27,7 +28,7 @@ if [ "$1" == "Check-Two" ]; then
   touch "$PACKAGES_PATH"/Log-Files/Check-Two-Log.txt
   TIMESTAMP1=$(date)
   echo "This Check-Two task was started by leon-ai on $TIMESTAMP1." >> "$PACKAGES_PATH"/Log-Files/Check-Two-Log.txt
-  robot --variable SLACK_CONFIG_PATH:"$SLACK_CONFIG_PATH" --include Check_Two --report NONE --log check-two-log.html --output check-two-output.xml -d "$PACKAGES_PATH"/Log-Files/Results "$PACKAGES_PATH"/Robot-Files/Leon-Robot-Framework-Customizable-Serial-Runner.robot >> "$PACKAGES_PATH"/Log-Files/Check-Two-Log.txt
+  robot --variable SLACK_CONFIG_PATH:"$SLACK_CONFIG_PATH" --include Check_Two --report NONE --log check-two-log.html --output check-two-output.xml -N "Check Two - One Robot Framework file that runs in serial" -d "$PACKAGES_PATH"/Log-Files/Results "$PACKAGES_PATH"/Robot-Files/Leon-Robot-Framework-Customizable-Serial-Runner.robot >> "$PACKAGES_PATH"/Log-Files/Check-Two-Log.txt
   TIMESTAMP2=$(date)
   echo "This Check-Two task was started by leon-ai, and it ended on $TIMESTAMP2." >> "$PACKAGES_PATH"/Log-Files/Check-Two-Log.txt
 fi
@@ -37,7 +38,7 @@ if [ "$1" == "Check-Three" ]; then
   touch "$PACKAGES_PATH"/Log-Files/Check-Three-Log.txt
   TIMESTAMP1=$(date)
   echo "This Check-Three task was started by leon-ai on $TIMESTAMP1." >> "$PACKAGES_PATH"/Log-Files/Check-Three-Log.txt
-  robot --variable SLACK_CONFIG_PATH:"$SLACK_CONFIG_PATH" --include Check_Three --report NONE --log check-three-log.html --output check-three-output.xml -d "$PACKAGES_PATH"/Log-Files/Results "$PACKAGES_PATH"/Robot-Files/Leon-Robot-Framework-Customizable-Serial-Runner.robot >> "$PACKAGES_PATH"/Log-Files/Check-Three-Log.txt
+  robot --variable SLACK_CONFIG_PATH:"$SLACK_CONFIG_PATH" --include Check_Three --report NONE --log check-three-log.html --output check-three-output.xml -N "Check Three - One Robot Framework file that runs in serial" -d "$PACKAGES_PATH"/Log-Files/Results "$PACKAGES_PATH"/Robot-Files/Leon-Robot-Framework-Customizable-Serial-Runner.robot >> "$PACKAGES_PATH"/Log-Files/Check-Three-Log.txt
   TIMESTAMP2=$(date)
   echo "This Check-Three task was started by leon-ai, and it ended on $TIMESTAMP2." >> "$PACKAGES_PATH"/Log-Files/Check-Three-Log.txt
 fi
@@ -47,7 +48,7 @@ if [ "$1" == "Check-Four" ]; then
   touch "$PACKAGES_PATH"/Log-Files/Check-Four-Log.txt
   TIMESTAMP1=$(date)
   echo "This Check-Four task was started by leon-ai on $TIMESTAMP1." >> "$PACKAGES_PATH"/Log-Files/Check-Four-Log.txt
-  robot --variable SLACK_CONFIG_PATH:"$SLACK_CONFIG_PATH" --include Check_Four --report NONE --log check-four-log.html --output check-four-output.xml -d "$PACKAGES_PATH"/Log-Files/Results "$PACKAGES_PATH"/Robot-Files/Leon-Robot-Framework-Customizable-Serial-Runner.robot >> "$PACKAGES_PATH"/Log-Files/Check-Four-Log.txt
+  robot --variable SLACK_CONFIG_PATH:"$SLACK_CONFIG_PATH" --include Check_Four --report NONE --log check-four-log.html --output check-four-output.xml -N "Check Four - One Robot Framework file that runs in serial" -d "$PACKAGES_PATH"/Log-Files/Results "$PACKAGES_PATH"/Robot-Files/Leon-Robot-Framework-Customizable-Serial-Runner.robot >> "$PACKAGES_PATH"/Log-Files/Check-Four-Log.txt
   TIMESTAMP2=$(date)
   echo "This Check-Four task was started by leon-ai, and it ended on $TIMESTAMP2." >> "$PACKAGES_PATH"/Log-Files/Check-Four-Log.txt
 fi
@@ -81,11 +82,12 @@ if [ "$1" == "Custom-Runner-One" ]; then
   echo "This Custom-Runner-One task was started by leon-ai on $TIMESTAMP1." >> "$PACKAGES_PATH"/Log-Files/Custom-Runner-One-Log.txt
   while IFS=, read -r SERIALRUNNER
   do
-    robot --variable SLACK_CONFIG_PATH:"$SLACK_CONFIG_PATH" --include "${SERIALRUNNER}" --report NONE --output custom-serial-automation-run-ouput.xml --log custom-serial-automation-run.html --timestampoutputs -N "${SERIALRUNNER}" -d "$PACKAGES_PATH"/Log-Files/Results "$PACKAGES_PATH"/Robot-Files/Leon-Robot-Framework-Customizable-Serial-Runner.robot >> "$PACKAGES_PATH"/Log-Files/Custom-Runner-One-Log.txt &&
+    TIMESTAMPER_CUSTOM_RUNNER_ONE=$(date)
+    robot --variable SLACK_CONFIG_PATH:"$SLACK_CONFIG_PATH" --include "${SERIALRUNNER}" --report NONE --output custom-serial-automation-run-ouput-"${SERIALRUNNER}".xml --log custom-serial-automation-run-"${SERIALRUNNER}".html --timestampoutputs -N "${SERIALRUNNER} ${TIMESTAMPER_CUSTOM_RUNNER_ONE}" -d "$PACKAGES_PATH"/Log-Files/Results "$PACKAGES_PATH"/Robot-Files/Leon-Robot-Framework-Customizable-Serial-Runner.robot >> "$PACKAGES_PATH"/Log-Files/Custom-Runner-One-Log.txt &&
     sleep 0.5s
   done < "$PACKAGES_PATH"/Robot-Files/CustomSerialAutomationRunnerFile.csv
   rebot --suitestatlevel 1 -N "Robot Framework automation run in a manually constructed sequence set up through leon-ai with a CustomSerialAutomationRunnerFile.csv file" --report NONE --log "$PACKAGES_PATH"/Log-Files/Results/custom-serial-automation-results-log.html --output "$PACKAGES_PATH"/Log-Files/Results/custom-serial-automation-run-*.xml >> "$PACKAGES_PATH"/Log-Files/Custom-Runner-One-Log.txt
-  rm -rf "$PACKAGES_PATH"/Log-Files/Results/custom-serial-automation-run-*.xml
+  rm -rf "$PACKAGES_PATH"/Log-Files/Results/custom-serial-automation-run-ouput-Start*.xml
   rm -rf "$PACKAGES_PATH"/Log-Files/Results/custom-serial-automation-run-*.html
   #rm -rf "$PACKAGES_PATH"/Robot-Files/CustomSerialAutomationRunnerFile.csv
   TIMESTAMP2=$(date)
@@ -101,7 +103,7 @@ if [ "$1" == "Group-One" ]; then
   touch "$PACKAGES_PATH"/Log-Files/Group-One-Log.txt
   TIMESTAMP1=$(date)
   echo "This Group-One task was started by leon-ai on $TIMESTAMP1." >> "$PACKAGES_PATH"/Log-Files/Group-One-Log.txt
-  pabot --verbose --variable SLACK_CONFIG_PATH:"$SLACK_CONFIG_PATH" --include Group_One --report NONE --log group-one-log.html --output group-one-output.xml -d "$PACKAGES_PATH"/Log-Files/Results "$PACKAGES_PATH"/Robot-Files/Leon-Robot-Framework-Customizable-Parallel-Runner*.robot >> "$PACKAGES_PATH"/Log-Files/Group-One-Log.txt
+  pabot --verbose --variable SLACK_CONFIG_PATH:"$SLACK_CONFIG_PATH" --include Group_One --report NONE --log group-one-log.html --output group-one-output.xml -N "Group One - Two parallel running Robot Framework files" -d "$PACKAGES_PATH"/Log-Files/Results "$PACKAGES_PATH"/Robot-Files/Leon-Robot-Framework-Customizable-Parallel-Runner*.robot >> "$PACKAGES_PATH"/Log-Files/Group-One-Log.txt
   TIMESTAMP2=$(date)
   echo "This Group-One task was started by leon-ai, and it ended on $TIMESTAMP2." >> "$PACKAGES_PATH"/Log-Files/Group-One-Log.txt
 fi
@@ -111,7 +113,7 @@ if [ "$1" == "Group-Two" ]; then
   touch "$PACKAGES_PATH"/Log-Files/Group-Two-Log.txt
   TIMESTAMP1=$(date)
   echo "This Group-Two task was started by leon-ai on $TIMESTAMP1." >> "$PACKAGES_PATH"/Log-Files/Group-Two-Log.txt
-  pabot --verbose --variable SLACK_CONFIG_PATH:"$SLACK_CONFIG_PATH" --include Group_Two --report NONE --log group-two-log.html --output group-two-output.xml -d "$PACKAGES_PATH"/Log-Files/Results "$PACKAGES_PATH"/Robot-Files/Leon-Robot-Framework-Customizable-Parallel-Runner*.robot >> "$PACKAGES_PATH"/Log-Files/Group-Two-Log.txt
+  pabot --verbose --variable SLACK_CONFIG_PATH:"$SLACK_CONFIG_PATH" --include Group_Two --report NONE --log group-two-log.html --output group-two-output.xml -N "Group Two - Two parallel running Robot Framework files" -d "$PACKAGES_PATH"/Log-Files/Results "$PACKAGES_PATH"/Robot-Files/Leon-Robot-Framework-Customizable-Parallel-Runner*.robot >> "$PACKAGES_PATH"/Log-Files/Group-Two-Log.txt
   TIMESTAMP2=$(date)
   echo "This Group-Two task was started by leon-ai, and it ended on $TIMESTAMP2." >> "$PACKAGES_PATH"/Log-Files/Group-Two-Log.txt
 fi
@@ -121,7 +123,7 @@ if [ "$1" == "Group-Three" ]; then
   touch "$PACKAGES_PATH"/Log-Files/Group-Three-Log.txt
   TIMESTAMP1=$(date)
   echo "This Group-Three task was started by leon-ai on $TIMESTAMP1." >> "$PACKAGES_PATH"/Log-Files/Group-Three-Log.txt
-  pabot --verbose --variable SLACK_CONFIG_PATH:"$SLACK_CONFIG_PATH" --include Group_Three --report NONE --log group-three-log.html --output group-three-output.xml -d "$PACKAGES_PATH"/Log-Files/Results "$PACKAGES_PATH"/Robot-Files/Leon-Robot-Framework-Customizable-Parallel-Runner*.robot >> "$PACKAGES_PATH"/Log-Files/Group-Three-Log.txt
+  pabot --verbose --variable SLACK_CONFIG_PATH:"$SLACK_CONFIG_PATH" --include Group_Three --report NONE --log group-three-log.html --output group-three-output.xml -N "Group Three - Two parallel running Robot Framework files" -d "$PACKAGES_PATH"/Log-Files/Results "$PACKAGES_PATH"/Robot-Files/Leon-Robot-Framework-Customizable-Parallel-Runner*.robot >> "$PACKAGES_PATH"/Log-Files/Group-Three-Log.txt
   TIMESTAMP2=$(date)
   echo "This Group-Three task was started by leon-ai, and it ended on $TIMESTAMP2." >> "$PACKAGES_PATH"/Log-Files/Group-Three-Log.txt
 fi
@@ -131,7 +133,7 @@ if [ "$1" == "Group-Four" ]; then
   touch "$PACKAGES_PATH"/Log-Files/Group-Four-Log.txt
   TIMESTAMP1=$(date)
   echo "This Group-Four task was started by leon-ai on $TIMESTAMP1." >> "$PACKAGES_PATH"/Log-Files/Group-Four-Log.txt
-  pabot --verbose --variable SLACK_CONFIG_PATH:"$SLACK_CONFIG_PATH" --include Group_Four --report NONE --log group-four-log.html --output group-four-output.xml -d "$PACKAGES_PATH"/Log-Files/Results "$PACKAGES_PATH"/Robot-Files/Leon-Robot-Framework-Customizable-Parallel-Runner*.robot >> "$PACKAGES_PATH"/Log-Files/Group-Four-Log.txt
+  pabot --verbose --variable SLACK_CONFIG_PATH:"$SLACK_CONFIG_PATH" --include Group_Four --report NONE --log group-four-log.html --output group-four-output.xml -N "Group Four - Two parallel running Robot Framework files" -d "$PACKAGES_PATH"/Log-Files/Results "$PACKAGES_PATH"/Robot-Files/Leon-Robot-Framework-Customizable-Parallel-Runner*.robot >> "$PACKAGES_PATH"/Log-Files/Group-Four-Log.txt
   TIMESTAMP2=$(date)
   echo "This Group-Four task was started by leon-ai, and it ended on $TIMESTAMP2." >> "$PACKAGES_PATH"/Log-Files/Group-Four-Log.txt
 fi
@@ -166,12 +168,12 @@ if [ "$1" == "Custom-Runner-Two" ]; then
   echo "This Custom-Runner-Two task was started by leon-ai on $TIMESTAMP1." >> "$PACKAGES_PATH"/Log-Files/Custom-Runner-Two-Log.txt
   while IFS=, read -r PARALLELRUNNER
   do
-    pabot --verbose --variable SLACK_CONFIG_PATH:"$SLACK_CONFIG_PATH" --include "${PARALLELRUNNER}" --report NONE --output custom-parallel-automation-run-ouput.xml --log custom-parallel-automation-run-"${PARALLELRUNNER}".html --timestampoutputs -N "${PARALLELRUNNER}" -d "$PACKAGES_PATH"/Log-Files/Results "$PACKAGES_PATH"/Robot-Files/Leon-Robot-Framework-Customizable-Parallel-Runner*.robot >> "$PACKAGES_PATH"/Log-Files/Custom-Runner-Two-Log.txt &&
+    TIMESTAMPER_CUSTOM_RUNNER_TWO=$(date)
+    pabot --verbose --variable SLACK_CONFIG_PATH:"$SLACK_CONFIG_PATH" --include "${PARALLELRUNNER}" --report NONE --output custom-parallel-automation-run-ouput-"${PARALLELRUNNER} ${TIMESTAMPER_CUSTOM_RUNNER_TWO}".xml --log custom-parallel-automation-run-"${PARALLELRUNNER}".html --timestampoutputs -N "${PARALLELRUNNER} ${TIMESTAMPER_CUSTOM_RUNNER_TWO}" -d "$PACKAGES_PATH"/Log-Files/Results "$PACKAGES_PATH"/Robot-Files/Leon-Robot-Framework-Customizable-Parallel-Runner*.robot >> "$PACKAGES_PATH"/Log-Files/Custom-Runner-Two-Log.txt &&
     sleep 0.5s
   done < "$PACKAGES_PATH"/Robot-Files/CustomParallelAutomationRunnerFile.csv
-  rm -rf "$PACKAGES_PATH"/Log-Files/Results/custom-parallel-automation-run-*.xml
+  rm -rf "$PACKAGES_PATH"/Log-Files/Results/custom-parallel-automation-run-ouput-Start*.xml
   rm -rf "$PACKAGES_PATH"/Log-Files/Results/custom-parallel-automation-run-Start-*.html
-  #rm -rf "$PACKAGES_PATH"/Log-Files/Results/custom-parallel-automation-run-*.html
   #rm -rf "$PACKAGES_PATH"/Robot-Files/CustomParallelAutomationRunnerFile.csv
   TIMESTAMP2=$(date)
   echo "This Custom-Runner-Two task was started by leon-ai, and it ended on $TIMESTAMP2." >> "$PACKAGES_PATH"/Log-Files/Custom-Runner-Two-Log.txt
@@ -191,7 +193,8 @@ if [ "$1" == "Build-Docker-Containers" ]; then
   touch "$PACKAGES_PATH"/Log-Files/Build-Images-Teardown-Old-Docker-Containers-Log.txt
   TIMESTAMP1=$(date)
   echo "This Build-Docker-Containers task was started by leon-ai on $TIMESTAMP1." >> "$PACKAGES_PATH"/Log-Files/Build-Images-Teardown-Old-Docker-Containers-Log.txt
-  bash -c "cd $PACKAGES_PATH/Tool-Strategies-Lone-Testers-Test-Leadership-Congress-2019/ && ./start-specific-docker-example-workflows-for-workshop.sh Build-Images-Teardown-Old-Docker-Containers > /dev/null 2>&1 && docker images && exit 0" >> "$PACKAGES_PATH"/Log-Files/Build-Images-Teardown-Old-Docker-Containers-Log.txt
+  bash -c "cd $PACKAGES_PATH/Tool-Strategies-Lone-Testers-Test-Leadership-Congress-2019/ && ./start-specific-docker-example-workflows-for-workshop.sh Build-Images-Teardown-Old-Docker-Containers > /dev/null 2>&1 && exit 0"
+  bash -c "cd $PACKAGES_PATH/Tool-Strategies-Lone-Testers-Test-Leadership-Congress-2019/Workshop-Examples/Shared-Resources/Bug-Risk-Prediction-Using-Heuristics-And-Machine-Learning && docker-compose build && docker-compose up > /dev/null 2>&1 && docker images && exit 0" >> "$PACKAGES_PATH"/Log-Files/Build-Images-Teardown-Old-Docker-Containers-Log.txt
   TIMESTAMP2=$(date)
   echo "This Build-Docker-Containers task was started by leon-ai, and it ended on $TIMESTAMP2." >> "$PACKAGES_PATH"/Log-Files/Build-Images-Teardown-Old-Docker-Containers-Log.txt
 fi
@@ -246,14 +249,14 @@ fi
 
 if [ "$1" == "Run-Same-Robot-Framework-Docker-MBT-Graphwalker-Checks-Again" ]; then
   chmod +x "$PACKAGES_PATH"/Tool-Strategies-Lone-Testers-Test-Leadership-Congress-2019/start-specific-docker-example-workflows-for-workshop.sh > /dev/null 2>&1
-  rm -rf "$PACKAGES_PATH"/Log-Files/Previous-Long-Graphwalker-Run-Workshop-Example-Log.txt
-  touch "$PACKAGES_PATH"/Log-Files/Previous-Long-Graphwalker-Run-Workshop-Example-Log.txt
+  rm -rf "$PACKAGES_PATH"/Log-Files/Run-Same-Robot-Framework-Docker-MBT-Graphwalker-Checks-Again-Log.txt
+  touch "$PACKAGES_PATH"/Log-Files/Run-Same-Robot-Framework-Docker-MBT-Graphwalker-Checks-Again-Log.txt
   TIMESTAMP1=$(date)
-  echo "This Run-Same-Robot-Framework-Docker-MBT-Graphwalker-Checks-Again task was started by leon-ai on $TIMESTAMP1." >> "$PACKAGES_PATH"/Log-Files/Previous-Long-Graphwalker-Run-Workshop-Example-Log.txt
+  echo "This Run-Same-Robot-Framework-Docker-MBT-Graphwalker-Checks-Again task was started by leon-ai on $TIMESTAMP1." >> "$PACKAGES_PATH"/Log-Files/Run-Same-Robot-Framework-Docker-MBT-Graphwalker-Checks-Again-Log.txt
   bash -c "cd $PACKAGES_PATH/Tool-Strategies-Lone-Testers-Test-Leadership-Congress-2019/ && ./start-specific-docker-example-workflows-for-workshop.sh Previous-Long-Graphwalker-Run-Workshop-Example > /dev/null 2>&1 && exit 0"
   TIMESTAMP2=$(date)
-  echo "This Run-Same-Robot-Framework-Docker-MBT-Graphwalker-Checks-Again task was started by leon-ai, and it ended on $TIMESTAMP2." >> "$PACKAGES_PATH"/Log-Files/Previous-Long-Graphwalker-Run-Workshop-Example-Log.txt
-  echo "The results of the Run-Same-Robot-Framework-Docker-MBT-Graphwalker-Checks-Again task can be found in this html log file-> $PACKAGES_PATH/Tool-Strategies-Lone-Testers-Test-Leadership-Congress-2019/Workshop-Examples/Workshop-Part-Three/Graphwalker-Model-Based-Test-Results/long-graphwalker-reuse-previous-path-file" >> "$PACKAGES_PATH"/Log-Files/Previous-Long-Graphwalker-Run-Workshop-Example-Log.txt
+  echo "This Run-Same-Robot-Framework-Docker-MBT-Graphwalker-Checks-Again task was started by leon-ai, and it ended on $TIMESTAMP2." >> "$PACKAGES_PATH"/Log-Files/Run-Same-Robot-Framework-Docker-MBT-Graphwalker-Checks-Again-Log.txt
+  echo "The results of the Run-Same-Robot-Framework-Docker-MBT-Graphwalker-Checks-Again task can be found in this html log file-> $PACKAGES_PATH/Tool-Strategies-Lone-Testers-Test-Leadership-Congress-2019/Workshop-Examples/Workshop-Part-Three/Graphwalker-Model-Based-Test-Results/long-graphwalker-reuse-previous-path-file.html" >> "$PACKAGES_PATH"/Log-Files/Run-Same-Robot-Framework-Docker-MBT-Graphwalker-Checks-Again-Log.txt
 fi
 
 if [ "$1" == "Robot-Framework-Selenium-Desktop-Web-Checks" ]; then
@@ -336,6 +339,18 @@ if [ "$1" == "Trigger-Both-Webhook-Docker-Containers-For-Parallel-Run" ]; then
   echo "This Trigger-Both-Webhook-Docker-Containers-For-Parallel-Run task was started by leon-ai, and it ended on $TIMESTAMP2." >> "$PACKAGES_PATH"/Log-Files/Trigger-Both-Webhook-Docker-Containers-For-Parallel-Run-Log.txt
 fi
 
+if [ "$1" == "Generate-Bug-Risk-Prediction-Scores-For-A-GitHub-Repo" ]; then
+  chmod +x "$PACKAGES_PATH"/Tool-Strategies-Lone-Testers-Test-Leadership-Congress-2019/Workshop-Examples/Shared-Resources/Bug-Risk-Prediction-Using-Heuristics-And-Machine-Learning/start-bug-risk-prediction-docker-container.sh > /dev/null 2>&1
+  rm -rf "$PACKAGES_PATH"/Log-Files/Generate-Bug-Risk-Prediction-Scores-For-A-GitHub-Repo-Log.txt
+  touch "$PACKAGES_PATH"/Log-Files/Generate-Bug-Risk-Prediction-Scores-For-A-GitHub-Repo-Log.txt
+  TIMESTAMP1=$(date)
+  echo "This Generate-Bug-Risk-Prediction-Scores-For-A-GitHub-Repo task was started by leon-ai on $TIMESTAMP1." >> "$PACKAGES_PATH"/Log-Files/Generate-Bug-Risk-Prediction-Scores-For-A-GitHub-Repo-Log.txt
+  bash -c "cd $PACKAGES_PATH/Tool-Strategies-Lone-Testers-Test-Leadership-Congress-2019/Workshop-Examples/Shared-Resources/Bug-Risk-Prediction-Using-Heuristics-And-Machine-Learning && ./start-bug-risk-prediction-docker-container.sh" >> "$PACKAGES_PATH"/Log-Files/Generate-Bug-Risk-Prediction-Scores-For-A-GitHub-Repo-Log.txt
+  TIMESTAMP2=$(date)
+  rm -rf "$PACKAGES_PATH"/Tool-Strategies-Lone-Testers-Test-Leadership-Congress-2019/Workshop-Examples/Shared-Resources/Bug-Risk-Prediction-Using-Heuristics-And-Machine-Learning/Bug-Risk-Prediction-Docker-Container/Target-GitHub-Repo
+  echo "This Generate-Bug-Risk-Prediction-Scores-For-A-GitHub-Repo task was started by leon-ai, and it ended on $TIMESTAMP2." >> "$PACKAGES_PATH"/Log-Files/Generate-Bug-Risk-Prediction-Scores-For-A-GitHub-Repo-Log.txt
+fi
+
 if [ "$1" == "Custom-Tasks-And-Suites-Runner" ]; then
   rm -rf "$PACKAGES_PATH"/Log-Files/Custom-Tasks-And-Suite-Runner-Log.txt
   touch "$PACKAGES_PATH"/Log-Files/Custom-Tasks-And-Suite-Runner-Log.txt
@@ -343,7 +358,8 @@ if [ "$1" == "Custom-Tasks-And-Suites-Runner" ]; then
   echo "This Custom-Tasks-And-Suite-Runner task was started by leon-ai on $TIMESTAMP1." >> "$PACKAGES_PATH"/Log-Files/Custom-Tasks-And-Suite-Runner-Log.txt
   while IFS=, read -r CUSTOMRUNNER
   do
-    robot --variable SLACK_CONFIG_PATH:"$SLACK_CONFIG_PATH" --variable TASK_RUNNER_PATH:"$PROJECT_PATH/packages/robotframework-test-assistant" --include "${CUSTOMRUNNER}" --report NONE --output customized-suite-order-automation-run-ouput.xml --log customized-suite-order-automation-run.html --timestampoutputs -N "${CUSTOMRUNNER}" -d "$PACKAGES_PATH"/Log-Files/Results "$PACKAGES_PATH"/Robot-Files/Leon-Robot-Framework-Customizable-RPA-Task-Runner.robot >> "$PACKAGES_PATH"/Log-Files/Custom-Tasks-And-Suite-Runner-Log.txt &&
+    TIMESTAMPER_CUSTOM_RPA_TASK_RUNNER=$(date)
+    robot --variable SLACK_CONFIG_PATH:"$SLACK_CONFIG_PATH" --variable TASK_RUNNER_PATH:"$PROJECT_PATH/packages/robotframework-test-assistant" --include "${CUSTOMRUNNER}" --report NONE --output customized-suite-order-automation-run-ouput-"${CUSTOMRUNNER}".xml --log customized-suite-order-automation-run-"${CUSTOMRUNNER}".html --timestampoutputs -N "${CUSTOMRUNNER} ${TIMESTAMPER_CUSTOM_RPA_TASK_RUNNER}" -d "$PACKAGES_PATH"/Log-Files/Results "$PACKAGES_PATH"/Robot-Files/Leon-Robot-Framework-Customizable-RPA-Task-Runner.robot >> "$PACKAGES_PATH"/Log-Files/Custom-Tasks-And-Suite-Runner-Log.txt &&
     sleep 0.5s
   done < "$PACKAGES_PATH"/Robot-Files/CustomizedTasksAndRobotFrameworkSuitesOrderSequence.csv
   rebot --suitestatlevel 1 -N "Manually constructed order of tasks and Robot Framework suites set up through leon-ai with a CustomizedTasksAndRobotFrameworkSuitesOrderSequence.csv file" --report NONE --log "$PACKAGES_PATH"/Log-Files/Results/customized-suite-order-automation-results-log.html --output "$PACKAGES_PATH"/Log-Files/Results/customized-suite-order-automation-run-*.xml >> "$PACKAGES_PATH"/Log-Files/Custom-Tasks-And-Suite-Runner-Log.txt
@@ -384,11 +400,31 @@ if [ "$1" == "Set-Trigger-Remote-API-Check-Process-Webhook-Docker-Container" ]; 
   echo "Trigger_Remote_API_Check_Process_Webhook_Docker_Container" >> "$PACKAGES_PATH"/Robot-Files/CustomizedTasksAndRobotFrameworkSuitesOrderSequence.csv
 fi
 
-
 if [ "$1" == "Set-Trigger-Remote-Selenium-Process-Webhook-Docker-Container" ]; then
   echo "Trigger_Remote_Selenium_Process_Webhook_Container" >> "$PACKAGES_PATH"/Robot-Files/CustomizedTasksAndRobotFrameworkSuitesOrderSequence.csv
 fi
 
 if [ "$1" == "Set-Trigger-Both-Webhook-Docker-Containers-For-Parallel-Run" ]; then
   echo "Trigger_Both_Webhook_Docker_Containers_For_Parallel_Run" >> "$PACKAGES_PATH"/Robot-Files/CustomizedTasksAndRobotFrameworkSuitesOrderSequence.csv
+fi
+
+if [ "$1" == "Set-Generate-Bug-Risk-Prediction-Scores-For-A-GitHub-Repo" ]; then
+  echo "Generate_Bug_Risk_Prediction_Scores_For_A_GitHub_Repo" >> "$PACKAGES_PATH"/Robot-Files/CustomizedTasksAndRobotFrameworkSuitesOrderSequence.csv
+fi
+
+if [ "$1" == "Gather-All-Robot-Framework-Test-Results-And-Deploy-Dashboard-To-Heroku" ]; then
+  ADDITIONAL_RESULTS_PATH=Tool-Strategies-Lone-Testers-Test-Leadership-Congress-2019/Workshop-Examples/Workshop-Part-Three
+  export ADDITIONAL_RESULTS_PATH
+  rm -rf "$PACKAGES_PATH"/Log-Files/Test-Log.txt
+  rm -rf "$PACKAGES_PATH"/Log-Files/Results/combined-leon-robot-framework-assistant-results-log.html
+  rm -rf ./combined-leon-robot-framework-assistant-results-log.html
+  pwd > "$PACKAGES_PATH"/Log-Files/Test-Log.txt
+  ls -l >> "$PACKAGES_PATH"/Log-Files/Test-Log.txt
+  rebot --removekeywords name:Capture\ Page\ Screenshot --removekeywords name:Take\ Screenshot --suitestatlevel 1 -N "Leon Robot Framework Assistant Combined Results Dashboard" --report NONE --log "$PACKAGES_PATH"/Log-Files/Results/combined-leon-robot-framework-assistant-results-log.html --output "$PACKAGES_PATH"/Log-Files/Results/*.xml "$PACKAGES_PATH"/"$ADDITIONAL_RESULTS_PATH"/*.xml >> "$PACKAGES_PATH"/Log-Files/Test-Log.txt
+  cp "$PACKAGES_PATH"/Log-Files/Results/combined-leon-robot-framework-assistant-results-log.html ./combined-leon-robot-framework-assistant-results-log.html
+  #echo "Gathered, combined results files, and deployed them to Heroku on $TIMESTAMP" > ./git_commit_message.txt
+  #GIT_COMMIT_MESSAGE=$(cat ./git_commit_message.txt) &&
+  #git add . &&
+  #git commit -m "$GIT_COMMIT_MESSAGE" &&
+  #git push origin master
 fi

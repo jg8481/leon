@@ -23,7 +23,6 @@
 	"greeting": {
     "run": {
       "expressions": [
-				"i",
         "Hi",
         "Hey",
         "Hello",
@@ -53,6 +52,18 @@
         "Tell me what is the meaning of life"
       ]
     }
+  },
+	"randomnumber": {
+    "run": {
+      "expressions": [
+        "Give me a random number",
+        "Give me a number",
+        "Tell me a random number",
+        "Choose a number",
+        "Pick a number"
+      ]
+    }
+
   },
 	"bye": {
     "run": {

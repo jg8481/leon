@@ -11,8 +11,8 @@ import time
 
 
 filepath = os.path.dirname(os.path.realpath(__file__))
-small_time_delay = 10 ##--> Use this to set up your small time delay. This time delay is in seconds.
-medium_time_delay = 60 ##--> Use this to set up your medium time delay. This time delay is in seconds.
+small_time_delay = 5 ##--> Use this to set up your small time delay. This time delay is in seconds.
+medium_time_delay = 20 ##--> Use this to set up your medium time delay. This time delay is in seconds.
 large_time_delay = 600 ##--> Use this to set up your large time delay. This time delay is in seconds.
 
 def Clean_Up_Results(string, entities):
@@ -250,6 +250,11 @@ def Set_Trigger_Both_Webhook_Docker_Containers_For_Parallel_Run(string, entities
     subprocess.call(filepath + '/robotframework-runner.sh Set-Trigger-Both-Webhook-Docker-Containers-For-Parallel-Run', shell=True)
     return utils.output('end', 'finished_setting_up', utils.translate('finished_setting_up'))
 
+def Set_Generate_Bug_Risk_Prediction_Scores_For_A_GitHub_Repo(string, entities):
+    """Leon will set up a custom automated tasks and suites run"""
+    subprocess.call(filepath + '/robotframework-runner.sh Set-Generate-Bug-Risk-Prediction-Scores-For-A-GitHub-Repo', shell=True)
+    return utils.output('end', 'finished_setting_up', utils.translate('finished_setting_up'))
+
 def Generic_Customizable_Time_Delayed_Runner_One(string, entities):
     """Leon will set up a time delayed generic task runner"""
     ##--> Suggestion: Feel free to change the time.sleep to small_time_delay, medium_time_delay or large_time_delay.
@@ -308,3 +313,8 @@ def Generic_Customizable_Time_Delayed_Runner_Four(string, entities):
     subprocess.call(filepath + '/robotframework-runner.sh Custom-Tasks-And-Suites-Runner', shell=True)
     subprocess.call(filepath + '/robotframework-runner.sh Slack-Notification-Send-All', shell=True)
     return utils.output('end', 'generic_time_delayed_task', utils.translate('generic_time_delayed_task'))
+
+def Gather_All_Robot_Framework_Test_Results_And_Deploy_Dashboard_To_Heroku(string, entities):
+    """Leon will run Robot Framework ReBot and Git commands to deploy a results file to Heroku"""
+    subprocess.call(filepath + '/robotframework-runner.sh Gather-All-Robot-Framework-Test-Results-And-Deploy-Dashboard-To-Heroku', shell=True)
+    return utils.output('end', 'generic_time_delayed_task', utils.translate('finished_setting_up'))

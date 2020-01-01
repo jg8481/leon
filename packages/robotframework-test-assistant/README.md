@@ -4,29 +4,42 @@
 
 ### Use leon-ai to turn Robot Framework into a personal testing assistant and OpenRPA task runner.
 
+### Tool requirements that need to be set up first in order to run the tests and RPA tasks suite examples in this assistant's "robotframework-brain".
+
+Please set up or install all of the tool requirements mentioned below.
+
+- https://github.com/jg8481/Tool-Strategies-Lone-Testers-Test-Leadership-Congress-2019/blob/master/README.md
+- https://github.com/coursehero/slacktee
+
 ### Commands for running leon-ai and getting started with this package.
 
 ```
-#Assuming that you git cloned the leon-ai repository.
+## Node.js v12.14.0 is the most reliable version to use with this package.
+## Newer Node.js versions will cause DeepSpeech errors.
+## After you you Git cloned the leon-ai repository, enter the following commands...
+
 cd leon
-npm install && npm run build && npm start
-#If you get this --> ".env file already exists, overwrite:...", select No or press enter.
+npm install && npm run build && npm run check && npm start 	
+
+## If you get this --> ".env file already exists, overwrite:...", select No or press enter.
 ```
 
 ```
-#Open another terminal, and run the following to use voice commands.
+## Open another terminal, and run the following to use voice commands.
 npm run wake
 ```
 
 #### Usage
 
+From any browser enter this URL --> http://localhost:1337/
+
 ```
 (en-US) "Check one'
 ```
 
-#### Hypothetical assumptions about inconsistent speech recognition using DeepSpeech engine with leon-ai for voice commands.
+#### Hypothetical assumptions about inconsistent speech recognition using DeepSpeech engine with leon-ai for just voice commands (typing text commands through the leon-ai web app UI works perfectly fine).
 
-While using leon-ai's speech recognition engine (DeepSpeech), you may notice that some times it makes mistakes interpreting what you are saying or it just hangs and does nothing. Here are some hypothetical assumptions I've made based on some quick research.
+While using leon-ai's offline speech-to-text engine (DeepSpeech), you may notice that some times it makes mistakes interpreting what you are saying or it just hangs and does nothing. Here are some hypothetical assumptions I've made based on some quick research.
 
 1) Tensorflow hardware requirements favor NVidia GPU technologies more. If you use a non-NVidia GPU (no CUDA cores etc.) it will be underutilized. For example, only using onboard graphics on a laptop may affect performance.
 - https://github.com/mozilla/DeepSpeech/releases
