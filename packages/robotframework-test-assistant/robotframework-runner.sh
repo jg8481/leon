@@ -367,6 +367,7 @@ if [ "$1" == "Custom-Tasks-And-Suites-Runner" ]; then
   rm -rf "$PACKAGES_PATH"/Log-Files/Results/customized-suite-order-automation-run-*.xml
   rm -rf "$PACKAGES_PATH"/Log-Files/Results/customized-suite-order-automation-run-*.html
   rm -rf "$PACKAGES_PATH"/Robot-Files/CustomizedTasksAndRobotFrameworkSuitesOrderSequence.csv
+  rm -rf "$PACKAGES_PATH"/Tool-Strategies-Lone-Testers-Test-Leadership-Congress-2019/Workshop-Examples/Shared-Resources/Bug-Risk-Prediction-Using-Heuristics-And-Machine-Learning/Bug-Risk-Prediction-Docker-Container/Target-GitHub-Repo
   TIMESTAMP2=$(date)
   echo "This Custom-Tasks-And-Suite-Runner task was started by leon-ai, and it ended on $TIMESTAMP2." >> "$PACKAGES_PATH"/Log-Files/Custom-Tasks-And-Suite-Runner-Log.txt
 fi
