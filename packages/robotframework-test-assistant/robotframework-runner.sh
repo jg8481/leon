@@ -415,16 +415,17 @@ fi
 if [ "$1" == "Gather-All-Robot-Framework-Test-Results-And-Deploy-Dashboard-To-Heroku" ]; then
   ADDITIONAL_RESULTS_PATH=Tool-Strategies-Lone-Testers-Test-Leadership-Congress-2019/Workshop-Examples/Workshop-Part-Three
   export ADDITIONAL_RESULTS_PATH
-  rm -rf "$PACKAGES_PATH"/Log-Files/Test-Log.txt
+  TIMESTAMP=$(date)
+  rm -rf "$PACKAGES_PATH"/Log-Files/Gather-All-Robot-Framework-Test-Results-And-Deploy-Dashboard-To-Heroku-Log.txt
   rm -rf "$PACKAGES_PATH"/Log-Files/Results/combined-leon-robot-framework-assistant-results-log.html
   rm -rf ./combined-leon-robot-framework-assistant-results-log.html
-  pwd > "$PACKAGES_PATH"/Log-Files/Test-Log.txt
-  ls -l >> "$PACKAGES_PATH"/Log-Files/Test-Log.txt
-  rebot --removekeywords name:Capture\ Page\ Screenshot --removekeywords name:Take\ Screenshot --suitestatlevel 1 -N "Leon Robot Framework Assistant Combined Results Dashboard" --report NONE --log "$PACKAGES_PATH"/Log-Files/Results/combined-leon-robot-framework-assistant-results-log.html --output "$PACKAGES_PATH"/Log-Files/Results/*.xml "$PACKAGES_PATH"/"$ADDITIONAL_RESULTS_PATH"/*.xml >> "$PACKAGES_PATH"/Log-Files/Test-Log.txt
+  pwd > "$PACKAGES_PATH"/Log-Files/Gather-All-Robot-Framework-Test-Results-And-Deploy-Dashboard-To-Heroku-Log.txt
+  ls -l >> "$PACKAGES_PATH"/Log-Files/Gather-All-Robot-Framework-Test-Results-And-Deploy-Dashboard-To-Heroku-Log.txt
+  rebot --removekeywords name:Capture\ Page\ Screenshot --removekeywords name:Take\ Screenshot --suitestatlevel 1 -N "Leon Robot Framework Assistant Combined Results Dashboard" --report NONE --log "$PACKAGES_PATH"/Log-Files/Results/combined-leon-robot-framework-assistant-results-log.html --output "$PACKAGES_PATH"/Log-Files/Results/*.xml "$PACKAGES_PATH"/"$ADDITIONAL_RESULTS_PATH"/*.xml >> "$PACKAGES_PATH"/Log-Files/Gather-All-Robot-Framework-Test-Results-And-Deploy-Dashboard-To-Heroku-Log.txt
   cp "$PACKAGES_PATH"/Log-Files/Results/combined-leon-robot-framework-assistant-results-log.html ./combined-leon-robot-framework-assistant-results-log.html
-  #echo "Gathered, combined results files, and deployed them to Heroku on $TIMESTAMP" > ./git_commit_message.txt
-  #GIT_COMMIT_MESSAGE=$(cat ./git_commit_message.txt) &&
-  #git add . &&
-  #git commit -m "$GIT_COMMIT_MESSAGE" &&
-  #git push origin master
+  echo "Gathered, combined results files, and deployed them to Heroku on $TIMESTAMP" > ./git_commit_message.txt
+  GIT_COMMIT_MESSAGE=$(cat ./git_commit_message.txt) &&
+  git add . >> "$PACKAGES_PATH"/Log-Files/Gather-All-Robot-Framework-Test-Results-And-Deploy-Dashboard-To-Heroku-Log.txt &&
+  git commit -m "$GIT_COMMIT_MESSAGE" >> "$PACKAGES_PATH"/Log-Files/Gather-All-Robot-Framework-Test-Results-And-Deploy-Dashboard-To-Heroku-Log.txt &&
+  git push origin master >> "$PACKAGES_PATH"/Log-Files/Gather-All-Robot-Framework-Test-Results-And-Deploy-Dashboard-To-Heroku-Log.txt
 fi
