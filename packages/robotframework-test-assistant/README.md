@@ -4,9 +4,7 @@
 
 ### Use leon-ai to turn Robot Framework into a personal testing assistant and OpenRPA task runner.
 
-### Tool requirements that need to be set up first in order to run the tests and RPA tasks suite examples in this assistant's "robotframework-brain".
-
-Please set up or install all of the tool requirements mentioned below.
+The following tool requirements need to be set up first in order to run the tests and RPA tasks suite examples in this assistant's "robotframework-brain". Please set up or install all of the tool requirements mentioned below.
 
 - https://github.com/jg8481/Tool-Strategies-Lone-Testers-Test-Leadership-Congress-2019/blob/master/README.md
 - https://github.com/coursehero/slacktee
@@ -19,7 +17,7 @@ Please set up or install all of the tool requirements mentioned below.
 ## After you you Git cloned the leon-ai repository, enter the following commands...
 
 cd leon
-npm install && npm run build && npm run check && npm start 	
+npm install && npm run build && npm run setup:offline && npm audit fix && npm run check && npm start 	
 
 ## If you get this --> ".env file already exists, overwrite:...", select No or press enter.
 ```
