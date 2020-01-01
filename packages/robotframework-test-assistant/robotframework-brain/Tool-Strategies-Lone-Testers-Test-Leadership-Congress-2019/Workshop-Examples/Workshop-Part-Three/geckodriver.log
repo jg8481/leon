@@ -208,3 +208,23 @@ JavaScript warning: https://owasp-goat-app.herokuapp.com/vendor/jquery.min.js, l
 JavaScript warning: https://owasp-goat-app.herokuapp.com/vendor/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
 JavaScript warning: https://owasp-goat-app.herokuapp.com/vendor/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
 1577497423550	Marionette	INFO	Stopped listening on port 36765
+1577850597798	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.sqb0chCzD43N"
+1577850598475	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1577850598476	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1577850598476	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1577850598477	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1577850600456	Marionette	INFO	Listening on port 36509
+1577850600518	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://owasp-goat-app.herokuapp.com/vendor/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://owasp-goat-app.herokuapp.com/vendor/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1577850605650	Marionette	INFO	Stopped listening on port 36509
+1577850612004	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.RWTLZynDwsxX"
+1577850612425	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1577850612426	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1577850612427	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1577850612428	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1577850614141	Marionette	INFO	Listening on port 35771
+1577850614226	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://owasp-goat-app.herokuapp.com/vendor/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://owasp-goat-app.herokuapp.com/vendor/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1577850619176	Marionette	INFO	Stopped listening on port 35771

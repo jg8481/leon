@@ -89,7 +89,7 @@ if [ "$1" == "Custom-Runner-One" ]; then
   rebot --suitestatlevel 1 -N "Robot Framework automation run in a manually constructed sequence set up through leon-ai with a CustomSerialAutomationRunnerFile.csv file" --report NONE --log "$PACKAGES_PATH"/Log-Files/Results/custom-serial-automation-results-log.html --output "$PACKAGES_PATH"/Log-Files/Results/custom-serial-automation-run-*.xml >> "$PACKAGES_PATH"/Log-Files/Custom-Runner-One-Log.txt
   rm -rf "$PACKAGES_PATH"/Log-Files/Results/custom-serial-automation-run-ouput-Start*.xml
   rm -rf "$PACKAGES_PATH"/Log-Files/Results/custom-serial-automation-run-*.html
-  #rm -rf "$PACKAGES_PATH"/Robot-Files/CustomSerialAutomationRunnerFile.csv
+  rm -rf "$PACKAGES_PATH"/Robot-Files/CustomSerialAutomationRunnerFile.csv
   TIMESTAMP2=$(date)
   echo "This Custom-Runner-One task was started by leon-ai, and it ended on $TIMESTAMP2." >> "$PACKAGES_PATH"/Log-Files/Custom-Runner-One-Log.txt
 fi
@@ -174,7 +174,7 @@ if [ "$1" == "Custom-Runner-Two" ]; then
   done < "$PACKAGES_PATH"/Robot-Files/CustomParallelAutomationRunnerFile.csv
   rm -rf "$PACKAGES_PATH"/Log-Files/Results/custom-parallel-automation-run-ouput-Start*.xml
   rm -rf "$PACKAGES_PATH"/Log-Files/Results/custom-parallel-automation-run-Start-*.html
-  #rm -rf "$PACKAGES_PATH"/Robot-Files/CustomParallelAutomationRunnerFile.csv
+  rm -rf "$PACKAGES_PATH"/Robot-Files/CustomParallelAutomationRunnerFile.csv
   TIMESTAMP2=$(date)
   echo "This Custom-Runner-Two task was started by leon-ai, and it ended on $TIMESTAMP2." >> "$PACKAGES_PATH"/Log-Files/Custom-Runner-Two-Log.txt
 fi
@@ -341,6 +341,7 @@ fi
 
 if [ "$1" == "Generate-Bug-Risk-Prediction-Scores-For-A-GitHub-Repo" ]; then
   chmod +x "$PACKAGES_PATH"/Tool-Strategies-Lone-Testers-Test-Leadership-Congress-2019/Workshop-Examples/Shared-Resources/Bug-Risk-Prediction-Using-Heuristics-And-Machine-Learning/start-bug-risk-prediction-docker-container.sh > /dev/null 2>&1
+  rm -rf "$PACKAGES_PATH"/Tool-Strategies-Lone-Testers-Test-Leadership-Congress-2019/Workshop-Examples/Shared-Resources/Bug-Risk-Prediction-Using-Heuristics-And-Machine-Learning/Bug-Risk-Prediction-Docker-Container/Target-GitHub-Repo
   rm -rf "$PACKAGES_PATH"/Log-Files/Generate-Bug-Risk-Prediction-Scores-For-A-GitHub-Repo-Log.txt
   touch "$PACKAGES_PATH"/Log-Files/Generate-Bug-Risk-Prediction-Scores-For-A-GitHub-Repo-Log.txt
   TIMESTAMP1=$(date)
@@ -365,7 +366,7 @@ if [ "$1" == "Custom-Tasks-And-Suites-Runner" ]; then
   rebot --suitestatlevel 1 -N "Manually constructed order of tasks and Robot Framework suites set up through leon-ai with a CustomizedTasksAndRobotFrameworkSuitesOrderSequence.csv file" --report NONE --log "$PACKAGES_PATH"/Log-Files/Results/customized-suite-order-automation-results-log.html --output "$PACKAGES_PATH"/Log-Files/Results/customized-suite-order-automation-run-*.xml >> "$PACKAGES_PATH"/Log-Files/Custom-Tasks-And-Suite-Runner-Log.txt
   rm -rf "$PACKAGES_PATH"/Log-Files/Results/customized-suite-order-automation-run-*.xml
   rm -rf "$PACKAGES_PATH"/Log-Files/Results/customized-suite-order-automation-run-*.html
-  #rm -rf "$PACKAGES_PATH"/Robot-Files/CustomizedTasksAndRobotFrameworkSuitesOrderSequence.csv
+  rm -rf "$PACKAGES_PATH"/Robot-Files/CustomizedTasksAndRobotFrameworkSuitesOrderSequence.csv
   TIMESTAMP2=$(date)
   echo "This Custom-Tasks-And-Suite-Runner task was started by leon-ai, and it ended on $TIMESTAMP2." >> "$PACKAGES_PATH"/Log-Files/Custom-Tasks-And-Suite-Runner-Log.txt
 fi

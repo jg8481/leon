@@ -312,6 +312,7 @@ def Generic_Customizable_Time_Delayed_Runner_Four(string, entities):
     subprocess.call(filepath + '/robotframework-runner.sh Set-Trigger-Both-Webhook-Docker-Containers-For-Parallel-Run', shell=True)
     subprocess.call(filepath + '/robotframework-runner.sh Set-Trigger-Remote-Selenium-Process-Webhook-Docker-Container', shell=True)
     subprocess.call(filepath + '/robotframework-runner.sh Set-Trigger-Remote-API-Check-Process-Webhook-Docker-Container', shell=True)
+    subprocess.call(filepath + '/robotframework-runner.sh Set-Generate-Bug-Risk-Prediction-Scores-For-A-GitHub-Repo', shell=True)
     subprocess.call(filepath + '/robotframework-runner.sh Custom-Tasks-And-Suites-Runner', shell=True)
     subprocess.call(filepath + '/robotframework-runner.sh Gather-All-Robot-Framework-Test-Results-And-Deploy-Dashboard-To-Heroku', shell=True)
     subprocess.call(filepath + '/robotframework-runner.sh Slack-Notification-Send-All', shell=True)

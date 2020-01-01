@@ -383,7 +383,9 @@
       "expressions": [
         "time delayed runner four",
         "fourth time delayed run",
-        "run all"
+        "everything",
+        "run all",
+        "all"
       ]
     }
   }

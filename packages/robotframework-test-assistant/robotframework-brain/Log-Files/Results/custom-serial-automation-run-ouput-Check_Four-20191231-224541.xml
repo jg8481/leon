@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Rebot 3.1.2 (Python 3.7.5 on darwin)" generated="20191231 22:23:32.711" rpa="false">
+<robot generator="Rebot 3.1.2 (Python 3.7.5 on darwin)" generated="20191231 22:45:44.325" rpa="false">
 <suite id="s1" name="Robot Framework automation run in a manually constructed sequence set up through leon-ai with a CustomSerialAutomationRunnerFile.csv file">
-<suite id="s1-s1" name="Check_One Tue Dec 31 22:23:31 EST 2019" source="/Users/jgorospe/Documents/GitHub/leon/packages/robotframework-test-assistant/robotframework-brain/Robot-Files/Leon-Robot-Framework-Customizable-Serial-Runner.robot">
+<suite id="s1-s1" name="Check_One Tue Dec 31 22:45:42 EST 2019" source="/Users/jgorospe/Documents/GitHub/leon/packages/robotframework-test-assistant/robotframework-brain/Robot-Files/Leon-Robot-Framework-Customizable-Serial-Runner.robot">
 <test id="s1-s1-t1" name="AUTOMATED CHECK 1 - SERIAL RUNNER : An automated check that will run.">
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>Just giving Robot Framework something to do when triggered by the voice assistant.</arg>
 </arguments>
-<msg timestamp="20191231 22:23:31.687" level="INFO">Just giving Robot Framework something to do when triggered by the voice assistant.</msg>
-<status status="PASS" starttime="20191231 22:23:31.687" endtime="20191231 22:23:31.687"></status>
+<msg timestamp="20191231 22:45:43.305" level="INFO">Just giving Robot Framework something to do when triggered by the voice assistant.</msg>
+<status status="PASS" starttime="20191231 22:45:43.305" endtime="20191231 22:45:43.305"></status>
 </kw>
 <kw name="Send Short Message Through Slack About The Automation Run">
 <arguments>
@@ -24,30 +24,30 @@
 <arg>timeout=20s</arg>
 <arg>on_timeout=continue</arg>
 </arguments>
-<msg timestamp="20191231 22:23:31.688" level="INFO">Starting process:
+<msg timestamp="20191231 22:45:43.306" level="INFO">Starting process:
 echo "AUTOMATED CHECK 1 - A hypothetical automated check - SERIAL RUNNER ran in the QA environment..." | slacktee.sh -i :nerd_face: --plain-text --config /Users/jgorospe/Documents/GitHub/leon/packages/robotframework-test-assistant/robotframework-brain/Tool-Strategies-Lone-Testers-Test-Leadership-Congress-2019/Workshop-Examples/Shared-Resources/.slacktee</msg>
-<msg timestamp="20191231 22:23:31.692" level="INFO">Waiting for process to complete.</msg>
-<msg timestamp="20191231 22:23:31.898" level="INFO">Process completed.</msg>
-<status status="PASS" starttime="20191231 22:23:31.688" endtime="20191231 22:23:31.898"></status>
+<msg timestamp="20191231 22:45:43.310" level="INFO">Waiting for process to complete.</msg>
+<msg timestamp="20191231 22:45:43.513" level="INFO">Process completed.</msg>
+<status status="PASS" starttime="20191231 22:45:43.305" endtime="20191231 22:45:43.514"></status>
 </kw>
-<status status="PASS" starttime="20191231 22:23:31.687" endtime="20191231 22:23:31.898"></status>
+<status status="PASS" starttime="20191231 22:45:43.305" endtime="20191231 22:45:43.514"></status>
 </kw>
 <tags>
 <tag>Check_One</tag>
 </tags>
-<status status="PASS" starttime="20191231 22:23:31.686" endtime="20191231 22:23:31.899" critical="yes"></status>
+<status status="PASS" starttime="20191231 22:45:43.304" endtime="20191231 22:45:43.514" critical="yes"></status>
 </test>
-<status status="PASS" starttime="20191231 22:23:31.648" endtime="20191231 22:23:31.899"></status>
+<status status="PASS" starttime="20191231 22:45:43.266" endtime="20191231 22:45:43.515"></status>
 </suite>
-<suite id="s1-s2" name="Check_Three Tue Dec 31 22:23:26 EST 2019" source="/Users/jgorospe/Documents/GitHub/leon/packages/robotframework-test-assistant/robotframework-brain/Robot-Files/Leon-Robot-Framework-Customizable-Serial-Runner.robot">
+<suite id="s1-s2" name="Check_Three Tue Dec 31 22:45:38 EST 2019" source="/Users/jgorospe/Documents/GitHub/leon/packages/robotframework-test-assistant/robotframework-brain/Robot-Files/Leon-Robot-Framework-Customizable-Serial-Runner.robot">
 <test id="s1-s2-t1" name="AUTOMATED CHECK 3 - SERIAL RUNNER : An automated check that will run.">
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>Just giving Robot Framework something to do when triggered by the voice assistant.</arg>
 </arguments>
-<msg timestamp="20191231 22:23:26.937" level="INFO">Just giving Robot Framework something to do when triggered by the voice assistant.</msg>
-<status status="PASS" starttime="20191231 22:23:26.937" endtime="20191231 22:23:26.937"></status>
+<msg timestamp="20191231 22:45:38.873" level="INFO">Just giving Robot Framework something to do when triggered by the voice assistant.</msg>
+<status status="PASS" starttime="20191231 22:45:38.873" endtime="20191231 22:45:38.873"></status>
 </kw>
 <kw name="Send Short Message Through Slack About The Automation Run">
 <arguments>
@@ -62,30 +62,30 @@ echo "AUTOMATED CHECK 1 - A hypothetical automated check - SERIAL RUNNER ran in 
 <arg>timeout=20s</arg>
 <arg>on_timeout=continue</arg>
 </arguments>
-<msg timestamp="20191231 22:23:26.938" level="INFO">Starting process:
+<msg timestamp="20191231 22:45:38.874" level="INFO">Starting process:
 echo "AUTOMATED CHECK 3 - A hypothetical automated check - SERIAL RUNNER ran in the QA environment..." | slacktee.sh -i :nerd_face: --plain-text --config /Users/jgorospe/Documents/GitHub/leon/packages/robotframework-test-assistant/robotframework-brain/Tool-Strategies-Lone-Testers-Test-Leadership-Congress-2019/Workshop-Examples/Shared-Resources/.slacktee</msg>
-<msg timestamp="20191231 22:23:26.942" level="INFO">Waiting for process to complete.</msg>
-<msg timestamp="20191231 22:23:28.680" level="INFO">Process completed.</msg>
-<status status="PASS" starttime="20191231 22:23:26.938" endtime="20191231 22:23:28.681"></status>
+<msg timestamp="20191231 22:45:38.878" level="INFO">Waiting for process to complete.</msg>
+<msg timestamp="20191231 22:45:39.186" level="INFO">Process completed.</msg>
+<status status="PASS" starttime="20191231 22:45:38.873" endtime="20191231 22:45:39.186"></status>
 </kw>
-<status status="PASS" starttime="20191231 22:23:26.937" endtime="20191231 22:23:28.681"></status>
+<status status="PASS" starttime="20191231 22:45:38.873" endtime="20191231 22:45:39.187"></status>
 </kw>
 <tags>
 <tag>Check_Three</tag>
 </tags>
-<status status="PASS" starttime="20191231 22:23:26.937" endtime="20191231 22:23:28.681" critical="yes"></status>
+<status status="PASS" starttime="20191231 22:45:38.872" endtime="20191231 22:45:39.187" critical="yes"></status>
 </test>
-<status status="PASS" starttime="20191231 22:23:26.901" endtime="20191231 22:23:28.682"></status>
+<status status="PASS" starttime="20191231 22:45:38.834" endtime="20191231 22:45:39.188"></status>
 </suite>
-<suite id="s1-s3" name="Check_Two Tue Dec 31 22:23:29 EST 2019" source="/Users/jgorospe/Documents/GitHub/leon/packages/robotframework-test-assistant/robotframework-brain/Robot-Files/Leon-Robot-Framework-Customizable-Serial-Runner.robot">
+<suite id="s1-s3" name="Check_Two Tue Dec 31 22:45:39 EST 2019" source="/Users/jgorospe/Documents/GitHub/leon/packages/robotframework-test-assistant/robotframework-brain/Robot-Files/Leon-Robot-Framework-Customizable-Serial-Runner.robot">
 <test id="s1-s3-t1" name="AUTOMATED CHECK 2 - SERIAL RUNNER : An automated check that will run.">
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>Just giving Robot Framework something to do when triggered by the voice assistant.</arg>
 </arguments>
-<msg timestamp="20191231 22:23:29.541" level="INFO">Just giving Robot Framework something to do when triggered by the voice assistant.</msg>
-<status status="PASS" starttime="20191231 22:23:29.541" endtime="20191231 22:23:29.542"></status>
+<msg timestamp="20191231 22:45:40.046" level="INFO">Just giving Robot Framework something to do when triggered by the voice assistant.</msg>
+<status status="PASS" starttime="20191231 22:45:40.046" endtime="20191231 22:45:40.046"></status>
 </kw>
 <kw name="Send Short Message Through Slack About The Automation Run">
 <arguments>
@@ -100,39 +100,39 @@ echo "AUTOMATED CHECK 3 - A hypothetical automated check - SERIAL RUNNER ran in 
 <arg>timeout=20s</arg>
 <arg>on_timeout=continue</arg>
 </arguments>
-<msg timestamp="20191231 22:23:29.542" level="INFO">Starting process:
+<msg timestamp="20191231 22:45:40.047" level="INFO">Starting process:
 echo "AUTOMATED CHECK 2 - A hypothetical automated check - SERIAL RUNNER ran in the QA environment..." | slacktee.sh -i :nerd_face: --plain-text --config /Users/jgorospe/Documents/GitHub/leon/packages/robotframework-test-assistant/robotframework-brain/Tool-Strategies-Lone-Testers-Test-Leadership-Congress-2019/Workshop-Examples/Shared-Resources/.slacktee</msg>
-<msg timestamp="20191231 22:23:29.546" level="INFO">Waiting for process to complete.</msg>
-<msg timestamp="20191231 22:23:29.753" level="INFO">Process completed.</msg>
-<status status="PASS" starttime="20191231 22:23:29.542" endtime="20191231 22:23:29.753"></status>
+<msg timestamp="20191231 22:45:40.050" level="INFO">Waiting for process to complete.</msg>
+<msg timestamp="20191231 22:45:40.255" level="INFO">Process completed.</msg>
+<status status="PASS" starttime="20191231 22:45:40.046" endtime="20191231 22:45:40.255"></status>
 </kw>
-<status status="PASS" starttime="20191231 22:23:29.542" endtime="20191231 22:23:29.754"></status>
+<status status="PASS" starttime="20191231 22:45:40.046" endtime="20191231 22:45:40.256"></status>
 </kw>
 <tags>
 <tag>Check_Two</tag>
 </tags>
-<status status="PASS" starttime="20191231 22:23:29.541" endtime="20191231 22:23:29.754" critical="yes"></status>
+<status status="PASS" starttime="20191231 22:45:40.045" endtime="20191231 22:45:40.256" critical="yes"></status>
 </test>
-<status status="PASS" starttime="20191231 22:23:29.503" endtime="20191231 22:23:29.755"></status>
+<status status="PASS" starttime="20191231 22:45:40.007" endtime="20191231 22:45:40.256"></status>
 </suite>
-<suite id="s1-s4" name="Start Tue Dec 31 22:23:25 EST 2019" source="/Users/jgorospe/Documents/GitHub/leon/packages/robotframework-test-assistant/robotframework-brain/Robot-Files/Leon-Robot-Framework-Customizable-Serial-Runner.robot">
+<suite id="s1-s4" name="Start Tue Dec 31 22:45:37 EST 2019" source="/Users/jgorospe/Documents/GitHub/leon/packages/robotframework-test-assistant/robotframework-brain/Robot-Files/Leon-Robot-Framework-Customizable-Serial-Runner.robot">
 <test id="s1-s4-t1" name="CUSTOM RUNNER START : This helps avoid skipping the first actual automated check in the runner file.">
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>This runs first.</arg>
 </arguments>
-<msg timestamp="20191231 22:23:26.071" level="INFO">This runs first.</msg>
-<status status="PASS" starttime="20191231 22:23:26.071" endtime="20191231 22:23:26.071"></status>
+<msg timestamp="20191231 22:45:38.003" level="INFO">This runs first.</msg>
+<status status="PASS" starttime="20191231 22:45:38.003" endtime="20191231 22:45:38.003"></status>
 </kw>
 <tags>
 <tag>Start</tag>
 </tags>
-<status status="PASS" starttime="20191231 22:23:26.070" endtime="20191231 22:23:26.071" critical="yes"></status>
+<status status="PASS" starttime="20191231 22:45:38.002" endtime="20191231 22:45:38.004" critical="yes"></status>
 </test>
-<status status="PASS" starttime="20191231 22:23:26.027" endtime="20191231 22:23:26.071"></status>
+<status status="PASS" starttime="20191231 22:45:37.965" endtime="20191231 22:45:38.004"></status>
 </suite>
-<status status="PASS" starttime="N/A" endtime="N/A" elapsedtime="2328"></status>
+<status status="PASS" starttime="N/A" endtime="N/A" elapsedtime="891"></status>
 </suite>
 <statistics>
 <total>
