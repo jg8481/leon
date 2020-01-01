@@ -290,6 +290,11 @@ def Generic_Customizable_Time_Delayed_Runner_Four(string, entities):
     ##--> Suggestion: Feel free to change the time.sleep to small_time_delay, medium_time_delay or large_time_delay.
     time.sleep(small_time_delay)
     ##--> Suggestion: Feel free to set the following subprocess.call to any of the previously defined commands in this robotframework-test-assistant.py script. The following example will chain together the commands for all of the custom runners and sends notifications to the team.
+    subprocess.call(filepath + '/robotframework-runner.sh Set-Up-Custom-Tasks-And-Suites-Runner', shell=True)
+    subprocess.call(filepath + '/robotframework-runner.sh Set-Clean-Up-Docker-Containers', shell=True)
+    subprocess.call(filepath + '/robotframework-runner.sh Set-Build-Docker-Containers', shell=True)
+    subprocess.call(filepath + '/robotframework-runner.sh Set-Generate-Bug-Risk-Prediction-Scores-For-A-GitHub-Repo', shell=True)
+    subprocess.call(filepath + '/robotframework-runner.sh Custom-Tasks-And-Suites-Runner', shell=True)
     subprocess.call(filepath + '/robotframework-runner.sh Set-Up-Runner-One', shell=True)
     subprocess.call(filepath + '/robotframework-runner.sh Set-Check-Three', shell=True)
     subprocess.call(filepath + '/robotframework-runner.sh Set-Check-Two', shell=True)
@@ -312,7 +317,6 @@ def Generic_Customizable_Time_Delayed_Runner_Four(string, entities):
     subprocess.call(filepath + '/robotframework-runner.sh Set-Trigger-Both-Webhook-Docker-Containers-For-Parallel-Run', shell=True)
     subprocess.call(filepath + '/robotframework-runner.sh Set-Trigger-Remote-Selenium-Process-Webhook-Docker-Container', shell=True)
     subprocess.call(filepath + '/robotframework-runner.sh Set-Trigger-Remote-API-Check-Process-Webhook-Docker-Container', shell=True)
-    subprocess.call(filepath + '/robotframework-runner.sh Set-Generate-Bug-Risk-Prediction-Scores-For-A-GitHub-Repo', shell=True)
     subprocess.call(filepath + '/robotframework-runner.sh Custom-Tasks-And-Suites-Runner', shell=True)
     subprocess.call(filepath + '/robotframework-runner.sh Gather-All-Robot-Framework-Test-Results-And-Deploy-Dashboard-To-Heroku', shell=True)
     subprocess.call(filepath + '/robotframework-runner.sh Slack-Notification-Send-All', shell=True)
