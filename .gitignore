@@ -64,7 +64,6 @@ Robot-Framework-Lone-Tester-Metrics-RoboCon-2019
 *.DS_Store
 test-log*.txt
 *-Log.txt
-*log.html
 *output.xml
 *report.html
 packages/robotframework-test-assistant/__init__.py
