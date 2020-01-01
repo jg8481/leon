@@ -354,8 +354,11 @@
     },
     "Gather_All_Robot_Framework_Test_Results_And_Deploy_Dashboard_To_Heroku": {
       "expressions": [
-        "testing dashboard",
-        "test the dashboard"
+        "heroku",
+        "deploy",
+        "heroku dashboard",
+        "results dashboard",
+        "gather all results"
       ]
     },
     "Generic_Customizable_Time_Delayed_Runner_One": {
@@ -379,7 +382,8 @@
     "Generic_Customizable_Time_Delayed_Runner_Four": {
       "expressions": [
         "time delayed runner four",
-        "fourth time delayed run"
+        "fourth time delayed run",
+        "run all"
       ]
     }
   }
