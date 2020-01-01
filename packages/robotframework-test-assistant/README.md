@@ -14,7 +14,7 @@ The following tool requirements need to be set up first in order to run the test
 ```
 ## Node.js v12.14.0 is the most reliable version to use with this package.
 ## Newer Node.js versions will cause DeepSpeech errors.
-## After you you Git cloned the leon-ai repository, enter the following commands...
+## After you Git clone the leon-ai repository, enter the following commands...
 
 cd leon
 npm install && npm run build && npm run setup:offline && npm audit fix && npm run check && npm start 	
