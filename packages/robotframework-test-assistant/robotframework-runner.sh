@@ -426,6 +426,6 @@ if [ "$1" == "Gather-All-Robot-Framework-Test-Results-And-Deploy-Dashboard-To-He
   echo "Gathered, combined results files, and deployed them to Heroku on $TIMESTAMP" > ./git_commit_message.txt
   GIT_COMMIT_MESSAGE=$(cat ./git_commit_message.txt) &&
   git add . >> "$PACKAGES_PATH"/Log-Files/Gather-All-Robot-Framework-Test-Results-And-Deploy-Dashboard-To-Heroku-Log.txt &&
-  git commit -m "$GIT_COMMIT_MESSAGE" >> "$PACKAGES_PATH"/Log-Files/Gather-All-Robot-Framework-Test-Results-And-Deploy-Dashboard-To-Heroku-Log.txt &&
+  git commit -m "$GIT_COMMIT_MESSAGE" --no-verify >> "$PACKAGES_PATH"/Log-Files/Gather-All-Robot-Framework-Test-Results-And-Deploy-Dashboard-To-Heroku-Log.txt &&
   git push origin master >> "$PACKAGES_PATH"/Log-Files/Gather-All-Robot-Framework-Test-Results-And-Deploy-Dashboard-To-Heroku-Log.txt
 fi
