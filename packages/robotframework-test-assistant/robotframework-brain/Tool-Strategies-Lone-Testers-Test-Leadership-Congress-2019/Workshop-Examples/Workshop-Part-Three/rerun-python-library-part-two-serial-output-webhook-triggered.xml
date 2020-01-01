@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20200101 05:16:24.078" generator="Robot 3.1.2 (Python 3.5.6 on linux)" rpa="false">
+<robot generated="20200101 05:31:30.806" generator="Robot 3.1.2 (Python 3.5.6 on linux)" rpa="false">
 <suite id="s1" name="Robot Framework test run with user-created Python Library one test at a time in serial random order">
 <suite source="/rfw/Tests/Workshop-Part-Two/Docker-Example-Python-Library1-Enhanced-Version.robot" id="s1-s1" name="Docker-Example-Python-Library1-Enhanced-Version">
 <test id="s1-s1-t1" name="USER-CREATED PYTHON LIBRARY EXAMPLE PART TWO - ROBOT FILE ONE : Send a POST request to jsonplaceholder.typicode.com/posts and check the response.">
@@ -7,85 +7,85 @@
 <assign>
 <var>${PYTHON_LIBRARY_ROBOT_FILE_ONE_POST_RESPONSE}</var>
 </assign>
-<msg level="INFO" timestamp="20200101 05:16:24.676">${PYTHON_LIBRARY_ROBOT_FILE_ONE_POST_RESPONSE} = &lt;Response [201]&gt;</msg>
-<status status="PASS" endtime="20200101 05:16:24.676" starttime="20200101 05:16:24.340"></status>
+<msg level="INFO" timestamp="20200101 05:31:31.539">${PYTHON_LIBRARY_ROBOT_FILE_ONE_POST_RESPONSE} = &lt;Response [201]&gt;</msg>
+<status starttime="20200101 05:31:31.019" status="PASS" endtime="20200101 05:31:31.539"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>.</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:24.676" starttime="20200101 05:16:24.676"></status>
+<status starttime="20200101 05:31:31.539" status="PASS" endtime="20200101 05:31:31.540"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>.</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:24.677" starttime="20200101 05:16:24.677"></status>
+<status starttime="20200101 05:31:31.541" status="PASS" endtime="20200101 05:31:31.542"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>.</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:24.677" starttime="20200101 05:16:24.677"></status>
+<status starttime="20200101 05:31:31.543" status="PASS" endtime="20200101 05:31:31.544"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${PYTHON_LIBRARY_ROBOT_FILE_ONE_POST_RESPONSE}</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:24.678" starttime="20200101 05:16:24.678"></status>
+<status starttime="20200101 05:31:31.544" status="PASS" endtime="20200101 05:31:31.545"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>.</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:24.679" starttime="20200101 05:16:24.678"></status>
+<status starttime="20200101 05:31:31.545" status="PASS" endtime="20200101 05:31:31.546"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>.</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:24.679" starttime="20200101 05:16:24.679"></status>
+<status starttime="20200101 05:31:31.546" status="PASS" endtime="20200101 05:31:31.547"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>.</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:24.680" starttime="20200101 05:16:24.679"></status>
+<status starttime="20200101 05:31:31.547" status="PASS" endtime="20200101 05:31:31.548"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${PYTHON_LIBRARY_ROBOT_FILE_ONE_POST_RESPONSE.json()}</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:24.681" starttime="20200101 05:16:24.680"></status>
+<status starttime="20200101 05:31:31.548" status="PASS" endtime="20200101 05:31:31.549"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>.</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:24.682" starttime="20200101 05:16:24.681"></status>
+<status starttime="20200101 05:31:31.549" status="PASS" endtime="20200101 05:31:31.549"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>.</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:24.683" starttime="20200101 05:16:24.682"></status>
+<status starttime="20200101 05:31:31.550" status="PASS" endtime="20200101 05:31:31.550"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>.</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:24.684" starttime="20200101 05:16:24.683"></status>
+<status starttime="20200101 05:31:31.550" status="PASS" endtime="20200101 05:31:31.551"></status>
 </kw>
 <kw library="BuiltIn" name="Should Be Equal As Strings">
 <doc>Fails if objects are unequal after converting them to strings.</doc>
@@ -93,10 +93,10 @@
 <arg>${PYTHON_LIBRARY_ROBOT_FILE_ONE_POST_RESPONSE.status_code}</arg>
 <arg>201</arg>
 </arguments>
-<msg level="INFO" timestamp="20200101 05:16:24.684">Argument types are:
+<msg level="INFO" timestamp="20200101 05:31:31.552">Argument types are:
 &lt;class 'int'&gt;
 &lt;type 'unicode'&gt;</msg>
-<status status="PASS" endtime="20200101 05:16:24.684" starttime="20200101 05:16:24.684"></status>
+<status starttime="20200101 05:31:31.551" status="PASS" endtime="20200101 05:31:31.552"></status>
 </kw>
 <kw library="Collections" name="Dictionary Should Contain Key">
 <doc>Fails if ``key`` is not found from ``dictionary``.</doc>
@@ -104,7 +104,7 @@
 <arg>${PYTHON_LIBRARY_ROBOT_FILE_ONE_POST_RESPONSE.json()}</arg>
 <arg>id</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:24.685" starttime="20200101 05:16:24.685"></status>
+<status starttime="20200101 05:31:31.552" status="PASS" endtime="20200101 05:31:31.552"></status>
 </kw>
 <kw library="Collections" name="Get Dictionary Values">
 <doc>Returns values of the given ``dictionary`` as a list.</doc>
@@ -114,8 +114,8 @@
 <assign>
 <var>${POST_RESPONSE_VALUES}</var>
 </assign>
-<msg level="INFO" timestamp="20200101 05:16:24.685">${POST_RESPONSE_VALUES} = [101]</msg>
-<status status="PASS" endtime="20200101 05:16:24.686" starttime="20200101 05:16:24.685"></status>
+<msg level="INFO" timestamp="20200101 05:31:31.553">${POST_RESPONSE_VALUES} = [101]</msg>
+<status starttime="20200101 05:31:31.553" status="PASS" endtime="20200101 05:31:31.553"></status>
 </kw>
 <kw library="BuiltIn" name="Should Be Equal As Strings">
 <doc>Fails if objects are unequal after converting them to strings.</doc>
@@ -123,10 +123,10 @@
 <arg>${POST_RESPONSE_VALUES}</arg>
 <arg>[101]</arg>
 </arguments>
-<msg level="INFO" timestamp="20200101 05:16:24.686">Argument types are:
+<msg level="INFO" timestamp="20200101 05:31:31.554">Argument types are:
 &lt;class 'list'&gt;
 &lt;type 'unicode'&gt;</msg>
-<status status="PASS" endtime="20200101 05:16:24.686" starttime="20200101 05:16:24.686"></status>
+<status starttime="20200101 05:31:31.553" status="PASS" endtime="20200101 05:31:31.554"></status>
 </kw>
 <kw type="teardown" name="Trigger Only After Failure">
 <kw library="BuiltIn" name="Run Keyword If Test Failed">
@@ -134,100 +134,100 @@
 <arguments>
 <arg>Failure Detected Notify Team</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:24.687" starttime="20200101 05:16:24.687"></status>
+<status starttime="20200101 05:31:31.555" status="PASS" endtime="20200101 05:31:31.555"></status>
 </kw>
-<status status="PASS" endtime="20200101 05:16:24.687" starttime="20200101 05:16:24.686"></status>
+<status starttime="20200101 05:31:31.554" status="PASS" endtime="20200101 05:31:31.555"></status>
 </kw>
 <tags>
 <tag>Regression_Tests</tag>
 <tag>Slightly_Refined_And_Room_For_Enhancements</tag>
 </tags>
-<status critical="yes" status="PASS" endtime="20200101 05:16:24.687" starttime="20200101 05:16:24.338"></status>
+<status starttime="20200101 05:31:31.017" critical="yes" status="PASS" endtime="20200101 05:31:31.555"></status>
 </test>
 <test id="s1-s1-t2" name="USER-CREATED PYTHON LIBRARY EXAMPLE PART TWO - ROBOT FILE ONE : Send a PATCH request to &quot;title&quot; for jsonplaceholder.typicode.com/posts/1 and check the response.">
 <kw library="DockerExample" name="Send Patch Request Robot File One">
 <assign>
 <var>${PYTHON_LIBRARY_ROBOT_FILE_ONE_PATCH_RESPONSE}</var>
 </assign>
-<msg level="INFO" timestamp="20200101 05:16:25.053">${PYTHON_LIBRARY_ROBOT_FILE_ONE_PATCH_RESPONSE} = &lt;Response [200]&gt;</msg>
-<status status="PASS" endtime="20200101 05:16:25.053" starttime="20200101 05:16:24.690"></status>
+<msg level="INFO" timestamp="20200101 05:31:32.223">${PYTHON_LIBRARY_ROBOT_FILE_ONE_PATCH_RESPONSE} = &lt;Response [200]&gt;</msg>
+<status starttime="20200101 05:31:31.558" status="PASS" endtime="20200101 05:31:32.223"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>.</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:25.053" starttime="20200101 05:16:25.053"></status>
+<status starttime="20200101 05:31:32.223" status="PASS" endtime="20200101 05:31:32.224"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>.</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:25.054" starttime="20200101 05:16:25.054"></status>
+<status starttime="20200101 05:31:32.224" status="PASS" endtime="20200101 05:31:32.225"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>.</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:25.054" starttime="20200101 05:16:25.054"></status>
+<status starttime="20200101 05:31:32.225" status="PASS" endtime="20200101 05:31:32.225"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${PYTHON_LIBRARY_ROBOT_FILE_ONE_PATCH_RESPONSE}</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:25.055" starttime="20200101 05:16:25.055"></status>
+<status starttime="20200101 05:31:32.226" status="PASS" endtime="20200101 05:31:32.227"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>.</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:25.055" starttime="20200101 05:16:25.055"></status>
+<status starttime="20200101 05:31:32.227" status="PASS" endtime="20200101 05:31:32.228"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>.</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:25.056" starttime="20200101 05:16:25.056"></status>
+<status starttime="20200101 05:31:32.228" status="PASS" endtime="20200101 05:31:32.229"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>.</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:25.057" starttime="20200101 05:16:25.056"></status>
+<status starttime="20200101 05:31:32.229" status="PASS" endtime="20200101 05:31:32.230"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${PYTHON_LIBRARY_ROBOT_FILE_ONE_PATCH_RESPONSE.json()}</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:25.058" starttime="20200101 05:16:25.058"></status>
+<status starttime="20200101 05:31:32.230" status="PASS" endtime="20200101 05:31:32.231"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>.</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:25.059" starttime="20200101 05:16:25.058"></status>
+<status starttime="20200101 05:31:32.231" status="PASS" endtime="20200101 05:31:32.231"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>.</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:25.059" starttime="20200101 05:16:25.059"></status>
+<status starttime="20200101 05:31:32.232" status="PASS" endtime="20200101 05:31:32.232"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>.</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:25.060" starttime="20200101 05:16:25.059"></status>
+<status starttime="20200101 05:31:32.232" status="PASS" endtime="20200101 05:31:32.233"></status>
 </kw>
 <kw library="BuiltIn" name="Should Be Equal As Strings">
 <doc>Fails if objects are unequal after converting them to strings.</doc>
@@ -235,10 +235,10 @@
 <arg>${PYTHON_LIBRARY_ROBOT_FILE_ONE_PATCH_RESPONSE.status_code}</arg>
 <arg>200</arg>
 </arguments>
-<msg level="INFO" timestamp="20200101 05:16:25.060">Argument types are:
+<msg level="INFO" timestamp="20200101 05:31:32.233">Argument types are:
 &lt;class 'int'&gt;
 &lt;type 'unicode'&gt;</msg>
-<status status="PASS" endtime="20200101 05:16:25.060" starttime="20200101 05:16:25.060"></status>
+<status starttime="20200101 05:31:32.233" status="PASS" endtime="20200101 05:31:32.233"></status>
 </kw>
 <kw library="Collections" name="Dictionary Should Contain Value">
 <doc>Fails if ``value`` is not found from ``dictionary``.</doc>
@@ -246,7 +246,7 @@
 <arg>${PYTHON_LIBRARY_ROBOT_FILE_ONE_PATCH_RESPONSE.json()}</arg>
 <arg>Testing with Robot Framework.</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:25.061" starttime="20200101 05:16:25.061"></status>
+<status starttime="20200101 05:31:32.234" status="PASS" endtime="20200101 05:31:32.234"></status>
 </kw>
 <kw type="teardown" name="Trigger Only After Failure">
 <kw library="BuiltIn" name="Run Keyword If Test Failed">
@@ -254,100 +254,100 @@
 <arguments>
 <arg>Failure Detected Notify Team</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:25.062" starttime="20200101 05:16:25.062"></status>
+<status starttime="20200101 05:31:32.235" status="PASS" endtime="20200101 05:31:32.235"></status>
 </kw>
-<status status="PASS" endtime="20200101 05:16:25.062" starttime="20200101 05:16:25.061"></status>
+<status starttime="20200101 05:31:32.234" status="PASS" endtime="20200101 05:31:32.235"></status>
 </kw>
 <tags>
 <tag>Regression_Tests</tag>
 <tag>Slightly_Refined_And_Room_For_Enhancements</tag>
 </tags>
-<status critical="yes" status="PASS" endtime="20200101 05:16:25.062" starttime="20200101 05:16:24.688"></status>
+<status starttime="20200101 05:31:31.557" critical="yes" status="PASS" endtime="20200101 05:31:32.235"></status>
 </test>
 <test id="s1-s1-t3" name="USER-CREATED PYTHON LIBRARY EXAMPLE PART TWO - ROBOT FILE ONE : Send a GET request to jsonplaceholder.typicode.com/posts/1 and check the response.">
 <kw library="DockerExample" name="Send Get Request Robot File One">
 <assign>
 <var>${PYTHON_LIBRARY_ROBOT_FILE_ONE_GET_RESPONSE}</var>
 </assign>
-<msg level="INFO" timestamp="20200101 05:16:25.112">${PYTHON_LIBRARY_ROBOT_FILE_ONE_GET_RESPONSE} = &lt;Response [200]&gt;</msg>
-<status status="PASS" endtime="20200101 05:16:25.113" starttime="20200101 05:16:25.064"></status>
+<msg level="INFO" timestamp="20200101 05:31:32.289">${PYTHON_LIBRARY_ROBOT_FILE_ONE_GET_RESPONSE} = &lt;Response [200]&gt;</msg>
+<status starttime="20200101 05:31:32.237" status="PASS" endtime="20200101 05:31:32.289"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>.</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:25.113" starttime="20200101 05:16:25.113"></status>
+<status starttime="20200101 05:31:32.290" status="PASS" endtime="20200101 05:31:32.290"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>.</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:25.114" starttime="20200101 05:16:25.113"></status>
+<status starttime="20200101 05:31:32.291" status="PASS" endtime="20200101 05:31:32.291"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>.</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:25.114" starttime="20200101 05:16:25.114"></status>
+<status starttime="20200101 05:31:32.292" status="PASS" endtime="20200101 05:31:32.292"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${PYTHON_LIBRARY_ROBOT_FILE_ONE_GET_RESPONSE}</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:25.116" starttime="20200101 05:16:25.115"></status>
+<status starttime="20200101 05:31:32.294" status="PASS" endtime="20200101 05:31:32.295"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>.</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:25.116" starttime="20200101 05:16:25.116"></status>
+<status starttime="20200101 05:31:32.295" status="PASS" endtime="20200101 05:31:32.296"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>.</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:25.117" starttime="20200101 05:16:25.117"></status>
+<status starttime="20200101 05:31:32.296" status="PASS" endtime="20200101 05:31:32.297"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>.</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:25.118" starttime="20200101 05:16:25.117"></status>
+<status starttime="20200101 05:31:32.297" status="PASS" endtime="20200101 05:31:32.297"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${PYTHON_LIBRARY_ROBOT_FILE_ONE_GET_RESPONSE.json()}</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:25.118" starttime="20200101 05:16:25.118"></status>
+<status starttime="20200101 05:31:32.298" status="PASS" endtime="20200101 05:31:32.298"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>.</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:25.119" starttime="20200101 05:16:25.119"></status>
+<status starttime="20200101 05:31:32.299" status="PASS" endtime="20200101 05:31:32.299"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>.</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:25.119" starttime="20200101 05:16:25.119"></status>
+<status starttime="20200101 05:31:32.299" status="PASS" endtime="20200101 05:31:32.300"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>.</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:25.120" starttime="20200101 05:16:25.120"></status>
+<status starttime="20200101 05:31:32.300" status="PASS" endtime="20200101 05:31:32.301"></status>
 </kw>
 <kw library="BuiltIn" name="Should Not Be Equal As Strings">
 <doc>Fails if objects are equal after converting them to strings.</doc>
@@ -355,11 +355,11 @@
 <arg>${PYTHON_LIBRARY_ROBOT_FILE_ONE_GET_RESPONSE.status_code}</arg>
 <arg>200</arg>
 </arguments>
-<msg level="INFO" timestamp="20200101 05:16:25.121">Argument types are:
+<msg level="INFO" timestamp="20200101 05:31:32.301">Argument types are:
 &lt;class 'int'&gt;
 &lt;type 'unicode'&gt;</msg>
-<msg level="FAIL" timestamp="20200101 05:16:25.122">200 == 200</msg>
-<status status="FAIL" endtime="20200101 05:16:25.122" starttime="20200101 05:16:25.120"></status>
+<msg level="FAIL" timestamp="20200101 05:31:32.303">200 == 200</msg>
+<status starttime="20200101 05:31:32.301" status="FAIL" endtime="20200101 05:31:32.303"></status>
 </kw>
 <kw type="teardown" name="Trigger Only After Failure">
 <kw library="BuiltIn" name="Run Keyword If Test Failed">
@@ -381,86 +381,86 @@
 <arg>timeout=20s</arg>
 <arg>on_timeout=continue</arg>
 </arguments>
-<msg level="INFO" timestamp="20200101 05:16:25.125">Starting process:
+<msg level="INFO" timestamp="20200101 05:31:32.305">Starting process:
 echo "The regression tests in the Docker-Example-Python-Library1-Enhanced-Version.robot file failed in the your_test_environment environment." | slacktee.sh -i :nerd_face: --plain-text --config /rfw/Shared-Resources/.slacktee</msg>
-<msg level="INFO" timestamp="20200101 05:16:25.130">Waiting for process to complete.</msg>
-<msg level="INFO" timestamp="20200101 05:16:25.332">Process completed.</msg>
-<status status="PASS" endtime="20200101 05:16:25.332" starttime="20200101 05:16:25.124"></status>
+<msg level="INFO" timestamp="20200101 05:31:32.311">Waiting for process to complete.</msg>
+<msg level="INFO" timestamp="20200101 05:31:32.515">Process completed.</msg>
+<status starttime="20200101 05:31:32.305" status="PASS" endtime="20200101 05:31:32.515"></status>
 </kw>
 <kw library="TestFailureEmailNotification" name="Send Email Notification">
 <doc>When a test fails you can send an email. Here are some examples that could work...</doc>
-<status status="PASS" endtime="20200101 05:16:25.333" starttime="20200101 05:16:25.333"></status>
+<status starttime="20200101 05:31:32.516" status="PASS" endtime="20200101 05:31:32.518"></status>
 </kw>
-<status status="PASS" endtime="20200101 05:16:25.334" starttime="20200101 05:16:25.124"></status>
+<status starttime="20200101 05:31:32.304" status="PASS" endtime="20200101 05:31:32.519"></status>
 </kw>
-<status status="PASS" endtime="20200101 05:16:25.334" starttime="20200101 05:16:25.123"></status>
+<status starttime="20200101 05:31:32.304" status="PASS" endtime="20200101 05:31:32.520"></status>
 </kw>
-<status status="PASS" endtime="20200101 05:16:25.335" starttime="20200101 05:16:25.123"></status>
+<status starttime="20200101 05:31:32.304" status="PASS" endtime="20200101 05:31:32.520"></status>
 </kw>
-<status status="PASS" endtime="20200101 05:16:25.335" starttime="20200101 05:16:25.123"></status>
+<status starttime="20200101 05:31:32.303" status="PASS" endtime="20200101 05:31:32.520"></status>
 </kw>
 <tags>
 <tag>Regression_Tests</tag>
 <tag>Slightly_Refined_And_Room_For_Enhancements</tag>
 </tags>
-<status critical="yes" status="FAIL" endtime="20200101 05:16:25.335" starttime="20200101 05:16:25.063">200 == 200</status>
+<status starttime="20200101 05:31:32.236" critical="yes" status="FAIL" endtime="20200101 05:31:32.520">200 == 200</status>
 </test>
 <test id="s1-s1-t4" name="USER-CREATED PYTHON LIBRARY EXAMPLE PART TWO - ROBOT FILE ONE : Send a DELETE request to jsonplaceholder.typicode.com/posts/1 and check the response.">
 <kw library="DockerExample" name="Send Delete Request Robot File One">
 <assign>
 <var>${PYTHON_LIBRARY_ROBOT_FILE_ONE_DELETE_RESPONSE}</var>
 </assign>
-<msg level="INFO" timestamp="20200101 05:16:25.804">${PYTHON_LIBRARY_ROBOT_FILE_ONE_DELETE_RESPONSE} = &lt;Response [200]&gt;</msg>
-<status status="PASS" endtime="20200101 05:16:25.804" starttime="20200101 05:16:25.337"></status>
+<msg level="INFO" timestamp="20200101 05:31:33.074">${PYTHON_LIBRARY_ROBOT_FILE_ONE_DELETE_RESPONSE} = &lt;Response [200]&gt;</msg>
+<status starttime="20200101 05:31:32.524" status="PASS" endtime="20200101 05:31:33.074"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>.</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:25.804" starttime="20200101 05:16:25.804"></status>
+<status starttime="20200101 05:31:33.074" status="PASS" endtime="20200101 05:31:33.076"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>.</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:25.805" starttime="20200101 05:16:25.805"></status>
+<status starttime="20200101 05:31:33.076" status="PASS" endtime="20200101 05:31:33.077"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>.</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:25.805" starttime="20200101 05:16:25.805"></status>
+<status starttime="20200101 05:31:33.078" status="PASS" endtime="20200101 05:31:33.079"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${PYTHON_LIBRARY_ROBOT_FILE_ONE_DELETE_RESPONSE}</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:25.806" starttime="20200101 05:16:25.806"></status>
+<status starttime="20200101 05:31:33.079" status="PASS" endtime="20200101 05:31:33.080"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>.</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:25.807" starttime="20200101 05:16:25.806"></status>
+<status starttime="20200101 05:31:33.080" status="PASS" endtime="20200101 05:31:33.081"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>.</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:25.807" starttime="20200101 05:16:25.807"></status>
+<status starttime="20200101 05:31:33.081" status="PASS" endtime="20200101 05:31:33.082"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>.</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:25.808" starttime="20200101 05:16:25.807"></status>
+<status starttime="20200101 05:31:33.082" status="PASS" endtime="20200101 05:31:33.082"></status>
 </kw>
 <kw library="BuiltIn" name="Should Be Equal As Strings">
 <doc>Fails if objects are unequal after converting them to strings.</doc>
@@ -468,18 +468,18 @@ echo "The regression tests in the Docker-Example-Python-Library1-Enhanced-Versio
 <arg>${PYTHON_LIBRARY_ROBOT_FILE_ONE_DELETE_RESPONSE.status_code}</arg>
 <arg>200</arg>
 </arguments>
-<msg level="INFO" timestamp="20200101 05:16:25.808">Argument types are:
+<msg level="INFO" timestamp="20200101 05:31:33.083">Argument types are:
 &lt;class 'int'&gt;
 &lt;type 'unicode'&gt;</msg>
-<status status="PASS" endtime="20200101 05:16:25.808" starttime="20200101 05:16:25.808"></status>
+<status starttime="20200101 05:31:33.083" status="PASS" endtime="20200101 05:31:33.083"></status>
 </kw>
 <kw library="BuiltIn" name="Should Be Empty">
 <doc>Verifies that the given item is empty.</doc>
 <arguments>
 <arg>${PYTHON_LIBRARY_ROBOT_FILE_ONE_DELETE_RESPONSE.json()}</arg>
 </arguments>
-<msg level="INFO" timestamp="20200101 05:16:25.809">Length is 0</msg>
-<status status="PASS" endtime="20200101 05:16:25.809" starttime="20200101 05:16:25.809"></status>
+<msg level="INFO" timestamp="20200101 05:31:33.084">Length is 0</msg>
+<status starttime="20200101 05:31:33.084" status="PASS" endtime="20200101 05:31:33.084"></status>
 </kw>
 <kw type="teardown" name="Trigger Only After Failure">
 <kw library="BuiltIn" name="Run Keyword If Test Failed">
@@ -487,19 +487,19 @@ echo "The regression tests in the Docker-Example-Python-Library1-Enhanced-Versio
 <arguments>
 <arg>Failure Detected Notify Team</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:25.810" starttime="20200101 05:16:25.810"></status>
+<status starttime="20200101 05:31:33.085" status="PASS" endtime="20200101 05:31:33.085"></status>
 </kw>
-<status status="PASS" endtime="20200101 05:16:25.810" starttime="20200101 05:16:25.810"></status>
+<status starttime="20200101 05:31:33.085" status="PASS" endtime="20200101 05:31:33.086"></status>
 </kw>
 <tags>
 <tag>Regression_Tests</tag>
 <tag>Slightly_Refined_And_Room_For_Enhancements</tag>
 </tags>
-<status critical="yes" status="PASS" endtime="20200101 05:16:25.810" starttime="20200101 05:16:25.336"></status>
+<status starttime="20200101 05:31:32.522" critical="yes" status="PASS" endtime="20200101 05:31:33.086"></status>
 </test>
 <doc>Part Two of the Python Library example has been enhanced by using the SharedKeywordsAndListeners.robot resource file to add 2 types of Robot Framework listeners and a team notification keyword.
 Also added the "--randomize all" option in the commands-running-inside-a-docker-container.sh script, and will demonstrate the use of the "--rerunfailedsuites".</doc>
-<status status="FAIL" endtime="20200101 05:16:25.811" starttime="20200101 05:16:24.114"></status>
+<status starttime="20200101 05:31:30.837" status="FAIL" endtime="20200101 05:31:33.087"></status>
 </suite>
 <suite source="/rfw/Tests/Workshop-Part-Two/Docker-Example-Python-Library2-Enhanced-Version.robot" id="s1-s2" name="Docker-Example-Python-Library2-Enhanced-Version">
 <test id="s1-s2-t1" name="USER-CREATED PYTHON LIBRARY EXAMPLE PART TWO - ROBOT FILE TWO : Send a PUT request to jsonplaceholder.typicode.com/posts and check the response.">
@@ -507,85 +507,85 @@ Also added the "--randomize all" option in the commands-running-inside-a-docker-
 <assign>
 <var>${PYTHON_LIBRARY_ROBOT_FILE_TWO_POST_RESPONSE}</var>
 </assign>
-<msg level="INFO" timestamp="20200101 05:16:26.069">${PYTHON_LIBRARY_ROBOT_FILE_TWO_POST_RESPONSE} = &lt;Response [200]&gt;</msg>
-<status status="PASS" endtime="20200101 05:16:26.069" starttime="20200101 05:16:25.845"></status>
+<msg level="INFO" timestamp="20200101 05:31:34.418">${PYTHON_LIBRARY_ROBOT_FILE_TWO_POST_RESPONSE} = &lt;Response [200]&gt;</msg>
+<status starttime="20200101 05:31:33.120" status="PASS" endtime="20200101 05:31:34.418"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>.</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:26.070" starttime="20200101 05:16:26.069"></status>
+<status starttime="20200101 05:31:34.419" status="PASS" endtime="20200101 05:31:34.419"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>.</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:26.071" starttime="20200101 05:16:26.071"></status>
+<status starttime="20200101 05:31:34.420" status="PASS" endtime="20200101 05:31:34.420"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>.</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:26.072" starttime="20200101 05:16:26.071"></status>
+<status starttime="20200101 05:31:34.421" status="PASS" endtime="20200101 05:31:34.421"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${PYTHON_LIBRARY_ROBOT_FILE_TWO_POST_RESPONSE}</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:26.072" starttime="20200101 05:16:26.072"></status>
+<status starttime="20200101 05:31:34.421" status="PASS" endtime="20200101 05:31:34.422"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>.</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:26.073" starttime="20200101 05:16:26.072"></status>
+<status starttime="20200101 05:31:34.422" status="PASS" endtime="20200101 05:31:34.423"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>.</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:26.073" starttime="20200101 05:16:26.073"></status>
+<status starttime="20200101 05:31:34.423" status="PASS" endtime="20200101 05:31:34.424"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>.</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:26.074" starttime="20200101 05:16:26.073"></status>
+<status starttime="20200101 05:31:34.424" status="PASS" endtime="20200101 05:31:34.424"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${PYTHON_LIBRARY_ROBOT_FILE_TWO_POST_RESPONSE.json()}</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:26.075" starttime="20200101 05:16:26.074"></status>
+<status starttime="20200101 05:31:34.425" status="PASS" endtime="20200101 05:31:34.426"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>.</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:26.075" starttime="20200101 05:16:26.075"></status>
+<status starttime="20200101 05:31:34.426" status="PASS" endtime="20200101 05:31:34.426"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>.</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:26.075" starttime="20200101 05:16:26.075"></status>
+<status starttime="20200101 05:31:34.426" status="PASS" endtime="20200101 05:31:34.427"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>.</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:26.076" starttime="20200101 05:16:26.076"></status>
+<status starttime="20200101 05:31:34.427" status="PASS" endtime="20200101 05:31:34.430"></status>
 </kw>
 <kw library="BuiltIn" name="Should Be Equal As Strings">
 <doc>Fails if objects are unequal after converting them to strings.</doc>
@@ -593,10 +593,10 @@ Also added the "--randomize all" option in the commands-running-inside-a-docker-
 <arg>${PYTHON_LIBRARY_ROBOT_FILE_TWO_POST_RESPONSE.status_code}</arg>
 <arg>200</arg>
 </arguments>
-<msg level="INFO" timestamp="20200101 05:16:26.077">Argument types are:
+<msg level="INFO" timestamp="20200101 05:31:34.431">Argument types are:
 &lt;class 'int'&gt;
 &lt;type 'unicode'&gt;</msg>
-<status status="PASS" endtime="20200101 05:16:26.077" starttime="20200101 05:16:26.077"></status>
+<status starttime="20200101 05:31:34.430" status="PASS" endtime="20200101 05:31:34.431"></status>
 </kw>
 <kw library="Collections" name="Dictionary Should Contain Key">
 <doc>Fails if ``key`` is not found from ``dictionary``.</doc>
@@ -604,7 +604,7 @@ Also added the "--randomize all" option in the commands-running-inside-a-docker-
 <arg>${PYTHON_LIBRARY_ROBOT_FILE_TWO_POST_RESPONSE.json()}</arg>
 <arg>id</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:26.078" starttime="20200101 05:16:26.077"></status>
+<status starttime="20200101 05:31:34.431" status="PASS" endtime="20200101 05:31:34.432"></status>
 </kw>
 <kw library="Collections" name="Get Dictionary Values">
 <doc>Returns values of the given ``dictionary`` as a list.</doc>
@@ -614,8 +614,8 @@ Also added the "--randomize all" option in the commands-running-inside-a-docker-
 <assign>
 <var>${POST_RESPONSE_VALUES}</var>
 </assign>
-<msg level="INFO" timestamp="20200101 05:16:26.078">${POST_RESPONSE_VALUES} = [2]</msg>
-<status status="PASS" endtime="20200101 05:16:26.078" starttime="20200101 05:16:26.078"></status>
+<msg level="INFO" timestamp="20200101 05:31:34.432">${POST_RESPONSE_VALUES} = [2]</msg>
+<status starttime="20200101 05:31:34.432" status="PASS" endtime="20200101 05:31:34.433"></status>
 </kw>
 <kw library="BuiltIn" name="Should Be Equal As Strings">
 <doc>Fails if objects are unequal after converting them to strings.</doc>
@@ -623,10 +623,10 @@ Also added the "--randomize all" option in the commands-running-inside-a-docker-
 <arg>${POST_RESPONSE_VALUES}</arg>
 <arg>[2]</arg>
 </arguments>
-<msg level="INFO" timestamp="20200101 05:16:26.079">Argument types are:
+<msg level="INFO" timestamp="20200101 05:31:34.433">Argument types are:
 &lt;class 'list'&gt;
 &lt;type 'unicode'&gt;</msg>
-<status status="PASS" endtime="20200101 05:16:26.079" starttime="20200101 05:16:26.079"></status>
+<status starttime="20200101 05:31:34.433" status="PASS" endtime="20200101 05:31:34.433"></status>
 </kw>
 <kw type="teardown" name="Trigger Only After Failure">
 <kw library="BuiltIn" name="Run Keyword If Test Failed">
@@ -634,100 +634,100 @@ Also added the "--randomize all" option in the commands-running-inside-a-docker-
 <arguments>
 <arg>Failure Detected Notify Team</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:26.080" starttime="20200101 05:16:26.080"></status>
+<status starttime="20200101 05:31:34.434" status="PASS" endtime="20200101 05:31:34.434"></status>
 </kw>
-<status status="PASS" endtime="20200101 05:16:26.080" starttime="20200101 05:16:26.079"></status>
+<status starttime="20200101 05:31:34.433" status="PASS" endtime="20200101 05:31:34.434"></status>
 </kw>
 <tags>
 <tag>Regression_Tests</tag>
 <tag>Slightly_Refined_And_Room_For_Enhancements</tag>
 </tags>
-<status critical="yes" status="PASS" endtime="20200101 05:16:26.080" starttime="20200101 05:16:25.843"></status>
+<status starttime="20200101 05:31:33.119" critical="yes" status="PASS" endtime="20200101 05:31:34.434"></status>
 </test>
 <test id="s1-s2-t2" name="USER-CREATED PYTHON LIBRARY EXAMPLE PART TWO - ROBOT FILE TWO : Send a PATCH request to &quot;body&quot; for jsonplaceholder.typicode.com/posts/2 and check the response.">
 <kw library="DockerExample" name="Send Patch Request Robot File Two">
 <assign>
 <var>${PYTHON_LIBRARY_ROBOT_FILE_TWO_PATCH_RESPONSE}</var>
 </assign>
-<msg level="INFO" timestamp="20200101 05:16:26.279">${PYTHON_LIBRARY_ROBOT_FILE_TWO_PATCH_RESPONSE} = &lt;Response [200]&gt;</msg>
-<status status="PASS" endtime="20200101 05:16:26.279" starttime="20200101 05:16:26.083"></status>
+<msg level="INFO" timestamp="20200101 05:31:34.658">${PYTHON_LIBRARY_ROBOT_FILE_TWO_PATCH_RESPONSE} = &lt;Response [200]&gt;</msg>
+<status starttime="20200101 05:31:34.436" status="PASS" endtime="20200101 05:31:34.658"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>.</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:26.280" starttime="20200101 05:16:26.279"></status>
+<status starttime="20200101 05:31:34.659" status="PASS" endtime="20200101 05:31:34.660"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>.</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:26.281" starttime="20200101 05:16:26.280"></status>
+<status starttime="20200101 05:31:34.660" status="PASS" endtime="20200101 05:31:34.661"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>.</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:26.281" starttime="20200101 05:16:26.281"></status>
+<status starttime="20200101 05:31:34.661" status="PASS" endtime="20200101 05:31:34.662"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${PYTHON_LIBRARY_ROBOT_FILE_TWO_PATCH_RESPONSE}</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:26.282" starttime="20200101 05:16:26.281"></status>
+<status starttime="20200101 05:31:34.662" status="PASS" endtime="20200101 05:31:34.663"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>.</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:26.283" starttime="20200101 05:16:26.282"></status>
+<status starttime="20200101 05:31:34.664" status="PASS" endtime="20200101 05:31:34.664"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>.</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:26.284" starttime="20200101 05:16:26.283"></status>
+<status starttime="20200101 05:31:34.665" status="PASS" endtime="20200101 05:31:34.665"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>.</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:26.284" starttime="20200101 05:16:26.284"></status>
+<status starttime="20200101 05:31:34.665" status="PASS" endtime="20200101 05:31:34.666"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${PYTHON_LIBRARY_ROBOT_FILE_TWO_PATCH_RESPONSE.json()}</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:26.285" starttime="20200101 05:16:26.284"></status>
+<status starttime="20200101 05:31:34.666" status="PASS" endtime="20200101 05:31:34.667"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>.</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:26.285" starttime="20200101 05:16:26.285"></status>
+<status starttime="20200101 05:31:34.667" status="PASS" endtime="20200101 05:31:34.668"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>.</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:26.286" starttime="20200101 05:16:26.286"></status>
+<status starttime="20200101 05:31:34.668" status="PASS" endtime="20200101 05:31:34.668"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>.</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:26.286" starttime="20200101 05:16:26.286"></status>
+<status starttime="20200101 05:31:34.668" status="PASS" endtime="20200101 05:31:34.669"></status>
 </kw>
 <kw library="BuiltIn" name="Should Be Equal As Strings">
 <doc>Fails if objects are unequal after converting them to strings.</doc>
@@ -735,10 +735,10 @@ Also added the "--randomize all" option in the commands-running-inside-a-docker-
 <arg>${PYTHON_LIBRARY_ROBOT_FILE_TWO_PATCH_RESPONSE.status_code}</arg>
 <arg>200</arg>
 </arguments>
-<msg level="INFO" timestamp="20200101 05:16:26.287">Argument types are:
+<msg level="INFO" timestamp="20200101 05:31:34.669">Argument types are:
 &lt;class 'int'&gt;
 &lt;type 'unicode'&gt;</msg>
-<status status="PASS" endtime="20200101 05:16:26.287" starttime="20200101 05:16:26.287"></status>
+<status starttime="20200101 05:31:34.669" status="PASS" endtime="20200101 05:31:34.670"></status>
 </kw>
 <kw library="Collections" name="Dictionary Should Contain Value">
 <doc>Fails if ``value`` is not found from ``dictionary``.</doc>
@@ -746,7 +746,7 @@ Also added the "--randomize all" option in the commands-running-inside-a-docker-
 <arg>${PYTHON_LIBRARY_ROBOT_FILE_TWO_PATCH_RESPONSE.json()}</arg>
 <arg>Testing with Robot Framework.</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:26.288" starttime="20200101 05:16:26.287"></status>
+<status starttime="20200101 05:31:34.670" status="PASS" endtime="20200101 05:31:34.670"></status>
 </kw>
 <kw type="teardown" name="Trigger Only After Failure">
 <kw library="BuiltIn" name="Run Keyword If Test Failed">
@@ -754,100 +754,100 @@ Also added the "--randomize all" option in the commands-running-inside-a-docker-
 <arguments>
 <arg>Failure Detected Notify Team</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:26.289" starttime="20200101 05:16:26.289"></status>
+<status starttime="20200101 05:31:34.671" status="PASS" endtime="20200101 05:31:34.671"></status>
 </kw>
-<status status="PASS" endtime="20200101 05:16:26.289" starttime="20200101 05:16:26.288"></status>
+<status starttime="20200101 05:31:34.671" status="PASS" endtime="20200101 05:31:34.672"></status>
 </kw>
 <tags>
 <tag>Regression_Tests</tag>
 <tag>Slightly_Refined_And_Room_For_Enhancements</tag>
 </tags>
-<status critical="yes" status="PASS" endtime="20200101 05:16:26.289" starttime="20200101 05:16:26.081"></status>
+<status starttime="20200101 05:31:34.435" critical="yes" status="PASS" endtime="20200101 05:31:34.672"></status>
 </test>
 <test id="s1-s2-t3" name="USER-CREATED PYTHON LIBRARY EXAMPLE PART TWO - ROBOT FILE TWO : Send a GET request to jsonplaceholder.typicode.com/posts/2 and check the response.">
 <kw library="DockerExample" name="Send Get Request Robot File Two">
 <assign>
 <var>${PYTHON_LIBRARY_ROBOT_FILE_TWO_GET_RESPONSE}</var>
 </assign>
-<msg level="INFO" timestamp="20200101 05:16:26.325">${PYTHON_LIBRARY_ROBOT_FILE_TWO_GET_RESPONSE} = &lt;Response [200]&gt;</msg>
-<status status="PASS" endtime="20200101 05:16:26.325" starttime="20200101 05:16:26.291"></status>
+<msg level="INFO" timestamp="20200101 05:31:34.766">${PYTHON_LIBRARY_ROBOT_FILE_TWO_GET_RESPONSE} = &lt;Response [200]&gt;</msg>
+<status starttime="20200101 05:31:34.673" status="PASS" endtime="20200101 05:31:34.766"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>.</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:26.326" starttime="20200101 05:16:26.325"></status>
+<status starttime="20200101 05:31:34.767" status="PASS" endtime="20200101 05:31:34.767"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>.</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:26.327" starttime="20200101 05:16:26.326"></status>
+<status starttime="20200101 05:31:34.768" status="PASS" endtime="20200101 05:31:34.769"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>.</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:26.328" starttime="20200101 05:16:26.327"></status>
+<status starttime="20200101 05:31:34.770" status="PASS" endtime="20200101 05:31:34.770"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${PYTHON_LIBRARY_ROBOT_FILE_TWO_GET_RESPONSE}</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:26.328" starttime="20200101 05:16:26.328"></status>
+<status starttime="20200101 05:31:34.771" status="PASS" endtime="20200101 05:31:34.771"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>.</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:26.329" starttime="20200101 05:16:26.328"></status>
+<status starttime="20200101 05:31:34.771" status="PASS" endtime="20200101 05:31:34.772"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>.</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:26.329" starttime="20200101 05:16:26.329"></status>
+<status starttime="20200101 05:31:34.772" status="PASS" endtime="20200101 05:31:34.772"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>.</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:26.330" starttime="20200101 05:16:26.329"></status>
+<status starttime="20200101 05:31:34.773" status="PASS" endtime="20200101 05:31:34.773"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${PYTHON_LIBRARY_ROBOT_FILE_TWO_GET_RESPONSE.json()}</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:26.330" starttime="20200101 05:16:26.330"></status>
+<status starttime="20200101 05:31:34.773" status="PASS" endtime="20200101 05:31:34.774"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>.</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:26.331" starttime="20200101 05:16:26.330"></status>
+<status starttime="20200101 05:31:34.774" status="PASS" endtime="20200101 05:31:34.775"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>.</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:26.331" starttime="20200101 05:16:26.331"></status>
+<status starttime="20200101 05:31:34.775" status="PASS" endtime="20200101 05:31:34.776"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>.</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:26.333" starttime="20200101 05:16:26.332"></status>
+<status starttime="20200101 05:31:34.776" status="PASS" endtime="20200101 05:31:34.776"></status>
 </kw>
 <kw library="BuiltIn" name="Should Be Equal As Strings">
 <doc>Fails if objects are unequal after converting them to strings.</doc>
@@ -855,10 +855,10 @@ Also added the "--randomize all" option in the commands-running-inside-a-docker-
 <arg>${PYTHON_LIBRARY_ROBOT_FILE_TWO_GET_RESPONSE.status_code}</arg>
 <arg>200</arg>
 </arguments>
-<msg level="INFO" timestamp="20200101 05:16:26.334">Argument types are:
+<msg level="INFO" timestamp="20200101 05:31:34.777">Argument types are:
 &lt;class 'int'&gt;
 &lt;type 'unicode'&gt;</msg>
-<status status="PASS" endtime="20200101 05:16:26.334" starttime="20200101 05:16:26.334"></status>
+<status starttime="20200101 05:31:34.776" status="PASS" endtime="20200101 05:31:34.777"></status>
 </kw>
 <kw library="Collections" name="Dictionary Should Contain Value">
 <doc>Fails if ``value`` is not found from ``dictionary``.</doc>
@@ -866,7 +866,7 @@ Also added the "--randomize all" option in the commands-running-inside-a-docker-
 <arg>${PYTHON_LIBRARY_ROBOT_FILE_TWO_GET_RESPONSE.json()}</arg>
 <arg>qui est esse</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:26.335" starttime="20200101 05:16:26.335"></status>
+<status starttime="20200101 05:31:34.777" status="PASS" endtime="20200101 05:31:34.778"></status>
 </kw>
 <kw library="Collections" name="Dictionary Should Not Contain Value">
 <doc>Fails if ``value`` is found from ``dictionary``.</doc>
@@ -874,7 +874,7 @@ Also added the "--randomize all" option in the commands-running-inside-a-docker-
 <arg>${PYTHON_LIBRARY_ROBOT_FILE_TWO_GET_RESPONSE.json()}</arg>
 <arg>Testing with Robot Framework.</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:26.336" starttime="20200101 05:16:26.335"></status>
+<status starttime="20200101 05:31:34.778" status="PASS" endtime="20200101 05:31:34.779"></status>
 </kw>
 <kw type="teardown" name="Trigger Only After Failure">
 <kw library="BuiltIn" name="Run Keyword If Test Failed">
@@ -882,72 +882,72 @@ Also added the "--randomize all" option in the commands-running-inside-a-docker-
 <arguments>
 <arg>Failure Detected Notify Team</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:26.337" starttime="20200101 05:16:26.336"></status>
+<status starttime="20200101 05:31:34.780" status="PASS" endtime="20200101 05:31:34.780"></status>
 </kw>
-<status status="PASS" endtime="20200101 05:16:26.337" starttime="20200101 05:16:26.336"></status>
+<status starttime="20200101 05:31:34.779" status="PASS" endtime="20200101 05:31:34.780"></status>
 </kw>
 <tags>
 <tag>Regression_Tests</tag>
 <tag>Slightly_Refined_And_Room_For_Enhancements</tag>
 </tags>
-<status critical="yes" status="PASS" endtime="20200101 05:16:26.337" starttime="20200101 05:16:26.290"></status>
+<status starttime="20200101 05:31:34.672" critical="yes" status="PASS" endtime="20200101 05:31:34.781"></status>
 </test>
 <test id="s1-s2-t4" name="USER-CREATED PYTHON LIBRARY EXAMPLE PART TWO - ROBOT FILE TWO : Send a DELETE request to jsonplaceholder.typicode.com/posts/2 and check the response.">
 <kw library="DockerExample" name="Send Delete Request Robot File Two">
 <assign>
 <var>${PYTHON_LIBRARY_ROBOT_FILE_TWO_DELETE_RESPONSE}</var>
 </assign>
-<msg level="INFO" timestamp="20200101 05:16:26.829">${PYTHON_LIBRARY_ROBOT_FILE_TWO_DELETE_RESPONSE} = &lt;Response [200]&gt;</msg>
-<status status="PASS" endtime="20200101 05:16:26.829" starttime="20200101 05:16:26.339"></status>
+<msg level="INFO" timestamp="20200101 05:31:35.269">${PYTHON_LIBRARY_ROBOT_FILE_TWO_DELETE_RESPONSE} = &lt;Response [200]&gt;</msg>
+<status starttime="20200101 05:31:34.782" status="PASS" endtime="20200101 05:31:35.269"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>.</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:26.830" starttime="20200101 05:16:26.829"></status>
+<status starttime="20200101 05:31:35.269" status="PASS" endtime="20200101 05:31:35.270"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>.</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:26.830" starttime="20200101 05:16:26.830"></status>
+<status starttime="20200101 05:31:35.271" status="PASS" endtime="20200101 05:31:35.271"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>.</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:26.831" starttime="20200101 05:16:26.830"></status>
+<status starttime="20200101 05:31:35.272" status="PASS" endtime="20200101 05:31:35.272"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${PYTHON_LIBRARY_ROBOT_FILE_TWO_DELETE_RESPONSE}</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:26.831" starttime="20200101 05:16:26.831"></status>
+<status starttime="20200101 05:31:35.272" status="PASS" endtime="20200101 05:31:35.273"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>.</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:26.832" starttime="20200101 05:16:26.831"></status>
+<status starttime="20200101 05:31:35.273" status="PASS" endtime="20200101 05:31:35.274"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>.</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:26.833" starttime="20200101 05:16:26.832"></status>
+<status starttime="20200101 05:31:35.274" status="PASS" endtime="20200101 05:31:35.275"></status>
 </kw>
 <kw library="BuiltIn" name="Log To Console">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>.</arg>
 </arguments>
-<status status="PASS" endtime="20200101 05:16:26.834" starttime="20200101 05:16:26.833"></status>
+<status starttime="20200101 05:31:35.275" status="PASS" endtime="20200101 05:31:35.276"></status>
 </kw>
 <kw library="BuiltIn" name="Should Not Be Equal As Strings">
 <doc>Fails if objects are equal after converting them to strings.</doc>
@@ -955,11 +955,11 @@ Also added the "--randomize all" option in the commands-running-inside-a-docker-
 <arg>${PYTHON_LIBRARY_ROBOT_FILE_TWO_DELETE_RESPONSE.status_code}</arg>
 <arg>200</arg>
 </arguments>
-<msg level="INFO" timestamp="20200101 05:16:26.835">Argument types are:
+<msg level="INFO" timestamp="20200101 05:31:35.277">Argument types are:
 &lt;class 'int'&gt;
 &lt;type 'unicode'&gt;</msg>
-<msg level="FAIL" timestamp="20200101 05:16:26.835">200 == 200</msg>
-<status status="FAIL" endtime="20200101 05:16:26.835" starttime="20200101 05:16:26.834"></status>
+<msg level="FAIL" timestamp="20200101 05:31:35.277">200 == 200</msg>
+<status starttime="20200101 05:31:35.276" status="FAIL" endtime="20200101 05:31:35.277"></status>
 </kw>
 <kw type="teardown" name="Trigger Only After Failure">
 <kw library="BuiltIn" name="Run Keyword If Test Failed">
@@ -981,49 +981,49 @@ Also added the "--randomize all" option in the commands-running-inside-a-docker-
 <arg>timeout=20s</arg>
 <arg>on_timeout=continue</arg>
 </arguments>
-<msg level="INFO" timestamp="20200101 05:16:26.837">Starting process:
+<msg level="INFO" timestamp="20200101 05:31:35.280">Starting process:
 echo "The regression tests in the Docker-Example-Python-Library2-Enhanced-Version.robot file failed in the your_test_environment environment." | slacktee.sh -i :nerd_face: --plain-text --config /rfw/Shared-Resources/.slacktee</msg>
-<msg level="INFO" timestamp="20200101 05:16:26.842">Waiting for process to complete.</msg>
-<msg level="INFO" timestamp="20200101 05:16:27.045">Process completed.</msg>
-<status status="PASS" endtime="20200101 05:16:27.045" starttime="20200101 05:16:26.837"></status>
+<msg level="INFO" timestamp="20200101 05:31:35.285">Waiting for process to complete.</msg>
+<msg level="INFO" timestamp="20200101 05:31:35.490">Process completed.</msg>
+<status starttime="20200101 05:31:35.279" status="PASS" endtime="20200101 05:31:35.491"></status>
 </kw>
 <kw library="TestFailureEmailNotification" name="Send Email Notification">
 <doc>When a test fails you can send an email. Here are some examples that could work...</doc>
-<status status="PASS" endtime="20200101 05:16:27.046" starttime="20200101 05:16:27.046"></status>
+<status starttime="20200101 05:31:35.492" status="PASS" endtime="20200101 05:31:35.492"></status>
 </kw>
-<status status="PASS" endtime="20200101 05:16:27.047" starttime="20200101 05:16:26.836"></status>
+<status starttime="20200101 05:31:35.279" status="PASS" endtime="20200101 05:31:35.493"></status>
 </kw>
-<status status="PASS" endtime="20200101 05:16:27.047" starttime="20200101 05:16:26.836"></status>
+<status starttime="20200101 05:31:35.278" status="PASS" endtime="20200101 05:31:35.494"></status>
 </kw>
-<status status="PASS" endtime="20200101 05:16:27.047" starttime="20200101 05:16:26.836"></status>
+<status starttime="20200101 05:31:35.278" status="PASS" endtime="20200101 05:31:35.494"></status>
 </kw>
-<status status="PASS" endtime="20200101 05:16:27.047" starttime="20200101 05:16:26.835"></status>
+<status starttime="20200101 05:31:35.277" status="PASS" endtime="20200101 05:31:35.494"></status>
 </kw>
 <tags>
 <tag>Regression_Tests</tag>
 <tag>Slightly_Refined_And_Room_For_Enhancements</tag>
 </tags>
-<status critical="yes" status="FAIL" endtime="20200101 05:16:27.047" starttime="20200101 05:16:26.337">200 == 200</status>
+<status starttime="20200101 05:31:34.781" critical="yes" status="FAIL" endtime="20200101 05:31:35.495">200 == 200</status>
 </test>
 <doc>Part Two of the Python Library example has been enhanced by using the SharedKeywordsAndListeners.robot resource file to add 2 types of Robot Framework listeners and a team notification keyword.
 Also added the "--randomize all" option in the commands-running-inside-a-docker-container.sh script, and will demonstrate the use of the "--rerunfailedsuites" option.</doc>
-<status status="FAIL" endtime="20200101 05:16:27.049" starttime="20200101 05:16:25.813"></status>
+<status starttime="20200101 05:31:33.090" status="FAIL" endtime="20200101 05:31:35.497"></status>
 </suite>
-<status status="FAIL" endtime="20200101 05:16:27.053" starttime="20200101 05:16:24.081"></status>
+<status starttime="20200101 05:31:30.808" status="FAIL" endtime="20200101 05:31:35.502"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="2" pass="6">Critical Tests</stat>
-<stat fail="2" pass="6">All Tests</stat>
+<stat pass="6" fail="2">Critical Tests</stat>
+<stat pass="6" fail="2">All Tests</stat>
 </total>
 <tag>
-<stat fail="2" pass="6">Regression_Tests</stat>
-<stat fail="2" pass="6">Slightly_Refined_And_Room_For_Enhancements</stat>
+<stat pass="6" fail="2">Regression_Tests</stat>
+<stat pass="6" fail="2">Slightly_Refined_And_Room_For_Enhancements</stat>
 </tag>
 <suite>
-<stat fail="2" id="s1" pass="6" name="Robot Framework test run with user-created Python Library one test at a time in serial random order">Robot Framework test run with user-created Python Library one test at a time in serial random order</stat>
-<stat fail="1" id="s1-s1" pass="3" name="Docker-Example-Python-Library1-Enhanced-Version">Robot Framework test run with user-created Python Library one test at a time in serial random order.Docker-Example-Python-Library1-Enhanced-Version</stat>
-<stat fail="1" id="s1-s2" pass="3" name="Docker-Example-Python-Library2-Enhanced-Version">Robot Framework test run with user-created Python Library one test at a time in serial random order.Docker-Example-Python-Library2-Enhanced-Version</stat>
+<stat name="Robot Framework test run with user-created Python Library one test at a time in serial random order" id="s1" pass="6" fail="2">Robot Framework test run with user-created Python Library one test at a time in serial random order</stat>
+<stat name="Docker-Example-Python-Library1-Enhanced-Version" id="s1-s1" pass="3" fail="1">Robot Framework test run with user-created Python Library one test at a time in serial random order.Docker-Example-Python-Library1-Enhanced-Version</stat>
+<stat name="Docker-Example-Python-Library2-Enhanced-Version" id="s1-s2" pass="3" fail="1">Robot Framework test run with user-created Python Library one test at a time in serial random order.Docker-Example-Python-Library2-Enhanced-Version</stat>
 </suite>
 </statistics>
 <errors>
