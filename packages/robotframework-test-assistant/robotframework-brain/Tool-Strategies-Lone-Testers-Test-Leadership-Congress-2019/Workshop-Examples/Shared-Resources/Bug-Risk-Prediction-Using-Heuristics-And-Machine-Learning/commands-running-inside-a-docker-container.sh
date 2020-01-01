@@ -99,3 +99,5 @@ echo
 echo
 TIMESTAMP2=$(date)
 echo 'This container finished running on '$TIMESTAMP2
+cd ..
+rm -rf ./rfw/Target-GitHub-Repo

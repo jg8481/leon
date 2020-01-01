@@ -410,6 +410,7 @@ if [ "$1" == "Set-Trigger-Both-Webhook-Docker-Containers-For-Parallel-Run" ]; th
 fi
 
 if [ "$1" == "Set-Generate-Bug-Risk-Prediction-Scores-For-A-GitHub-Repo" ]; then
+  rm -rf "$PACKAGES_PATH"/Tool-Strategies-Lone-Testers-Test-Leadership-Congress-2019/Workshop-Examples/Shared-Resources/Bug-Risk-Prediction-Using-Heuristics-And-Machine-Learning/Bug-Risk-Prediction-Docker-Container/Target-GitHub-Repo
   echo "Generate_Bug_Risk_Prediction_Scores_For_A_GitHub_Repo" >> "$PACKAGES_PATH"/Robot-Files/CustomizedTasksAndRobotFrameworkSuitesOrderSequence.csv
 fi
 
@@ -417,6 +418,7 @@ if [ "$1" == "Gather-All-Robot-Framework-Test-Results-And-Deploy-Dashboard-To-He
   ADDITIONAL_RESULTS_PATH=Tool-Strategies-Lone-Testers-Test-Leadership-Congress-2019/Workshop-Examples/Workshop-Part-Three
   export ADDITIONAL_RESULTS_PATH
   TIMESTAMP=$(date)
+  rm -rf "$PACKAGES_PATH"/Tool-Strategies-Lone-Testers-Test-Leadership-Congress-2019/Workshop-Examples/Shared-Resources/Bug-Risk-Prediction-Using-Heuristics-And-Machine-Learning/Bug-Risk-Prediction-Docker-Container/Target-GitHub-Repo
   rm -rf "$PACKAGES_PATH"/Log-Files/Gather-All-Robot-Framework-Test-Results-And-Deploy-Dashboard-To-Heroku-Log.txt
   rm -rf "$PACKAGES_PATH"/Log-Files/Results/combined-leon-robot-framework-assistant-results-log.html
   rm -rf ./combined-leon-robot-framework-assistant-results-log.html
