@@ -432,5 +432,5 @@ if [ "$1" == "Gather-All-Robot-Framework-Test-Results-And-Deploy-Dashboard-To-He
   git add . >> "$PACKAGES_PATH"/Log-Files/Gather-All-Robot-Framework-Test-Results-And-Deploy-Dashboard-To-Heroku-Log.txt &&
   git commit -m "$GIT_COMMIT_MESSAGE" --no-verify >> "$PACKAGES_PATH"/Log-Files/Gather-All-Robot-Framework-Test-Results-And-Deploy-Dashboard-To-Heroku-Log.txt &&
   git push origin develop > /dev/null 2>&1
-  echo 'Your Robot Framework test results have been combined into one result file and deplyed to Heroku. You can view it in your browser using https://robocon2020-workshop-dashboard.herokuapp.com/' | slacktee.sh -i :nerd_face: --plain-text --plain-text --config "$SLACK_CONFIG_PATH" > /dev/null 2>&1
+  echo 'Your Robot Framework test results have been combined into one result file and deployed to Heroku. You can view it in your browser using https://robocon2020-workshop-dashboard.herokuapp.com/' | slacktee.sh -i :nerd_face: --plain-text --plain-text --config "$SLACK_CONFIG_PATH" > /dev/null 2>&1
 fi

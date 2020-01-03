@@ -29,7 +29,7 @@
 			"Your time delayed generic task has finished running."
 		],
 		"gathered_test_results_and_deployed_dashboard_to_heroku": [
-			"Your Robot Framework test results have been combined into one result file and deplyed to Heroku. You can view it in your browser using robocon2020-workshop-dashboard.herokuapp.com"
+			"Your Robot Framework test results have been combined into one result file and deployed to Heroku. You can view it in your browser using robocon2020-workshop-dashboard.herokuapp.com"
 		],
     "error": [
       "Oops, an error occurred..."
