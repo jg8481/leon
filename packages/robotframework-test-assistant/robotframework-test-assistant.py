@@ -261,7 +261,7 @@ def Generic_Customizable_Time_Delayed_Runner_One(string, entities):
     time.sleep(small_time_delay)
     ##--> Suggestion: Feel free to set the following subprocess.call to any of the previously defined commands in this robotframework-test-assistant.py script. The following is just an example triggering a single time delayed check.
     subprocess.call(filepath + '/robotframework-runner.sh Check-One', shell=True)
-    return utils.output('end', 'generic_time_delayed_task', utils.translate('generic_time_delayed_task'))
+    return utils.output('end', 'generic_time_delayed_task_ran', utils.translate('generic_time_delayed_task_ran'))
 
 def Generic_Customizable_Time_Delayed_Runner_Two(string, entities):
     """Leon will set up a time delayed generic task runner"""
@@ -269,7 +269,7 @@ def Generic_Customizable_Time_Delayed_Runner_Two(string, entities):
     time.sleep(small_time_delay)
     ##--> Suggestion: Feel free to set the following subprocess.call to any of the previously defined commands in this robotframework-test-assistant.py script. The following example builds off of a previously created Custom_Runner_Two .csv file.
     subprocess.call(filepath + '/robotframework-runner.sh Custom-Runner-Two', shell=True)
-    return utils.output('end', 'generic_time_delayed_task', utils.translate('generic_time_delayed_task'))
+    return utils.output('end', 'generic_time_delayed_task_ran', utils.translate('generic_time_delayed_task_ran'))
 
 def Generic_Customizable_Time_Delayed_Runner_Three(string, entities):
     """Leon will set up a time delayed generic task runner"""
@@ -283,7 +283,7 @@ def Generic_Customizable_Time_Delayed_Runner_Three(string, entities):
     subprocess.call(filepath + '/robotframework-runner.sh Set-Check-One', shell=True)
     subprocess.call(filepath + '/robotframework-runner.sh Custom-Runner-One', shell=True)
     subprocess.call(filepath + '/robotframework-runner.sh Display-Runner-One', shell=True)
-    return utils.output('end', 'generic_time_delayed_task', utils.translate('generic_time_delayed_task'))
+    return utils.output('end', 'generic_time_delayed_task_ran', utils.translate('generic_time_delayed_task_ran'))
 
 def Generic_Customizable_Time_Delayed_Runner_Four(string, entities):
     """Leon will set up a time delayed generic task runner"""
@@ -320,9 +320,9 @@ def Generic_Customizable_Time_Delayed_Runner_Four(string, entities):
     subprocess.call(filepath + '/robotframework-runner.sh Custom-Tasks-And-Suites-Runner', shell=True)
     subprocess.call(filepath + '/robotframework-runner.sh Gather-All-Robot-Framework-Test-Results-And-Deploy-Dashboard-To-Heroku', shell=True)
     subprocess.call(filepath + '/robotframework-runner.sh Slack-Notification-Send-All', shell=True)
-    return utils.output('end', 'generic_time_delayed_task', utils.translate('generic_time_delayed_task'))
+    return utils.output('end', 'generic_time_delayed_task_ran', utils.translate('generic_time_delayed_task_ran'))
 
 def Gather_All_Robot_Framework_Test_Results_And_Deploy_Dashboard_To_Heroku(string, entities):
     """Leon will run Robot Framework ReBot and Git commands to deploy a results file to Heroku"""
     subprocess.call(filepath + '/robotframework-runner.sh Gather-All-Robot-Framework-Test-Results-And-Deploy-Dashboard-To-Heroku', shell=True)
-    return utils.output('end', 'generic_time_delayed_task', utils.translate('finished_setting_up'))
+    return utils.output('end', 'gathered_test_results_and_deployed_dashboard_to_heroku', utils.translate('gathered_test_results_and_deployed_dashboard_to_heroku'))
