@@ -30,7 +30,7 @@
 
 Leon is an **open-source personal assistant** who can live **on your server**.
 
-He **does stuff** when you **ask him for**.
+He **does stuff** when you **ask him**.
 
 You can **talk to him** and he can **talk to you**.
 You can also **text him** and he can also **text you**.
