@@ -2,9 +2,9 @@
 
 ## Modules
 
-### Use leon-ai to turn Robot Framework into a personal testing assistant and OpenRPA task runner. With this package you will be able to control test processes and RPA tasks with your voice or with a text message sent directly to the assistant.
+### Use leon-ai to turn Robot Framework into a personal testing assistant and OpenRPA task runner. 
 
-The following tool requirements need to be set up first in order to run the tests and RPA tasks suite examples in this assistant's "robotframework-brain". Please set up or install all of the tool requirements and all of the required .env files mentioned below.
+With this package you will be able to control test processes and RPA tasks with your voice or with a text message sent directly to the assistant through leon-ai's UI. The following tool requirements need to be set up first in order to run the tests and RPA tasks suite examples in this assistant's "robotframework-brain". Please set up or install all of the tool requirements and all of the required .env files mentioned below.
 
 - https://github.com/jg8481/Tool-Strategies-Lone-Testers-Test-Leadership-Congress-2019/blob/master/README.md
 - https://github.com/coursehero/slacktee
@@ -33,7 +33,7 @@ npm run wake
 
 #### Usage
 
-From any browser enter this URL --> http://localhost:1337/
+From any browser enter this URL to access leon-ai's UI --> http://localhost:1337/
 
 ```
 Full list of the available basic commands is coming soon...
