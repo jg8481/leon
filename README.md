@@ -24,7 +24,8 @@
 ---
 
 **Note**
-> I'm focusing on another project, so the progress of this repo might slow down for a while. You can [subscribe here](https://www.producthunt.com/upcoming/2aud-io) to be part of the first ones.
+> Attendees of the ["Strategies for creating your own conversational test assistant with Robot Framework and other tools"](https://robocon.io/#strategies-for-creating-your-own-conversational-test-assistant-with-robot-framework-and-other-tools) workshop for RoboCon 2020 should proceed to the following link... 
+> https://github.com/jg8481/leon/tree/develop/packages/robotframework-test-assistant
 
 ## Introduction
 
