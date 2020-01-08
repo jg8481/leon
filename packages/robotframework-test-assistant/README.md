@@ -1,7 +1,5 @@
 # Robot Framework Test Assistant Package
 
-## Modules
-
 ### Use leon-ai to turn Robot Framework into a personal testing assistant and OpenRPA task runner. 
 
 With this package you will be able to control test processes and RPA tasks with your voice or with a text message sent directly to the assistant through leon-ai's UI. The following tool requirements need to be set up first in order to run the tests and RPA tasks suite examples in this assistant's "robotframework-brain". Please set up or install all of the tool requirements and all of the required .env files mentioned below.
