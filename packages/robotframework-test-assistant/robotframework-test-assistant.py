@@ -290,10 +290,8 @@ def Generic_Customizable_Time_Delayed_Runner_Three(string, entities):
     subprocess.call(filepath + '/robotframework-runner.sh Display-Custom-Tasks-And-Suites-Runner', shell=True)
     return utils.output('end', 'generic_time_delayed_task_ran', utils.translate('generic_time_delayed_task_ran'))
 
-def Generic_Customizable_Time_Delayed_Runner_Four(string, entities):
-    """Leon will set up a time delayed generic task runner"""
-    ##--> Suggestion: Feel free to change the time.sleep to small_time_delay, medium_time_delay or large_time_delay.
-    time.sleep(small_time_delay)
+def Generic_Customizable_On_Demand_Runner(string, entities):
+    """Leon will set up a generic on-demand task runner"""
     ##--> Suggestion: Feel free to set the following subprocess.call to any of the previously defined commands in this robotframework-test-assistant.py script. The following example will chain together the commands for all of the custom runners and sends notifications to the team.
     subprocess.call(filepath + '/robotframework-runner.sh Set-Up-Custom-Tasks-And-Suites-Runner', shell=True)
     subprocess.call(filepath + '/robotframework-runner.sh Set-Clean-Up-Docker-Containers', shell=True)
@@ -325,7 +323,7 @@ def Generic_Customizable_Time_Delayed_Runner_Four(string, entities):
     subprocess.call(filepath + '/robotframework-runner.sh Custom-Tasks-And-Suites-Runner', shell=True)
     subprocess.call(filepath + '/robotframework-runner.sh Gather-All-Robot-Framework-Test-Results-And-Deploy-Dashboard-To-Heroku', shell=True)
     subprocess.call(filepath + '/robotframework-runner.sh Slack-Notification-Send-All', shell=True)
-    return utils.output('end', 'generic_time_delayed_task_ran', utils.translate('generic_time_delayed_task_ran'))
+    return utils.output('end', 'generic_on_demand_task_ran', utils.translate('generic_on_demand_task_ran'))
 
 def Gather_All_Robot_Framework_Test_Results_And_Deploy_Dashboard_To_Heroku(string, entities):
     """Leon will run Robot Framework ReBot and Git commands to deploy a results file to Heroku"""

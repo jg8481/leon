@@ -396,10 +396,11 @@
         "bug risk"
       ]
     },
-    "Generic_Customizable_Time_Delayed_Runner_Four": {
+    "Generic_Customizable_On_Demand_Runner": {
       "expressions": [
-        "time delayed runner four",
-        "fourth time delayed run",
+        "generic on demand runner",
+        "many commands chained together",
+        "long chain of commands",
         "everything",
         "run all",
         "all"
