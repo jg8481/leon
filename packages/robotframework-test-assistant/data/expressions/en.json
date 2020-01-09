@@ -387,7 +387,11 @@
     "Generic_Customizable_Time_Delayed_Runner_Three": {
       "expressions": [
         "time delayed runner three",
-        "third time delayed run"
+        "third time delayed run",
+        "check risk",
+        "analyze risk",
+        "predict risk",
+        "bug risk"
       ]
     },
     "Generic_Customizable_Time_Delayed_Runner_Four": {
