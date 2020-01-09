@@ -66,4 +66,3 @@ test-log*.txt
 *-Log.txt
 *output.xml
 *report.html
-packages/robotframework-test-assistant/__init__.py

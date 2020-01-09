@@ -372,6 +372,10 @@ if [ "$1" == "Custom-Tasks-And-Suites-Runner" ]; then
   echo "This Custom-Tasks-And-Suite-Runner task was started by leon-ai, and it ended on $TIMESTAMP2." >> "$PACKAGES_PATH"/Log-Files/Custom-Tasks-And-Suite-Runner-Log.txt
 fi
 
+if [ "$1" == "Display-Custom-Tasks-And-Suites-Runner" ]; then
+  open "$PACKAGES_PATH"/Log-Files/Results/customized-suite-order-automation-results-log.html
+fi
+
 if [ "$1" == "Set-Up-Custom-Tasks-And-Suites-Runner" ]; then
   rm -rf "$PACKAGES_PATH"/Robot-Files/CustomizedTasksAndRobotFrameworkSuitesOrderSequence.csv
   touch "$PACKAGES_PATH"/Robot-Files/CustomizedTasksAndRobotFrameworkSuitesOrderSequence.csv

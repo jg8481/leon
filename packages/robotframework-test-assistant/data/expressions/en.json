@@ -361,6 +361,17 @@
         "gather all results"
       ]
     },
+    "Help_Confused_Users": {
+      "expressions": [
+        "help",
+        "help me",
+        "how does this work?",
+        "I am confused",
+        "what does this do?",
+        "what?",
+        "how?"
+      ]
+    },
     "Generic_Customizable_Time_Delayed_Runner_One": {
       "expressions": [
         "time delayed runner one",
