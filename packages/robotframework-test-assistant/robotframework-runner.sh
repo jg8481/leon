@@ -194,6 +194,7 @@ fi
 if [ "$1" == "Build-Docker-Containers" ]; then
   chmod +x "$PACKAGES_PATH"/Tool-Strategies-Lone-Testers-Test-Leadership-Congress-2019/start-specific-docker-example-workflows-for-workshop.sh > /dev/null 2>&1
   rm -rf "$PACKAGES_PATH"/Log-Files/Build-Images-Teardown-Old-Docker-Containers-Log.txt
+  rm -rf "$PACKAGES_PATH"/Tool-Strategies-Lone-Testers-Test-Leadership-Congress-2019/Workshop-Examples/Shared-Resources/Bug-Risk-Prediction-Using-Heuristics-And-Machine-Learning/Bug-Risk-Prediction-Docker-Container/Target-GitHub-Repo
   touch "$PACKAGES_PATH"/Log-Files/Build-Images-Teardown-Old-Docker-Containers-Log.txt
   TIMESTAMP1=$(date)
   echo "This Build-Docker-Containers task was started by leon-ai on $TIMESTAMP1." >> "$PACKAGES_PATH"/Log-Files/Build-Images-Teardown-Old-Docker-Containers-Log.txt
@@ -207,6 +208,7 @@ if [ "$1" == "Clean-Up-Docker-Containers" ]; then
   docker stop $(docker ps -a -q) > /dev/null 2>&1
   docker rm $(docker ps -a -q) > /dev/null 2>&1
   docker image prune --force > /dev/null 2>&1
+  rm -rf "$PACKAGES_PATH"/Tool-Strategies-Lone-Testers-Test-Leadership-Congress-2019/Workshop-Examples/Shared-Resources/Bug-Risk-Prediction-Using-Heuristics-And-Machine-Learning/Bug-Risk-Prediction-Docker-Container/Target-GitHub-Repo
 fi
 
 if [ "$1" == "Robot-Framework-Docker-API-Checks" ]; then
@@ -391,10 +393,12 @@ if [ "$1" == "Set-Slack-Notification-Send-All" ]; then
 fi
 
 if [ "$1" == "Set-Build-Docker-Containers" ]; then
+  rm -rf "$PACKAGES_PATH"/Tool-Strategies-Lone-Testers-Test-Leadership-Congress-2019/Workshop-Examples/Shared-Resources/Bug-Risk-Prediction-Using-Heuristics-And-Machine-Learning/Bug-Risk-Prediction-Docker-Container/Target-GitHub-Repo
   echo "Build_Docker_Containers" >> "$PACKAGES_PATH"/Robot-Files/CustomizedTasksAndRobotFrameworkSuitesOrderSequence.csv
 fi
 
 if [ "$1" == "Set-Clean-Up-Docker-Containers" ]; then
+  rm -rf "$PACKAGES_PATH"/Tool-Strategies-Lone-Testers-Test-Leadership-Congress-2019/Workshop-Examples/Shared-Resources/Bug-Risk-Prediction-Using-Heuristics-And-Machine-Learning/Bug-Risk-Prediction-Docker-Container/Target-GitHub-Repo
   echo "Clean_Up_Docker_Containers" >> "$PACKAGES_PATH"/Robot-Files/CustomizedTasksAndRobotFrameworkSuitesOrderSequence.csv
 fi
 

@@ -220,10 +220,11 @@
         "graphwalker"
       ]
     },
-    "Display_MBT_Graphwalker_Results": {
+    "Display_Current_MBT_Graphwalker_Path": {
       "expressions": [
         "display graph walker path",
         "display graph walker",
+        "display graphwalker",
         "graph walker path"
       ]
     },
