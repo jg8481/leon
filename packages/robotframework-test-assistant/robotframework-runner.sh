@@ -21,6 +21,7 @@ if [ "$1" == "Check-One" ]; then
   robot --variable SLACK_CONFIG_PATH:"$SLACK_CONFIG_PATH" --include Check_One --report NONE --log check-one-log.html --output check-one-output.xml -N "Check One - One Robot Framework file that runs in serial" -d "$PACKAGES_PATH"/Log-Files/Results "$PACKAGES_PATH"/Robot-Files/Leon-Robot-Framework-Customizable-Serial-Runner.robot >> "$PACKAGES_PATH"/Log-Files/Check-One-Log.txt
   TIMESTAMP2=$(date)
   echo "This Check-One task was started by leon-ai, and it ended on $TIMESTAMP2." >> "$PACKAGES_PATH"/Log-Files/Check-One-Log.txt
+  open "$PACKAGES_PATH"/Log-Files/Results/check-one-log.html > /dev/null 2>&1
 fi
 
 if [ "$1" == "Check-Two" ]; then
@@ -31,6 +32,7 @@ if [ "$1" == "Check-Two" ]; then
   robot --variable SLACK_CONFIG_PATH:"$SLACK_CONFIG_PATH" --include Check_Two --report NONE --log check-two-log.html --output check-two-output.xml -N "Check Two - One Robot Framework file that runs in serial" -d "$PACKAGES_PATH"/Log-Files/Results "$PACKAGES_PATH"/Robot-Files/Leon-Robot-Framework-Customizable-Serial-Runner.robot >> "$PACKAGES_PATH"/Log-Files/Check-Two-Log.txt
   TIMESTAMP2=$(date)
   echo "This Check-Two task was started by leon-ai, and it ended on $TIMESTAMP2." >> "$PACKAGES_PATH"/Log-Files/Check-Two-Log.txt
+  open "$PACKAGES_PATH"/Log-Files/Results/check-two-log.html > /dev/null 2>&1
 fi
 
 if [ "$1" == "Check-Three" ]; then
@@ -41,6 +43,7 @@ if [ "$1" == "Check-Three" ]; then
   robot --variable SLACK_CONFIG_PATH:"$SLACK_CONFIG_PATH" --include Check_Three --report NONE --log check-three-log.html --output check-three-output.xml -N "Check Three - One Robot Framework file that runs in serial" -d "$PACKAGES_PATH"/Log-Files/Results "$PACKAGES_PATH"/Robot-Files/Leon-Robot-Framework-Customizable-Serial-Runner.robot >> "$PACKAGES_PATH"/Log-Files/Check-Three-Log.txt
   TIMESTAMP2=$(date)
   echo "This Check-Three task was started by leon-ai, and it ended on $TIMESTAMP2." >> "$PACKAGES_PATH"/Log-Files/Check-Three-Log.txt
+  open "$PACKAGES_PATH"/Log-Files/Results/check-three-log.html > /dev/null 2>&1
 fi
 
 if [ "$1" == "Check-Four" ]; then
@@ -51,6 +54,7 @@ if [ "$1" == "Check-Four" ]; then
   robot --variable SLACK_CONFIG_PATH:"$SLACK_CONFIG_PATH" --include Check_Four --report NONE --log check-four-log.html --output check-four-output.xml -N "Check Four - One Robot Framework file that runs in serial" -d "$PACKAGES_PATH"/Log-Files/Results "$PACKAGES_PATH"/Robot-Files/Leon-Robot-Framework-Customizable-Serial-Runner.robot >> "$PACKAGES_PATH"/Log-Files/Check-Four-Log.txt
   TIMESTAMP2=$(date)
   echo "This Check-Four task was started by leon-ai, and it ended on $TIMESTAMP2." >> "$PACKAGES_PATH"/Log-Files/Check-Four-Log.txt
+  open "$PACKAGES_PATH"/Log-Files/Results/check-four-log.html > /dev/null 2>&1
 fi
 
 if [ "$1" == "Set-Up-Runner-One" ]; then
