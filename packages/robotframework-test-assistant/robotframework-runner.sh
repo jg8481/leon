@@ -198,7 +198,7 @@ if [ "$1" == "Build-Docker-Containers" ]; then
   TIMESTAMP1=$(date)
   echo "This Build-Docker-Containers task was started by leon-ai on $TIMESTAMP1." >> "$PACKAGES_PATH"/Log-Files/Build-Images-Teardown-Old-Docker-Containers-Log.txt
   bash -c "cd $PACKAGES_PATH/Tool-Strategies-Lone-Testers-Test-Leadership-Congress-2019/ && ./start-specific-docker-example-workflows-for-workshop.sh Build-Images-Teardown-Old-Docker-Containers > /dev/null 2>&1 && exit 0"
-  bash -c "cd $PACKAGES_PATH/Tool-Strategies-Lone-Testers-Test-Leadership-Congress-2019/Workshop-Examples/Shared-Resources/Bug-Risk-Prediction-Using-Heuristics-And-Machine-Learning && docker-compose build && docker-compose up > /dev/null 2>&1 && docker images && exit 0" >> "$PACKAGES_PATH"/Log-Files/Build-Images-Teardown-Old-Docker-Containers-Log.txt
+  bash -c "cd $PACKAGES_PATH/Tool-Strategies-Lone-Testers-Test-Leadership-Congress-2019/Workshop-Examples/Shared-Resources/Bug-Risk-Prediction-Using-Heuristics-And-Machine-Learning && docker-compose build > /dev/null 2>&1 && docker-compose up > /dev/null 2>&1 && docker images && exit 0" >> "$PACKAGES_PATH"/Log-Files/Build-Images-Teardown-Old-Docker-Containers-Log.txt
   TIMESTAMP2=$(date)
   echo "This Build-Docker-Containers task was started by leon-ai, and it ended on $TIMESTAMP2." >> "$PACKAGES_PATH"/Log-Files/Build-Images-Teardown-Old-Docker-Containers-Log.txt
 fi
