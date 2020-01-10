@@ -2,7 +2,7 @@
 
 ### Use leon-ai to turn Robot Framework into a conversational AI test assistant and OpenRPA task runner. 
 
-This is a working proof-of-concept "leon-ai package" (similar to Alexa Skills) that focuses on RPA and assisting testers. Feel free to fork this and use it as a template to build your own test/RPA assistant. 
+This is a working proof-of-concept "leon-ai package" (similar to Alexa Skills) that focuses on RPA and assisting testers, non-testers, technical people, and non-technical people who work on the same product development team. Feel free to fork this and use it as a template to build your own test/RPA assistant. 
 
 With this package you will be able to control test processes and RPA tasks with your voice or with a text message sent directly to the assistant through leon-ai's UI. The following tool requirements need to be set up first in order to run the tests and RPA tasks suite examples in this assistant's "robotframework-brain". Please set up or install all of the tool requirements and all of the required .env files mentioned below.
 
