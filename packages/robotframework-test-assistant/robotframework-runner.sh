@@ -188,13 +188,12 @@ if [ "$1" == "Display-Runner-Two" ]; then
 fi
 
 if [ "$1" == "Slack-Notification-Send-All" ]; then
-  cat "$PACKAGES_PATH"/Log-Files/*.txt | slacktee.sh -i :nerd_face: --plain-text --plain-text --config "$SLACK_CONFIG_PATH" > /dev/null 2>&1
+  cat "$PACKAGES_PATH"/Log-Files/*.txt | slacktee.sh -i :nerd_face: --plain-text --config "$SLACK_CONFIG_PATH" > /dev/null 2>&1
 fi
 
 if [ "$1" == "Build-Docker-Containers" ]; then
   chmod +x "$PACKAGES_PATH"/Tool-Strategies-Lone-Testers-Test-Leadership-Congress-2019/start-specific-docker-example-workflows-for-workshop.sh > /dev/null 2>&1
   rm -rf "$PACKAGES_PATH"/Log-Files/Build-Images-Teardown-Old-Docker-Containers-Log.txt
-  rm -rf "$PACKAGES_PATH"/Tool-Strategies-Lone-Testers-Test-Leadership-Congress-2019/Workshop-Examples/Shared-Resources/Bug-Risk-Prediction-Using-Heuristics-And-Machine-Learning/Bug-Risk-Prediction-Docker-Container/Target-GitHub-Repo
   touch "$PACKAGES_PATH"/Log-Files/Build-Images-Teardown-Old-Docker-Containers-Log.txt
   TIMESTAMP1=$(date)
   echo "This Build-Docker-Containers task was started by leon-ai on $TIMESTAMP1." >> "$PACKAGES_PATH"/Log-Files/Build-Images-Teardown-Old-Docker-Containers-Log.txt
@@ -202,6 +201,8 @@ if [ "$1" == "Build-Docker-Containers" ]; then
   bash -c "cd $PACKAGES_PATH/Tool-Strategies-Lone-Testers-Test-Leadership-Congress-2019/Workshop-Examples/Shared-Resources/Bug-Risk-Prediction-Using-Heuristics-And-Machine-Learning && docker-compose build > /dev/null 2>&1 && docker-compose up > /dev/null 2>&1 && docker images && exit 0" >> "$PACKAGES_PATH"/Log-Files/Build-Images-Teardown-Old-Docker-Containers-Log.txt
   TIMESTAMP2=$(date)
   echo "This Build-Docker-Containers task was started by leon-ai, and it ended on $TIMESTAMP2." >> "$PACKAGES_PATH"/Log-Files/Build-Images-Teardown-Old-Docker-Containers-Log.txt
+  cat "$PACKAGES_PATH"/Log-Files/Build-Images-Teardown-Old-Docker-Containers-Log.txt | slacktee.sh -i :nerd_face: --plain-text --config "$SLACK_CONFIG_PATH" > /dev/null 2>&1
+  rm -rf "$PACKAGES_PATH"/Tool-Strategies-Lone-Testers-Test-Leadership-Congress-2019/Workshop-Examples/Shared-Resources/Bug-Risk-Prediction-Using-Heuristics-And-Machine-Learning/Bug-Risk-Prediction-Docker-Container/Target-GitHub-Repo
 fi
 
 if [ "$1" == "Clean-Up-Docker-Containers" ]; then
@@ -209,6 +210,7 @@ if [ "$1" == "Clean-Up-Docker-Containers" ]; then
   docker rm $(docker ps -a -q) > /dev/null 2>&1
   docker image prune --force > /dev/null 2>&1
   rm -rf "$PACKAGES_PATH"/Tool-Strategies-Lone-Testers-Test-Leadership-Congress-2019/Workshop-Examples/Shared-Resources/Bug-Risk-Prediction-Using-Heuristics-And-Machine-Learning/Bug-Risk-Prediction-Docker-Container/Target-GitHub-Repo
+  echo "Docker Containers have been stopped and cleaned up on your local machine." | slacktee.sh -i :nerd_face: --plain-text --config "$SLACK_CONFIG_PATH" > /dev/null 2>&1
 fi
 
 if [ "$1" == "Robot-Framework-Docker-API-Checks" ]; then
@@ -222,6 +224,7 @@ if [ "$1" == "Robot-Framework-Docker-API-Checks" ]; then
   cat "$PACKAGES_PATH/Tool-Strategies-Lone-Testers-Test-Leadership-Congress-2019/Workshop-Examples/Workshop-Part-Three/pabot_results/Robot Framework test run with Requests Library in parallel.Docker-Example-Requests-Library2/robot_stdout.out" >> "$PACKAGES_PATH"/Log-Files/Part-One-Requests-Library-Workshop-Examples-Log.txt
   TIMESTAMP2=$(date)
   echo "This Robot-Framework-Docker-API-Checks task was started by leon-ai, and it ended on $TIMESTAMP2." >> "$PACKAGES_PATH"/Log-Files/Part-One-Requests-Library-Workshop-Examples-Log.txt
+  cat "$PACKAGES_PATH"/Log-Files/Part-One-Requests-Library-Workshop-Examples-Log.txt | slacktee.sh -i :nerd_face: --plain-text --config "$SLACK_CONFIG_PATH" > /dev/null 2>&1
 fi
 
 if [ "$1" == "Robot-Framework-Docker-Random-Order-API-Checks" ]; then
@@ -235,6 +238,7 @@ if [ "$1" == "Robot-Framework-Docker-Random-Order-API-Checks" ]; then
   cat "$PACKAGES_PATH/Tool-Strategies-Lone-Testers-Test-Leadership-Congress-2019/Workshop-Examples/Workshop-Part-Three/pabot_results/Robot Framework test run with user-created Python Library in parallel.Docker-Example-Python-Library2-Enhanced-Version/robot_stdout.out" >> "$PACKAGES_PATH"/Log-Files/Part-Two-Python-Library-Workshop-Examples-Log.txt
   TIMESTAMP2=$(date)
   echo "This Robot-Framework-Docker-Random-Order-API-Checks task was started by leon-ai, and it ended on $TIMESTAMP2." >> "$PACKAGES_PATH"/Log-Files/Part-Two-Python-Library-Workshop-Examples-Log.txt
+  cat "$PACKAGES_PATH"/Log-Files/Part-Two-Python-Library-Workshop-Examples-Log.txt | slacktee.sh -i :nerd_face: --plain-text --config "$SLACK_CONFIG_PATH" > /dev/null 2>&1
 fi
 
 if [ "$1" == "Robot-Framework-Docker-MBT-Graphwalker-Checks" ]; then
@@ -247,9 +251,10 @@ if [ "$1" == "Robot-Framework-Docker-MBT-Graphwalker-Checks" ]; then
   TIMESTAMP2=$(date)
   echo "This Robot-Framework-Docker-MBT-Graphwalker-Checks task was started by leon-ai, and it ended on $TIMESTAMP2." >> "$PACKAGES_PATH"/Log-Files/Long-Graphwalker-Run-Workshop-Example-Log.txt
   echo "The results of the Robot-Framework-Docker-MBT-Graphwalker-Checks task can be found in this html log file-> $PACKAGES_PATH/Tool-Strategies-Lone-Testers-Test-Leadership-Congress-2019/Workshop-Examples/Workshop-Part-Three/Graphwalker-Model-Based-Test-Results/long-graphwalker-run.html" >> "$PACKAGES_PATH"/Log-Files/Long-Graphwalker-Run-Workshop-Example-Log.txt
+  cat "$PACKAGES_PATH"/Log-Files/Long-Graphwalker-Run-Workshop-Example-Log.txt | slacktee.sh -i :nerd_face: --plain-text --config "$SLACK_CONFIG_PATH" > /dev/null 2>&1
 fi
 
-if [ "$1" == "Display-MBT-Graphwalker-Results" ]; then
+if [ "$1" == "Display-Current-MBT-Graphwalker-Results" ]; then
   open "$PACKAGES_PATH"/Tool-Strategies-Lone-Testers-Test-Leadership-Congress-2019/Workshop-Examples/Workshop-Part-Three/Graphwalker-Model-Based-Test-Results/long-graphwalker-run.html
 fi
 
@@ -263,6 +268,7 @@ if [ "$1" == "Run-Same-Robot-Framework-Docker-MBT-Graphwalker-Checks-Again" ]; t
   TIMESTAMP2=$(date)
   echo "This Run-Same-Robot-Framework-Docker-MBT-Graphwalker-Checks-Again task was started by leon-ai, and it ended on $TIMESTAMP2." >> "$PACKAGES_PATH"/Log-Files/Run-Same-Robot-Framework-Docker-MBT-Graphwalker-Checks-Again-Log.txt
   echo "The results of the Run-Same-Robot-Framework-Docker-MBT-Graphwalker-Checks-Again task can be found in this html log file-> $PACKAGES_PATH/Tool-Strategies-Lone-Testers-Test-Leadership-Congress-2019/Workshop-Examples/Workshop-Part-Three/Graphwalker-Model-Based-Test-Results/long-graphwalker-reuse-previous-path-file.html" >> "$PACKAGES_PATH"/Log-Files/Run-Same-Robot-Framework-Docker-MBT-Graphwalker-Checks-Again-Log.txt
+  cat "$PACKAGES_PATH"/Log-Files/Run-Same-Robot-Framework-Docker-MBT-Graphwalker-Checks-Again-Log.txt | slacktee.sh -i :nerd_face: --plain-text --config "$SLACK_CONFIG_PATH" > /dev/null 2>&1
 fi
 
 if [ "$1" == "Robot-Framework-Selenium-Desktop-Web-Checks" ]; then
@@ -275,6 +281,7 @@ if [ "$1" == "Robot-Framework-Selenium-Desktop-Web-Checks" ]; then
   bash -c "cd $PACKAGES_PATH/Tool-Strategies-Lone-Testers-Test-Leadership-Congress-2019/ && ./start-specific-local-machine-example-workflows-for-workshop.sh Robot-Framework-Desktop-Web-Test-Example" >> "$PACKAGES_PATH"/Log-Files/Robot-Framework-Desktop-Web-Log.txt
   TIMESTAMP2=$(date)
   echo "This Robot-Framework-Selenium-Desktop-Web-Checks task was started by leon-ai, and it ended on $TIMESTAMP2." >> "$PACKAGES_PATH"/Log-Files/Robot-Framework-Desktop-Web-Log.txt
+  cat "$PACKAGES_PATH"/Log-Files/Robot-Framework-Desktop-Web-Log.txt | slacktee.sh -i :nerd_face: --plain-text --config "$SLACK_CONFIG_PATH" > /dev/null 2>&1
 fi
 
 if [ "$1" == "Start-Remote-API-Check-Process-Webhook-Docker-Container" ]; then
@@ -289,6 +296,7 @@ if [ "$1" == "Start-Remote-API-Check-Process-Webhook-Docker-Container" ]; then
   TIMESTAMP2=$(date)
   echo "$TIME_LOGGER" >>  "$PACKAGES_PATH"/Log-Files/Start-Remote-API-Check-Process-Webhook-Docker-Container-Log.txt
   echo "This Start-Remote-API-Check-Process-Webhook-Docker-Container task was started by leon-ai, and it ended on $TIMESTAMP2." >> "$PACKAGES_PATH"/Log-Files/Start-Remote-API-Check-Process-Webhook-Docker-Container-Log.txt
+  cat "$PACKAGES_PATH"/Log-Files/Start-Remote-API-Check-Process-Webhook-Docker-Container-Log.txt | slacktee.sh -i :nerd_face: --plain-text --config "$SLACK_CONFIG_PATH" > /dev/null 2>&1
 fi
 
 if [ "$1" == "Start-Remote-Selenium-Process-Webhook-Docker-Container" ]; then
@@ -303,6 +311,7 @@ if [ "$1" == "Start-Remote-Selenium-Process-Webhook-Docker-Container" ]; then
   TIMESTAMP2=$(date)
   echo "$TIME_LOGGER" >> "$PACKAGES_PATH"/Log-Files/Start-Remote-Selenium-Process-Webhook-Docker-Container-Log.txt
   echo "This Start-Remote-Selenium-Process-Webhook-Docker-Container task was started by leon-ai, and it ended on $TIMESTAMP2." >> "$PACKAGES_PATH"/Log-Files/Start-Remote-Selenium-Process-Webhook-Docker-Container-Log.txt
+  cat "$PACKAGES_PATH"/Log-Files/Start-Remote-Selenium-Process-Webhook-Docker-Container-Log.txt | slacktee.sh -i :nerd_face: --plain-text --config "$SLACK_CONFIG_PATH" > /dev/null 2>&1
 fi
 
 if [ "$1" == "Trigger-Remote-API-Check-Process-Webhook-Docker-Container" ]; then
@@ -316,6 +325,7 @@ if [ "$1" == "Trigger-Remote-API-Check-Process-Webhook-Docker-Container" ]; then
   TIMESTAMP2=$(date)
   echo "$TIME_LOGGER" >> "$PACKAGES_PATH"/Log-Files/Trigger-Remote-API-Check-Process-Webhook-Docker-Container-Log.txt
   echo "This Trigger-Remote-API-Check-Process-Webhook-Docker-Container task was started by leon-ai, and it ended on $TIMESTAMP2." >> "$PACKAGES_PATH"/Log-Files/Trigger-Remote-API-Check-Process-Webhook-Docker-Container-Log.txt
+  cat "$PACKAGES_PATH"/Log-Files/Trigger-Remote-API-Check-Process-Webhook-Docker-Container-Log.txt | slacktee.sh -i :nerd_face: --plain-text --config "$SLACK_CONFIG_PATH" > /dev/null 2>&1
 fi
 
 if [ "$1" == "Trigger-Remote-Selenium-Process-Webhook-Docker-Container" ]; then
@@ -329,6 +339,7 @@ if [ "$1" == "Trigger-Remote-Selenium-Process-Webhook-Docker-Container" ]; then
   TIMESTAMP2=$(date)
   echo "$TIME_LOGGER" >> "$PACKAGES_PATH"/Log-Files/Trigger-Remote-Selenium-Process-Webhook-Docker-Container-Log.txt
   echo "This Trigger-Remote-Selenium-Process-Webhook-Docker-Container task was started by leon-ai, and it ended on $TIMESTAMP2." >> "$PACKAGES_PATH"/Log-Files/Trigger-Remote-Selenium-Process-Webhook-Docker-Container-Log.txt
+  cat "$PACKAGES_PATH"/Log-Files/Trigger-Remote-Selenium-Process-Webhook-Docker-Container-Log.txt | slacktee.sh -i :nerd_face: --plain-text --config "$SLACK_CONFIG_PATH" > /dev/null 2>&1
 fi
 
 if [ "$1" == "Trigger-Both-Webhook-Docker-Containers-For-Parallel-Run" ]; then
@@ -343,6 +354,7 @@ if [ "$1" == "Trigger-Both-Webhook-Docker-Containers-For-Parallel-Run" ]; then
   TIMESTAMP2=$(date)
   echo "$TIME_LOGGER" >> "$PACKAGES_PATH"/Log-Files/Trigger-Both-Webhook-Docker-Containers-For-Parallel-Run-Log.txt
   echo "This Trigger-Both-Webhook-Docker-Containers-For-Parallel-Run task was started by leon-ai, and it ended on $TIMESTAMP2." >> "$PACKAGES_PATH"/Log-Files/Trigger-Both-Webhook-Docker-Containers-For-Parallel-Run-Log.txt
+  cat "$PACKAGES_PATH"/Log-Files/Trigger-Both-Webhook-Docker-Containers-For-Parallel-Run-Log.txt | slacktee.sh -i :nerd_face: --plain-text --config "$SLACK_CONFIG_PATH" > /dev/null 2>&1
 fi
 
 if [ "$1" == "Generate-Bug-Risk-Prediction-Scores-For-A-GitHub-Repo" ]; then
@@ -444,5 +456,5 @@ if [ "$1" == "Gather-All-Robot-Framework-Test-Results-And-Deploy-Dashboard-To-He
   git add . >> "$PACKAGES_PATH"/Log-Files/Gather-All-Robot-Framework-Test-Results-And-Deploy-Dashboard-To-Heroku-Log.txt &&
   git commit -m "$GIT_COMMIT_MESSAGE" --no-verify >> "$PACKAGES_PATH"/Log-Files/Gather-All-Robot-Framework-Test-Results-And-Deploy-Dashboard-To-Heroku-Log.txt &&
   git push origin develop > /dev/null 2>&1
-  echo 'Your Robot Framework test results have been combined into one result file and deployed to Heroku. You can view it in your browser using https://robocon2020-workshop-dashboard.herokuapp.com/' | slacktee.sh -i :nerd_face: --plain-text --plain-text --config "$SLACK_CONFIG_PATH" > /dev/null 2>&1
+  echo 'Your Robot Framework test results have been combined into one result file and deployed to Heroku. You can view it in your browser using https://robocon2020-workshop-dashboard.herokuapp.com/' | slacktee.sh -i :nerd_face: --plain-text --config "$SLACK_CONFIG_PATH" > /dev/null 2>&1
 fi
