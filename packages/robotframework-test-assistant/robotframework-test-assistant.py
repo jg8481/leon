@@ -259,7 +259,7 @@ def Generic_Customizable_Time_Delayed_Runner_One(string, entities):
     """Leon will set up a time delayed generic task runner"""
     ##--> Suggestion: Feel free to change the time.sleep to small_time_delay, medium_time_delay or large_time_delay.
     time.sleep(small_time_delay)
-    ##--> Suggestion: Feel free to set the following subprocess.call to any of the previously defined commands in this robotframework-test-assistant.py script. The following is just an example triggering a single time delayed check.
+    ##--> Suggestion: Feel free to set the following subprocess.call to any of the previously defined commands in this robotframework-test-assistant.py leon-ai module. The following is just an example triggering a single time delayed check.
     subprocess.call(filepath + '/robotframework-runner.sh Check-One', shell=True)
     return utils.output('end', 'generic_time_delayed_task_ran', utils.translate('generic_time_delayed_task_ran'))
 
@@ -267,7 +267,7 @@ def Generic_Customizable_Time_Delayed_Runner_Two(string, entities):
     """Leon will set up a time delayed generic task runner"""
     ##--> Suggestion: Feel free to change the time.sleep to small_time_delay, medium_time_delay or large_time_delay.
     time.sleep(small_time_delay)
-    ##--> Suggestion: Feel free to set the following subprocess.call to any of the previously defined commands in this robotframework-test-assistant.py script. The following example builds off of a previously created Custom_Runner_Two .csv file.
+    ##--> Suggestion: Feel free to set the following subprocess.call to any of the previously defined commands in this robotframework-test-assistant.py leon-ai module. The following example builds off of a previously created Custom_Runner_Two .csv file.
     subprocess.call(filepath + '/robotframework-runner.sh Set-Up-Runner-One', shell=True)
     subprocess.call(filepath + '/robotframework-runner.sh Set-Check-Three', shell=True)
     subprocess.call(filepath + '/robotframework-runner.sh Set-Check-Two', shell=True)
@@ -281,7 +281,7 @@ def Generic_Customizable_Time_Delayed_Runner_Three(string, entities):
     """Leon will set up a time delayed generic task runner"""
     ##--> Suggestion: Feel free to change the time.sleep to small_time_delay, medium_time_delay or large_time_delay.
     time.sleep(small_time_delay)
-    ##--> Suggestion: Feel free to set the following subprocess.call to any of the previously defined commands in this robotframework-test-assistant.py script. The following example will chain together the commands for a new Custom_Runner_One .csv file, runs it, and displays results.
+    ##--> Suggestion: Feel free to set the following subprocess.call to any of the previously defined commands in this robotframework-test-assistant.py leon-ai module. The following example will chain together the commands for a new Custom_Runner_One .csv file, runs it, and displays results.
     subprocess.call(filepath + '/robotframework-runner.sh Set-Up-Custom-Tasks-And-Suites-Runner', shell=True)
     subprocess.call(filepath + '/robotframework-runner.sh Set-Clean-Up-Docker-Containers', shell=True)
     subprocess.call(filepath + '/robotframework-runner.sh Set-Build-Docker-Containers', shell=True)
@@ -292,7 +292,7 @@ def Generic_Customizable_Time_Delayed_Runner_Three(string, entities):
 
 def Generic_Customizable_On_Demand_Runner(string, entities):
     """Leon will set up a generic on-demand task runner"""
-    ##--> Suggestion: Feel free to set the following subprocess.call to any of the previously defined commands in this robotframework-test-assistant.py script. The following example will chain together the commands for all of the custom runners and sends notifications to the team.
+    ##--> Suggestion: Feel free to set the following subprocess.call to any of the previously defined commands in this robotframework-test-assistant.py leon-ai module. The following example will chain together the commands for all of the custom runners and sends notifications to the team.
     subprocess.call(filepath + '/robotframework-runner.sh Set-Up-Custom-Tasks-And-Suites-Runner', shell=True)
     subprocess.call(filepath + '/robotframework-runner.sh Set-Clean-Up-Docker-Containers', shell=True)
     subprocess.call(filepath + '/robotframework-runner.sh Set-Build-Docker-Containers', shell=True)

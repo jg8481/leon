@@ -99,7 +99,7 @@ if [ "$1" == "Custom-Runner-One" ]; then
 fi
 
 if [ "$1" == "Display-Runner-One" ]; then
-  open "$PACKAGES_PATH"/Log-Files/Results/custom-serial-automation-results-log.html
+  open "$PACKAGES_PATH"/Log-Files/Results/custom-serial-automation-results-log.html > /dev/null 2>&1
 fi
 
 if [ "$1" == "Group-One" ]; then
@@ -110,6 +110,7 @@ if [ "$1" == "Group-One" ]; then
   pabot --verbose --variable SLACK_CONFIG_PATH:"$SLACK_CONFIG_PATH" --include Group_One --report NONE --log group-one-log.html --output group-one-output.xml -N "Group One - Two parallel running Robot Framework files" -d "$PACKAGES_PATH"/Log-Files/Results "$PACKAGES_PATH"/Robot-Files/Leon-Robot-Framework-Customizable-Parallel-Runner*.robot >> "$PACKAGES_PATH"/Log-Files/Group-One-Log.txt
   TIMESTAMP2=$(date)
   echo "This Group-One task was started by leon-ai, and it ended on $TIMESTAMP2." >> "$PACKAGES_PATH"/Log-Files/Group-One-Log.txt
+  open "$PACKAGES_PATH"/Log-Files/Results/group-one-log.html > /dev/null 2>&1
 fi
 
 if [ "$1" == "Group-Two" ]; then
@@ -120,6 +121,7 @@ if [ "$1" == "Group-Two" ]; then
   pabot --verbose --variable SLACK_CONFIG_PATH:"$SLACK_CONFIG_PATH" --include Group_Two --report NONE --log group-two-log.html --output group-two-output.xml -N "Group Two - Two parallel running Robot Framework files" -d "$PACKAGES_PATH"/Log-Files/Results "$PACKAGES_PATH"/Robot-Files/Leon-Robot-Framework-Customizable-Parallel-Runner*.robot >> "$PACKAGES_PATH"/Log-Files/Group-Two-Log.txt
   TIMESTAMP2=$(date)
   echo "This Group-Two task was started by leon-ai, and it ended on $TIMESTAMP2." >> "$PACKAGES_PATH"/Log-Files/Group-Two-Log.txt
+  open "$PACKAGES_PATH"/Log-Files/Results/group-two-log.html > /dev/null 2>&1
 fi
 
 if [ "$1" == "Group-Three" ]; then
@@ -130,6 +132,7 @@ if [ "$1" == "Group-Three" ]; then
   pabot --verbose --variable SLACK_CONFIG_PATH:"$SLACK_CONFIG_PATH" --include Group_Three --report NONE --log group-three-log.html --output group-three-output.xml -N "Group Three - Two parallel running Robot Framework files" -d "$PACKAGES_PATH"/Log-Files/Results "$PACKAGES_PATH"/Robot-Files/Leon-Robot-Framework-Customizable-Parallel-Runner*.robot >> "$PACKAGES_PATH"/Log-Files/Group-Three-Log.txt
   TIMESTAMP2=$(date)
   echo "This Group-Three task was started by leon-ai, and it ended on $TIMESTAMP2." >> "$PACKAGES_PATH"/Log-Files/Group-Three-Log.txt
+  open "$PACKAGES_PATH"/Log-Files/Results/group-three-log.html > /dev/null 2>&1
 fi
 
 if [ "$1" == "Group-Four" ]; then
@@ -140,6 +143,7 @@ if [ "$1" == "Group-Four" ]; then
   pabot --verbose --variable SLACK_CONFIG_PATH:"$SLACK_CONFIG_PATH" --include Group_Four --report NONE --log group-four-log.html --output group-four-output.xml -N "Group Four - Two parallel running Robot Framework files" -d "$PACKAGES_PATH"/Log-Files/Results "$PACKAGES_PATH"/Robot-Files/Leon-Robot-Framework-Customizable-Parallel-Runner*.robot >> "$PACKAGES_PATH"/Log-Files/Group-Four-Log.txt
   TIMESTAMP2=$(date)
   echo "This Group-Four task was started by leon-ai, and it ended on $TIMESTAMP2." >> "$PACKAGES_PATH"/Log-Files/Group-Four-Log.txt
+  open "$PACKAGES_PATH"/Log-Files/Results/group-four-log.html > /dev/null 2>&1
 fi
 
 if [ "$1" == "Set-Up-Runner-Two" ]; then
@@ -184,7 +188,7 @@ if [ "$1" == "Custom-Runner-Two" ]; then
 fi
 
 if [ "$1" == "Display-Runner-Two" ]; then
-  open "$PACKAGES_PATH"/Log-Files/Results/custom-parallel-automation-run-*.html
+  open "$PACKAGES_PATH"/Log-Files/Results/custom-parallel-automation-run-*.html > /dev/null 2>&1
 fi
 
 if [ "$1" == "Slack-Notification-Send-All" ]; then
@@ -255,7 +259,7 @@ if [ "$1" == "Robot-Framework-Docker-MBT-Graphwalker-Checks" ]; then
 fi
 
 if [ "$1" == "Display-Current-MBT-Graphwalker-Results" ]; then
-  open "$PACKAGES_PATH"/Tool-Strategies-Lone-Testers-Test-Leadership-Congress-2019/Workshop-Examples/Workshop-Part-Three/Graphwalker-Model-Based-Test-Results/long-graphwalker-run.html
+  open "$PACKAGES_PATH"/Tool-Strategies-Lone-Testers-Test-Leadership-Congress-2019/Workshop-Examples/Workshop-Part-Three/Graphwalker-Model-Based-Test-Results/long-graphwalker-run.html > /dev/null 2>&1
 fi
 
 if [ "$1" == "Run-Same-Robot-Framework-Docker-MBT-Graphwalker-Checks-Again" ]; then
@@ -391,7 +395,7 @@ if [ "$1" == "Custom-Tasks-And-Suites-Runner" ]; then
 fi
 
 if [ "$1" == "Display-Custom-Tasks-And-Suites-Runner" ]; then
-  open "$PACKAGES_PATH"/Log-Files/Results/customized-suite-order-automation-results-log.html
+  open "$PACKAGES_PATH"/Log-Files/Results/customized-suite-order-automation-results-log.html > /dev/null 2>&1
 fi
 
 if [ "$1" == "Set-Up-Custom-Tasks-And-Suites-Runner" ]; then

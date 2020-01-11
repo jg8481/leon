@@ -16,7 +16,7 @@ CUSTOM RUNNER START : This helps avoid skipping the first actual automated check
 AUTOMATED CHECK 1 - PARALLEL RUNNER 2 : An automated check that will run.
     Log    Just giving Robot Framework something to do when triggered by the voice assistant.
     Send Short Message Through Slack About The Automation Run    AUTOMATED CHECK 1 - A hypothetical automated check - PARALLEL RUNNER 2    QA
-    [Tags]    Group_One
+    [Tags]    Group_One    Jira_Release_Number_123
 
 AUTOMATED CHECK 2 - PARALLEL RUNNER 2 : An automated check that will run.
     Log    Just giving Robot Framework something to do when triggered by the voice assistant.

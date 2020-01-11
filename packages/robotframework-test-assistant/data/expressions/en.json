@@ -91,6 +91,9 @@
       "expressions": [
         "group one",
         "groupone",
+        "jira release number 123",
+        "jira release 123",
+        "group of checks for release 123",
         "run groupone",
         "run group one"
       ]
