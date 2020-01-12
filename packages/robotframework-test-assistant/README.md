@@ -113,7 +113,7 @@ Then use any of the following groups of commands. Please read all of the descrip
 
 ```
 
-#### Hypothetical assumptions about inconsistent speech recognition using DeepSpeech engine with leon-ai for just voice commands (typing text commands through the leon-ai web app UI works perfectly fine).
+#### Hypothetical assumptions about inconsistent speech recognition using DeepSpeech engine with leon-ai for just voice commands (typing text commands through the leon-ai UI works perfectly fine).
 
 While using leon-ai's offline speech-to-text engine (DeepSpeech), you may notice that sometimes it makes mistakes interpreting what you are saying or it just hangs and does nothing. Here are some hypothetical assumptions I've made based on some quick research.
 
