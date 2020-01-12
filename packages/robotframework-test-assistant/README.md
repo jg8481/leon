@@ -1,6 +1,6 @@
 # Robot Framework Test Assistant Package
 
-### Use leon-ai to turn Robot Framework into a conversational AI test assistant and OpenRPA task runner.
+### Use leon-ai to turn [Robot Framework](https://robotframework.org/) into a conversational AI test assistant and [OpenRPA](https://github.com/open-rpa/openrpa) task runner.
 
 This is a working proof-of-concept "leon-ai package" (similar to Amazon's Alexa Skills) that focuses on RPA and assisting testers. It can also help make a test team's automation more accessible to non-testers, other technical people, and non-technical people who work on the same product/software development team. Feel free to fork this and use it as a template to build your own test/RPA assistant.
 
