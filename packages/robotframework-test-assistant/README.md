@@ -11,6 +11,7 @@ With this package you will be able to control test processes and RPA tasks with 
 
 Here is a video demonstration. More will be added soon.
 - [Voice command triggering a quick check.](https://drive.google.com/file/d/1lmKCbsB9rU56OGFr4cf2EkP_ydEywt83/view?usp=sharing)
+- [Text command triggering parallel running checks.](https://drive.google.com/file/d/11Br2ds2I__M6o56KGAeRhW7z-GdtjI0z/view?usp=sharing)
 
 ### Commands for running leon-ai and getting started with this package.
 
