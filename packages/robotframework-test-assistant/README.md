@@ -1,8 +1,8 @@
 # Robot Framework Test Assistant Package
 
-### Use leon-ai to turn Robot Framework into a conversational AI test assistant and OpenRPA task runner. 
+### Use leon-ai to turn Robot Framework into a conversational AI test assistant and OpenRPA task runner.
 
-This is a working proof-of-concept "leon-ai package" (similar to Alexa Skills) that focuses on RPA and assisting testers. It can also help make a test team's automation more accessible to non-testers, other technical people, and non-technical people who work on the same product/software development team. Feel free to fork this and use it as a template to build your own test/RPA assistant. 
+This is a working proof-of-concept "leon-ai package" (similar to Alexa Skills) that focuses on RPA and assisting testers. It can also help make a test team's automation more accessible to non-testers, other technical people, and non-technical people who work on the same product/software development team. Feel free to fork this and use it as a template to build your own test/RPA assistant.
 
 With this package you will be able to control test processes and RPA tasks with your voice or with a text message sent directly to the assistant through leon-ai's UI. The following tool requirements need to be set up first in order to run the tests and RPA tasks suite examples in this assistant's "robotframework-brain". Please set up or install all of the tool requirements and all of the required .env files mentioned below.
 
@@ -46,12 +46,12 @@ Then use any of the following groups of commands. Please read all of the descrip
 "check two" <-- This on-demand (no time delay) command will immediately run a single automated check called Check Two, and quickly display the results file.
 "check three" <-- This on-demand (no time delay) command will immediately run a single automated check called Check Three, and quickly display the results file.
 "check four" <-- This on-demand (no time delay) command will immediately run a single automated check called Check Four, and quickly display the results file.
-"group one" <-- This on-demand (no time delay) command will immediately run parallel automated checks called Group One.
-"group two" <-- This on-demand (no time delay) command will immediately run parallel automated checks called Group Two.
-"group three" <-- This on-demand (no time delay) command will immediately run parallel automated checks called Group Three.
-"group four" <-- This on-demand (no time delay) command will immediately run parallel automated checks called Group Four.
+"group one" <-- This on-demand (no time delay) command will immediately run parallel automated checks called Group One, and quickly display the results file.
+"group two" <-- This on-demand (no time delay) command will immediately run parallel automated checks called Group Two, and quickly display the results file.
+"group three" <-- This on-demand (no time delay) command will immediately run parallel automated checks called Group Three, and quickly display the results file.
+"group four" <-- This on-demand (no time delay) command will immediately run parallel automated checks called Group Four, and quickly display the results file.
 "slack notify" <-- This on-demand (no time delay) command will immediately send out all console logs as a Slack notification to a specific channel.
-"desktop browsers" <-- This on-demand (no time delay) command will immediately run parallel automated checks on multiple browsers using PaBot.
+"desktop browsers" <-- This on-demand (no time delay) command will immediately run parallel automated checks on multiple browsers using PaBot, and quickly display the results file.
 "results dashboard" <-- This on-demand (no time delay) command will immediately combine all automation results into one .html log file and deploy it to Heroku.
 "time delayed runner one" <-- This time delayed command will wait for a specific amount of time defined in the robotframework-test-assistant.py leon-ai module. After waiting it will run a single command or many commands chained together in a specific order.
 "time delayed runner two" <-- This time delayed command will wait for a specific amount of time defined in the robotframework-test-assistant.py leon-ai module. After waiting it will run a single command or many commands chained together in a specific order.

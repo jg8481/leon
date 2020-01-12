@@ -246,7 +246,10 @@
     "Robot_Framework_Selenium_Desktop_Web_Checks": {
       "expressions": [
         "desktop browsers",
+        "browsers",
+        "a browser",
         "desktop",
+        "desk top",
         "desktop selenium"
       ]
     },

@@ -12,33 +12,27 @@ Test Teardown     Trigger Only After Failure
 
 *** Variables ***
 
-${URL}      %{APP_URL}
 ${BROWSER}        Safari
 ${RETRY_AMOUNT}    10
 ${SELENIUM_IMPLICIT_WAIT}    10
 
 *** Test Cases ***
 
-Go to the sign up page from the login page.
+Open Safari Browser, go to Google, and check the page.
     [Tags]    Desktop Safari
-    Click Sign Up Link
-
-Quickly check that the sign up page loaded.
-    [Tags]    Desktop Safari
-    #Check The Sign Up Page
-    Check The Sign Up Page Demonstrate Failure
+    Check The Page Demonstrate Failure
 
 *** Keywords ***
 
 Open Safari Browser To Specified URL
-    Open Browser    ${URL}    ${BROWSER}
+    Open Browser    https://www.google.com/    ${BROWSER}
     Set Selenium Implicit Wait    ${SELENIUM_IMPLICIT_WAIT}
-    Wait Until Keyword Succeeds   ${RETRY_AMOUNT}x    0.1s    Wait Until Page Contains    Password    0.5s
+    Wait Until Keyword Succeeds   ${RETRY_AMOUNT}x    0.1s    Wait Until Page Contains    Gmail    0.5s
     Set Selenium Implicit Wait    ${SELENIUM_IMPLICIT_WAIT}
     Sleep    2s
     Capture Page Screenshot
 
-Check The Sign Up Page Demonstrate Failure
+Check The Page Demonstrate Failure
     Page Should Contain    THIS SHOULD FAIL
 
 Trigger Only After Failure

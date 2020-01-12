@@ -286,6 +286,7 @@ if [ "$1" == "Robot-Framework-Selenium-Desktop-Web-Checks" ]; then
   TIMESTAMP2=$(date)
   echo "This Robot-Framework-Selenium-Desktop-Web-Checks task was started by leon-ai, and it ended on $TIMESTAMP2." >> "$PACKAGES_PATH"/Log-Files/Robot-Framework-Desktop-Web-Log.txt
   cat "$PACKAGES_PATH"/Log-Files/Robot-Framework-Desktop-Web-Log.txt | slacktee.sh -i :nerd_face: --plain-text --config "$SLACK_CONFIG_PATH" > /dev/null 2>&1
+  open "$PACKAGES_PATH"/Tool-Strategies-Lone-Testers-Test-Leadership-Congress-2019/Workshop-Examples/Workshop-Part-Three/desktop-web-browser-log.html > /dev/null 2>&1
 fi
 
 if [ "$1" == "Start-Remote-API-Check-Process-Webhook-Docker-Container" ]; then
