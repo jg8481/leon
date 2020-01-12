@@ -9,7 +9,8 @@ With this package you will be able to control test processes and RPA tasks with 
 - https://github.com/jg8481/Tool-Strategies-Lone-Testers-Test-Leadership-Congress-2019/blob/master/README.md
 - https://github.com/coursehero/slacktee
 
-Video demonstration is coming soon.
+Here is a video demonstration. More will be added soon.
+- [Voice command triggering a quick check.](https://drive.google.com/file/d/1lmKCbsB9rU56OGFr4cf2EkP_ydEywt83/view?usp=sharing)
 
 ### Commands for running leon-ai and getting started with this package.
 
