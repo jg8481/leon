@@ -255,6 +255,11 @@ def Set_Generate_Bug_Risk_Prediction_Scores_For_A_GitHub_Repo(string, entities):
     subprocess.call(filepath + '/robotframework-runner.sh Set-Generate-Bug-Risk-Prediction-Scores-For-A-GitHub-Repo', shell=True)
     return utils.output('end', 'finished_setting_up', utils.translate('finished_setting_up'))
 
+def Display_Custom_Tasks_And_Suites_Runner(string, entities):
+    """Leon will display the results of the Robot Framework automated RPA tasks run"""
+    subprocess.call(filepath + '/robotframework-runner.sh Display-Custom-Tasks-And-Suites-Runner', shell=True)
+    return utils.output('end', 'display_results', utils.translate('display_results'))
+
 def Generic_Customizable_Time_Delayed_Runner_One(string, entities):
     """Leon will set up a time delayed generic task runner"""
     ##--> Suggestion: Feel free to change the time.sleep to small_time_delay, medium_time_delay or large_time_delay.
