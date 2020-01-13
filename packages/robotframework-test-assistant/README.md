@@ -44,6 +44,7 @@ Then use any of the following groups of commands. Please read all of the descrip
 ```
 >> Stand-alone Commands <<
 
+Basic commands...
 "help" <-- This on-demand (no time delay) command will immediately display a GitHub link to this documentation.
 "clean" <-- This on-demand (no time delay) command will immediately clean up all results and logs.
 "check one" <-- This on-demand (no time delay) command will immediately run a single automated check called Check One, and quickly display the results file.
@@ -56,12 +57,14 @@ Then use any of the following groups of commands. Please read all of the descrip
 "group four" <-- This on-demand (no time delay) command will immediately run parallel automated checks called Group Four, and quickly display the results file.
 "slack notify" <-- This on-demand (no time delay) command will immediately send out all console logs as a Slack notification to a specific channel.
 "desktop browsers" <-- This on-demand (no time delay) command will immediately run parallel automated checks on multiple browsers using PaBot, and quickly display the results file.
-"results dashboard" <-- This on-demand (no time delay) command will immediately combine all automation results into one .html log file and deploy it to Heroku.
+
+Advanced commands...
 "time delayed runner one" <-- This time delayed command will wait for a specific amount of time defined in the robotframework-test-assistant.py leon-ai module. After waiting it will run a single command or many commands chained together in a specific order.
 "time delayed runner two" <-- This time delayed command will wait for a specific amount of time defined in the robotframework-test-assistant.py leon-ai module. After waiting it will run a single command or many commands chained together in a specific order.
 "time delayed runner three" <-- This time delayed command will wait for a specific amount of time defined in the robotframework-test-assistant.py leon-ai module. After waiting it will run a single command or many commands chained together in a specific order.
 "bug risk" <-- This time delayed command will wait for a short duration, run a set of Robot Framework RPA commands that uses a Docker Container that checks the git commit bug risk of a specific repo using a tool called gitrisky, and sends notifications to specific Slack channels using slacktee if there are commits with a bug risk score of 0.1 or higher.
 "generic on demand runner" <-- This on-demand (no time delay) command will immediately run many commands chained together in a specific order.
+"results dashboard" <-- This on-demand (no time delay) command requires a Heroku account integrated with a GitHub repo you control. If you don't set this up to handle your GitUb repo on your own Heroku account, then leon-ai will immediately reply with the last combined results log that I already deployed it to Heroku.
 
 
 
