@@ -387,7 +387,6 @@ if [ "$1" == "Custom-Tasks-And-Suites-Runner" ]; then
   echo "This Custom-Tasks-And-Suite-Runner task was started by leon-ai on $TIMESTAMP1." >> "$PACKAGES_PATH"/Log-Files/Custom-Tasks-And-Suite-Runner-Log.txt
   while IFS=, read -r CUSTOMRUNNER
   do
-    #TIMESTAMPER_CUSTOM_RPA_TASK_RUNNER=$(date)
     robot --variable SLACK_CONFIG_PATH:"$SLACK_CONFIG_PATH" --variable TASK_RUNNER_PATH:"$PROJECT_PATH/packages/robotframework-test-assistant" --include "${CUSTOMRUNNER}" --report NONE --output customized-suite-order-automation-run-output-"${CUSTOMRUNNER}".xml --log customized-suite-order-automation-run-"${CUSTOMRUNNER}".html -N "${CUSTOMRUNNER}" -d "$PACKAGES_PATH"/Log-Files/Results "$PACKAGES_PATH"/Robot-Files/Leon-Robot-Framework-Customizable-RPA-Task-Runner.robot >> "$PACKAGES_PATH"/Log-Files/Custom-Tasks-And-Suite-Runner-Log.txt &&
     sleep 0.5s
   done < "$PACKAGES_PATH"/Robot-Files/CustomizedTasksAndRobotFrameworkSuitesOrderSequence.csv
