@@ -6,6 +6,12 @@ This is a "leon-ai package" (similar to Amazon's Alexa Skills) that focuses on R
 
 With this package you will be able to control test processes and RPA tasks with your voice or with a text message sent directly to the assistant through leon-ai's UI. The following tool requirements need to be set up first in order to run the tests and RPA tasks suite examples in this assistant's "robotframework-brain". Please set up or install all of the tool requirements and all of the required .env files mentioned below.
 
+- Git
+- Docker and docker-compose
+- Python 3
+- Pipenv
+- NodeJS
+- https://docs.getleon.ai/#prerequisites
 - https://github.com/jg8481/Tool-Strategies-Lone-Testers-Test-Leadership-Congress-2019/blob/master/README.md
 - https://github.com/coursehero/slacktee
 
