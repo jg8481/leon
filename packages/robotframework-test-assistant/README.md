@@ -13,6 +13,7 @@ Here are video demonstrations. More will be added soon.
 - [Voice command triggering a single quick check.](https://drive.google.com/file/d/1lmKCbsB9rU56OGFr4cf2EkP_ydEywt83/view?usp=sharing)
 - [Text command triggering parallel running checks.](https://drive.google.com/file/d/11Br2ds2I__M6o56KGAeRhW7z-GdtjI0z/view?usp=sharing)
 - [Text commands setting up a basic custom runner.](https://drive.google.com/file/d/1JHlGa6Bxwwy-gdDpg5dQOMh0cB4-vCgR/view?usp=sharing)
+- [Text command triggering a predetermined set of commands that assigns bug risk scores to git commits and triggers alerts.](https://drive.google.com/file/d/1znOeDkgB-xjEtgJND7jCxhEWIBO0FXWe/view?usp=sharing)
 
 ### Commands for running leon-ai and getting started with this package.
 
