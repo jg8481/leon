@@ -75,3 +75,6 @@ CustomParallelAutomationRunnerFile.csv
 *CustomizedTasksAndRobotFrameworkSuitesOrderSequence.csv
 *CustomSerialAutomationRunnerFile.csv
 *CustomParallelAutomationRunnerFile.csv
+packages/robotframework-test-assistant/robotframework-brain/Log-Files/Results/*.html
+packages/robotframework-test-assistant/robotframework-brain/Log-Files/Results/*.xml
+packages/robotframework-test-assistant/robotframework-brain/Log-Files/*.txt
