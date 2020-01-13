@@ -60,6 +60,7 @@ Then use any of the following groups of commands. Please read all of the descrip
 "time delayed runner one" <-- This time delayed command will wait for a specific amount of time defined in the robotframework-test-assistant.py leon-ai module. After waiting it will run a single command or many commands chained together in a specific order.
 "time delayed runner two" <-- This time delayed command will wait for a specific amount of time defined in the robotframework-test-assistant.py leon-ai module. After waiting it will run a single command or many commands chained together in a specific order.
 "time delayed runner three" <-- This time delayed command will wait for a specific amount of time defined in the robotframework-test-assistant.py leon-ai module. After waiting it will run a single command or many commands chained together in a specific order.
+"bug risk" <-- This time delayed command will wait for a short duration, run a set of Robot Framework RPA commands that uses a Docker Container that checks the git commit bug risk using a tool called gitrisky, and sends notifications to specific Slack channels using slacktee if there are commits with a bug risk score of 0.1 or higher.
 "generic on demand runner" <-- This on-demand (no time delay) command will immediately run many commands chained together in a specific order.
 
 
@@ -114,7 +115,7 @@ Then use any of the following groups of commands. Please read all of the descrip
 "set bug risk predictor" <-- This command can RUN AFTER the "set up custom task" command is finished running. It will set the RPA custom task automation runner to run this specifically tagged RPA task in the Leon-Robot-Framework-Customizable-RPA-Task-Runner.robot file. This will run an RPA task that will trigger a Docker Container that predicts bug risk in a GitHub and sends out alerts.
 "set slack" <-- This command can RUN AFTER the "set up custom task" command is finished running. It will set the RPA custom task automation runner to run this specifically tagged RPA task in the Leon-Robot-Framework-Customizable-RPA-Task-Runner.robot file. This RPA task works the same way as the similar command found in the >> Stand-alone Commands <<.
 "custom task runner" <-- This on-demand (no time delay) command NEEDS TO RUN AFTER the "set up custom task" and the "set xxxx xxxx etc." command(s) finished running. It will immediately run the parallel and serial tasks from this group of related commands in an order defined by you.
-
+"display rpa results" <-- This command NEEDS TO RUN AFTER the "custom task runner" command is finished running. It will display the combined results of the "custom task runner" command.
 ```
 
 #### Hypothetical assumptions about inconsistent speech recognition using DeepSpeech engine with leon-ai for just voice commands (typing text commands through the leon-ai UI works perfectly fine).
