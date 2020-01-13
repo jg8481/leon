@@ -60,7 +60,7 @@ Then use any of the following groups of commands. Please read all of the descrip
 "time delayed runner one" <-- This time delayed command will wait for a specific amount of time defined in the robotframework-test-assistant.py leon-ai module. After waiting it will run a single command or many commands chained together in a specific order.
 "time delayed runner two" <-- This time delayed command will wait for a specific amount of time defined in the robotframework-test-assistant.py leon-ai module. After waiting it will run a single command or many commands chained together in a specific order.
 "time delayed runner three" <-- This time delayed command will wait for a specific amount of time defined in the robotframework-test-assistant.py leon-ai module. After waiting it will run a single command or many commands chained together in a specific order.
-"bug risk" <-- This time delayed command will wait for a short duration, run a set of Robot Framework RPA commands that uses a Docker Container that checks the git commit bug risk using a tool called gitrisky, and sends notifications to specific Slack channels using slacktee if there are commits with a bug risk score of 0.1 or higher.
+"bug risk" <-- This time delayed command will wait for a short duration, run a set of Robot Framework RPA commands that uses a Docker Container that checks the git commit bug risk of a specific repo using a tool called gitrisky, and sends notifications to specific Slack channels using slacktee if there are commits with a bug risk score of 0.1 or higher.
 "generic on demand runner" <-- This on-demand (no time delay) command will immediately run many commands chained together in a specific order.
 
 
