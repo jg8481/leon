@@ -66,3 +66,12 @@ test-log*.txt
 *-Log.txt
 *output.xml
 *report.html
+packages/robotframework-test-assistant/robotframework-brain/Robot-Files/CustomizedTasksAndRobotFrameworkSuitesOrderSequence.csv
+packages/robotframework-test-assistant/robotframework-brain/Robot-Files/CustomSerialAutomationRunnerFile.csv
+packages/robotframework-test-assistant/robotframework-brain/Robot-Files/CustomParallelAutomationRunnerFile.csv
+CustomizedTasksAndRobotFrameworkSuitesOrderSequence.csv
+CustomSerialAutomationRunnerFile.csv
+CustomParallelAutomationRunnerFile.csv
+*CustomizedTasksAndRobotFrameworkSuitesOrderSequence.csv
+*CustomSerialAutomationRunnerFile.csv
+*CustomParallelAutomationRunnerFile.csv
