@@ -123,7 +123,7 @@ Advanced commands...
 "display rpa results" <-- This command NEEDS TO RUN AFTER the "custom task runner" command is finished running. It will display the combined results of the "custom task runner" command.
 ```
 
-#### Hypothetical assumptions about inconsistent speech recognition using DeepSpeech engine with leon-ai for just voice commands (typing text commands through the leon-ai UI works perfectly fine).
+#### Hypothetical assumptions about inconsistent speech recognition using DeepSpeech engine with leon-ai for just voice commands. Typing text commands through the leon-ai UI and getting text-to-speech through CMU Flite works perfectly fine.
 
 While using leon-ai's offline speech-to-text engine (DeepSpeech), you may notice that sometimes it makes mistakes interpreting what you are saying or it just hangs and does nothing. Here are some hypothetical assumptions I've made based on some quick research.
 
