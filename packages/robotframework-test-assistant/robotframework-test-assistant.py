@@ -338,3 +338,8 @@ def Gather_All_Robot_Framework_Test_Results_And_Deploy_Dashboard_To_Heroku(strin
 def Help_Confused_Users(string, entities):
     """Leon will try to help confused users who don't know how to use this leon-ai package"""
     return utils.output('end', 'help_confused_users', utils.translate('help_confused_users'))
+
+def Jira_Task_Runner(string, entities):
+    """Leon will run Robot Framework through the script runner"""
+    subprocess.call(filepath + '/robotframework-runner.sh Jira-Task-Runner', shell=True)
+    return utils.output('end', 'single_check_ran', utils.translate('single_check_ran'))

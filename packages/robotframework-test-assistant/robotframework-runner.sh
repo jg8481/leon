@@ -467,3 +467,14 @@ if [ "$1" == "Gather-All-Robot-Framework-Test-Results-And-Deploy-Dashboard-To-He
   git push origin develop > /dev/null 2>&1
   echo 'Your Robot Framework test results have been combined into one result file and deployed to Heroku. You can view it in your browser using https://robocon2020-workshop-dashboard.herokuapp.com/' | slacktee.sh -i :nerd_face: --plain-text --config "$SLACK_CONFIG_PATH" > /dev/null 2>&1
 fi
+
+if [ "$1" == "Jira-Task-Runner" ]; then
+  rm -rf "$PACKAGES_PATH"/Log-Files/Jira-Task-Log.txt
+  touch "$PACKAGES_PATH"/Log-Files/Jira-Task-Log.txt
+  TIMESTAMP1=$(date)
+  echo "This Jira-Task-Runner task was started by leon-ai on $TIMESTAMP1." >> "$PACKAGES_PATH"/Log-Files/Jira-Task-Log.txt
+  robot --variable SLACK_CONFIG_PATH:"$SLACK_CONFIG_PATH" --include Jira_Tasks --report NONE --log jira-task-log.html --output jira-task-output.xml -N "Jira Tasks - One Robot Framework file that runs in serial" -d "$PACKAGES_PATH"/Log-Files/Results "$PACKAGES_PATH"/Robot-Files/Leon-Robot-Framework-Customizable-Serial-Runner.robot >> "$PACKAGES_PATH"/Log-Files/Jira-Task-Log.txt
+  TIMESTAMP2=$(date)
+  echo "This Jira-Task-Runner task was started by leon-ai, and it ended on $TIMESTAMP2." >> "$PACKAGES_PATH"/Log-Files/Jira-Task-Log.txt
+  open "$PACKAGES_PATH"/Log-Files/Results/jira-task-log.html > /dev/null 2>&1
+fi

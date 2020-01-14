@@ -40,6 +40,12 @@
         "run check four"
       ]
     },
+    "Jira_Task_Runner": {
+      "expressions": [
+        "jira tasks",
+        "jira ticket 321"
+      ]
+    },
     "Set_Up_Runner_One": {
       "expressions": [
         "set up runner one",
@@ -91,6 +97,7 @@
       "expressions": [
         "group one",
         "groupone",
+        "release checks",
         "jira release number 123",
         "jira release 123",
         "group of checks for release 123",

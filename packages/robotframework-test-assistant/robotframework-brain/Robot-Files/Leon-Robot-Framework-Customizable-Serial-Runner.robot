@@ -33,6 +33,11 @@ AUTOMATED CHECK 4 - SERIAL RUNNER : An automated check that will run.
     Send Short Message Through Slack About The Automation Run    AUTOMATED CHECK 4 - A hypothetical automated check - SERIAL RUNNER    QA
     [Tags]    Check_Four
 
+AUTOMATED CHECK 5 - SERIAL RUNNER : An automated check that will run.
+    Log    Just giving Robot Framework something to do when triggered by the voice assistant.
+    Send Short Message Through Slack About The Automation Run    AUTOMATED CHECK 5 - A hypothetical automated check - SERIAL RUNNER    QA
+    [Tags]    Jira_Tasks    Jira_Ticket_321
+
 *** Keywords ***
 
 Send Short Message Through Slack About The Automation Run
