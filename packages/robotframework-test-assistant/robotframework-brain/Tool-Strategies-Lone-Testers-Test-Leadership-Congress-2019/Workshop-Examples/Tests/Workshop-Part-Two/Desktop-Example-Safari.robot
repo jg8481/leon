@@ -13,8 +13,8 @@ Test Teardown     Trigger Only After Failure
 *** Variables ***
 
 ${BROWSER}        Safari
-${RETRY_AMOUNT}    10
-${SELENIUM_IMPLICIT_WAIT}    10
+${RETRY_AMOUNT}    4
+${SELENIUM_IMPLICIT_WAIT}    2
 
 *** Test Cases ***
 
@@ -27,9 +27,8 @@ Open Safari Browser, go to Google, and check the page.
 Open Safari Browser To Specified URL
     Open Browser    https://www.google.com/    ${BROWSER}
     Set Selenium Implicit Wait    ${SELENIUM_IMPLICIT_WAIT}
-    Wait Until Keyword Succeeds   ${RETRY_AMOUNT}x    0.1s    Wait Until Page Contains    Gmail    0.5s
+    Wait Until Keyword Succeeds   ${RETRY_AMOUNT}x    0.1s    Wait Until Page Contains    Gmail    0.25s
     Set Selenium Implicit Wait    ${SELENIUM_IMPLICIT_WAIT}
-    Sleep    2s
     Capture Page Screenshot
 
 Check The Page Demonstrate Failure
