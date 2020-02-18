@@ -16,6 +16,7 @@ With this package you will be able to control test processes and RPA tasks with 
 - https://github.com/coursehero/slacktee
 
 Here are video demonstrations. More will be added soon.
+- [Here is a RoboCon 2020 demonstration of this conversational test assistant.](https://youtu.be/oo11OlAaWWA)
 - [Voice command triggering a single quick check.](https://drive.google.com/file/d/1lmKCbsB9rU56OGFr4cf2EkP_ydEywt83/view?usp=sharing)
 - [Text command triggering parallel running checks.](https://drive.google.com/file/d/11Br2ds2I__M6o56KGAeRhW7z-GdtjI0z/view?usp=sharing)
 - [Text commands setting up a basic custom runner.](https://drive.google.com/file/d/1JHlGa6Bxwwy-gdDpg5dQOMh0cB4-vCgR/view?usp=sharing)
