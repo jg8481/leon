@@ -26,6 +26,9 @@
 **Note**
 > Attendees of the ["Strategies for creating your own conversational test assistant with Robot Framework and other tools"](https://robocon.io/#strategies-for-creating-your-own-conversational-test-assistant-with-robot-framework-and-other-tools) workshop for RoboCon 2020 should proceed to the following link... 
 > https://github.com/jg8481/leon/tree/develop/packages/robotframework-test-assistant
+>
+> Here is a RoboCon 2020 demonstration of this conversational test assistant...
+> https://youtu.be/oo11OlAaWWA
 
 ## Introduction
 
