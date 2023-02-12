@@ -149,6 +149,6 @@ While using leon-ai's offline speech-to-text engine (DeepSpeech), you may notice
 3) If you have an unreliable or poor quality microphone it may affect performance.
 - https://github.com/mozilla/DeepSpeech/issues/1156#issuecomment-434872303
 
-#### Some possible ideas for expanding this bot's capabilities
+#### Some possible ideas for expanding this bot's capabilities.
 - [Research and explore GPT-3 integrations.](https://sendpulse.com/knowledge-base/chatbot/integrations/openai)
 - [Research how this can be integrated with Robot Framework and blockchain work that I am currently working on.](https://github.com/jg8481/Robot-Framework-Solidity-Testing-Toolkit)
