@@ -15,7 +15,7 @@ With this package you will be able to control test processes and RPA tasks with 
 - https://github.com/jg8481/Tool-Strategies-Lone-Testers-Test-Leadership-Congress-2019/blob/master/README.md
 - https://github.com/coursehero/slacktee
 
-Here are video demonstrations. More will be added soon.
+Here are video demonstrations. More could be added in the future.
 - [Here is a RoboCon 2020 demonstration of this conversational test assistant.](https://youtu.be/oo11OlAaWWA)
 - [Voice command triggering a single quick check.](https://drive.google.com/file/d/1lmKCbsB9rU56OGFr4cf2EkP_ydEywt83/view?usp=sharing)
 - [Text command triggering parallel running checks.](https://drive.google.com/file/d/11Br2ds2I__M6o56KGAeRhW7z-GdtjI0z/view?usp=sharing)
@@ -148,3 +148,7 @@ While using leon-ai's offline speech-to-text engine (DeepSpeech), you may notice
 
 3) If you have an unreliable or poor quality microphone it may affect performance.
 - https://github.com/mozilla/DeepSpeech/issues/1156#issuecomment-434872303
+
+#### Some possible ideas for expanding this bot's capabilities
+- [Research and explore GPT-3 integrations.](https://sendpulse.com/knowledge-base/chatbot/integrations/openai)
+- [Research how this can be integrated with Robot Framework and blockchain work that I am currently working on.](https://github.com/jg8481/Robot-Framework-Solidity-Testing-Toolkit)
